@@ -64,7 +64,7 @@ public class BuildingStage extends BaseOneLevelStage {
 	}
 
 	private void setBuildingFunction() {
-		if (buildingInfo.getBuildingType().equals(BuildingTypeEnum.INN)) {
+		if (buildingInfo.getBuildingType().equals(BuildingTypeEnum.inn)) {
 			Table buttonTable = new Table();
 			buttonTable.bottom().left();
 			buttonTable.padLeft(1100).padBottom(500);
@@ -125,8 +125,8 @@ public class BuildingStage extends BaseOneLevelStage {
 								public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 									timeManager.plusMinute(5);
 									eventManager.setCurrentGameObject(gameObject);
-									positionManager.setCurrentEventPositionType(EventPosition.GAME_OBJECT);
-									screenFactory.show(ScreenEnum.GAME_OBJECT);
+									positionManager.setCurrentEventPositionType(EventPosition.game_object);
+									screenFactory.show(ScreenEnum.game_object);
 								}
 							});
 							tableStack.add(gameObjectTable);
@@ -179,8 +179,8 @@ public class BuildingStage extends BaseOneLevelStage {
 							public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 								timeManager.plusMinute(5);
 								eventManager.setCurrentNpc(npcName);
-								positionManager.setCurrentEventPositionType(EventPosition.NPC);
-								screenFactory.show(ScreenEnum.GREETING);
+								positionManager.setCurrentEventPositionType(EventPosition.npc);
+								screenFactory.show(ScreenEnum.greeting);
 							}
 						});
 						tableStack.add(npcTable);

@@ -38,8 +38,8 @@ public class GreetingScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		greetingStage = stageFactory.makeStage(StageEnum.GREETING);
-		choiceEventStage = stageFactory.makeStage(StageEnum.CHOICE_EVENT);
+		greetingStage = stageFactory.makeStage(StageEnum.greeting);
+		choiceEventStage = stageFactory.makeStage(StageEnum.choice_event);
 		// for shuffle
 
 		InputMultiplexer multiplexer = new InputMultiplexer();

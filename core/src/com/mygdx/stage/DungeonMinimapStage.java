@@ -59,28 +59,28 @@ public class DungeonMinimapStage extends BaseOneLevelStage {
 	private void rotateArrow(Image directionArrow, DungeonManager dungeonManager) {
 		int rotationDegree;
 		switch (dungeonManager.getDungeonInfo().getCurrentRoom().getForwardAngle()) {
-			case TOP :
+			case top :
 				rotationDegree = 90;
 				break;
-			case TOP_LEFT :
+			case top_left :
 				rotationDegree = 135;
 				break;
-			case TOP_RIGHT :
+			case top_right :
 				rotationDegree = 45;
 				break;
-			case RIGHT :
+			case right :
 				rotationDegree = 0;
 				break;
-			case BOTTOM_RIGHT :
+			case bottom_right :
 				rotationDegree = -45;
 				break;
-			case BOTTOM :
+			case bottom :
 				rotationDegree = -90;
 				break;
-			case BOTTOM_LEFT :
+			case bottom_left :
 				rotationDegree = -135;
 				break;
-			case LEFT :
+			case left :
 				rotationDegree = 180;
 				break;
 			default :
@@ -88,7 +88,7 @@ public class DungeonMinimapStage extends BaseOneLevelStage {
 				rotationDegree = 0;
 				break;
 		}
-		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.BACKWARD)) {
+		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.backward)) {
 			rotationDegree += 180;
 		}
 		directionArrow.setRotation(rotationDegree);

@@ -61,7 +61,7 @@ public class DungeonManager {
 	}
 	private void setInitialCurrentRoomInfo(int startDungeonRoomIndex) {
 		dungeonInfo.setCurrentRoom(dungeonInfo.getCurrentFloor().getDungeonRooms().get(startDungeonRoomIndex));
-		dungeonInfo.setCurrentDirection(Direction.FORWARD);
+		dungeonInfo.setCurrentDirection(Direction.forward);
 		dungeonInfo.setCurrentForwardAngle(dungeonInfo.getCurrentRoom().getForwardAngle());
 		setCurrentDoorSize(dungeonInfo);
 	}
@@ -72,9 +72,9 @@ public class DungeonManager {
 
 	public void setCurrentDoorSize(DungeonInfo dungeonInfo) {
 		int doorSize;
-		if (dungeonInfo.getCurrentDirection().equals(DungeonEnum.Direction.FORWARD)) {
+		if (dungeonInfo.getCurrentDirection().equals(DungeonEnum.Direction.forward)) {
 			doorSize = dungeonInfo.getCurrentRoom().getForwardConnections().size();
-		} else if (dungeonInfo.getCurrentDirection().equals(DungeonEnum.Direction.BACKWARD)) {
+		} else if (dungeonInfo.getCurrentDirection().equals(DungeonEnum.Direction.backward)) {
 			doorSize = dungeonInfo.getCurrentRoom().getBackwardConnections().size();
 		} else {
 			Gdx.app.log("DungeonManager", "Direction정보 오류");
@@ -92,7 +92,7 @@ public class DungeonManager {
 		DungeonRoom originalRoom = dungeonInfo.getCurrentRoom();
 		dungeonInfo.setBeforeRoom(originalRoom);
 		DungeonConnection dungeonConnection;
-		if (dungeonInfo.getCurrentDirection().equals(Direction.FORWARD)) {
+		if (dungeonInfo.getCurrentDirection().equals(Direction.forward)) {
 			dungeonConnection = originalRoom.getForwardConnections().get(index);
 		} else {
 			dungeonConnection = originalRoom.getBackwardConnections().get(index);
@@ -102,9 +102,9 @@ public class DungeonManager {
 		dungeonInfo.setCurrentDirection(dungeonConnection.getDirectionType());
 		dungeonInfo.getCurrentFloor().setMiniMapAttribute(targetRoom.getRoomPosY(), targetRoom.getRoomPosX());
 		setCurrentDoorSize(dungeonInfo);
-		if (dungeonInfo.getCurrentRoom().getRoomType().equals(DungeonEnum.Type.BOSS)) {
+		if (dungeonInfo.getCurrentRoom().getRoomType().equals(DungeonEnum.Type.boss)) {
 			meetBossMonster(dungeonInfo.getCurrentRoom().getLink());
-		} else if (dungeonInfo.getCurrentRoom().getRoomType().equals(DungeonEnum.Type.ELITE)) {
+		} else if (dungeonInfo.getCurrentRoom().getRoomType().equals(DungeonEnum.Type.elite)) {
 			meetEliteMonster(dungeonInfo.getCurrentRoom().getLink());
 		} else {
 			randomMeetMonster(dungeonInfo.getCurrentFloor().getFloorMonsterList());
@@ -138,10 +138,10 @@ public class DungeonManager {
 		return lastDungeonRoom;
 	}
 	public void changeDirection() {
-		if (dungeonInfo.getCurrentDirection().equals(Direction.FORWARD)) {
-			dungeonInfo.setCurrentDirection(Direction.BACKWARD);
+		if (dungeonInfo.getCurrentDirection().equals(Direction.forward)) {
+			dungeonInfo.setCurrentDirection(Direction.backward);
 		} else {
-			dungeonInfo.setCurrentDirection(Direction.FORWARD);
+			dungeonInfo.setCurrentDirection(Direction.forward);
 		}
 		setCurrentDoorSize(dungeonInfo);
 	}
@@ -155,12 +155,12 @@ public class DungeonManager {
 	public void moveStair(Type stairType, String link) {
 		int beforeFloorIndex = checkCurrentFloorIndex();
 		switch (stairType) {
-			case UP_STAIR :
+			case up_stair :
 				dungeonInfo.setCurrentFloor(dungeonInfo.getCurrentDungeon().getDungeonFloors()
 						.get(beforeFloorIndex + 1));
 				Gdx.app.log("DungeonManager", "go up stair - " + dungeonInfo.getCurrentFloor().getFloorPath());
 				break;
-			case DOWN_STAIR :
+			case down_stair :
 				dungeonInfo.setCurrentFloor(dungeonInfo.getCurrentDungeon().getDungeonFloors()
 						.get(beforeFloorIndex - 1));
 				Gdx.app.log("DungeonManager", "go down stair - " + dungeonInfo.getCurrentFloor().getFloorPath());
@@ -171,7 +171,7 @@ public class DungeonManager {
 		}
 		setFloorMinimap(dungeonInfo);
 		dungeonInfo.setCurrentRoom(dungeonInfo.getCurrentFloor().findRoomByLabel(link));
-		dungeonInfo.setCurrentDirection(Direction.FORWARD);
+		dungeonInfo.setCurrentDirection(Direction.forward);
 		setCurrentDoorSize(dungeonInfo);
 		setCurrentRoomVisibilityOn();
 	}
@@ -187,8 +187,8 @@ public class DungeonManager {
 		dungeonInfo.setCurrentDungeon(currentDungeon);
 		dungeonInfo.setCurrentFloor(currentDungeon.findFloorByPath(location.getFloorPath()));
 		dungeonInfo.setCurrentRoom(dungeonInfo.getCurrentFloor().findRoomByLabel(location.getRoomLabel()));
-		dungeonInfo.setCurrentDirection(Direction.FORWARD);
+		dungeonInfo.setCurrentDirection(Direction.forward);
 		dungeonInfo.setCurrentForwardAngle(dungeonInfo.getCurrentRoom().getForwardAngle());
-		screenFactory.show(ScreenEnum.DUNGEON);
+		screenFactory.show(ScreenEnum.dungeon);
 	}
 }

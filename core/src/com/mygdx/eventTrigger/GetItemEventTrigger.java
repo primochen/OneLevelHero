@@ -18,25 +18,25 @@ public class GetItemEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		switch (eventParameter.getItem().getItemType()) {
-			case HANDGRIP :
+			case handgrip :
 				Equipment handgrip = itemAssets.getHandGrip(eventParameter.getItem().getItemPath());
 				bagManager.addEquipment(handgrip);
 				break;
-			case ACCESSORY :
+			case accessory :
 				Equipment accessory = itemAssets.getAccessory(eventParameter.getItem().getItemPath());
 				bagManager.addEquipment(accessory);
 				break;
-			case CLOTHES :
+			case clothes :
 				Equipment clothes = itemAssets.getClothes(eventParameter.getItem().getItemPath());
 				bagManager.addEquipment(clothes);
 				break;
-			case CONSUMABLES :
+			case consumables :
 				for (int i = 0; i < eventParameter.getItem().getItemCount(); i++) {
 					Consumables item = itemAssets.getConsumables(eventParameter.getItem().getItemPath());
 					bagManager.addConsumables(item);
 				}
 				break;
-			case ETC_ITEM :
+			case etc_item :
 				for (int i = 0; i < eventParameter.getItem().getItemCount(); i++) {
 					Item item = itemAssets.getEtcItem(eventParameter.getItem().getItemPath());
 					bagManager.addEtcItem(item);

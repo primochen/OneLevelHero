@@ -53,16 +53,16 @@ public class LogScreen extends BaseScreen {
 		if (battleManager.isInBattle()) {
 			eventManager.setCurrentNpc(battleManager.getCurrentMonster().getFacePath());
 		} else {
-			positionManager.setCurrentEventPositionType(EventPosition.LOG);
+			positionManager.setCurrentEventPositionType(EventPosition.log);
 			eventManager.setCurrentNpc(YONGSA_NAME);
-			selectEventStage = stageFactory.makeStage(StageEnum.CHOICE_EVENT);
+			selectEventStage = stageFactory.makeStage(StageEnum.choice_event);
 		}
 
 		final NPC npc = eventManager.getCurrentNpc();
 		// for shuffle
 		List<EventScene> shuffleList = new ArrayList<EventScene>(logScenes);
 		Collections.shuffle(shuffleList);
-		eventStage = stageFactory.makeStage(StageEnum.CHAT_EVENT);
+		eventStage = stageFactory.makeStage(StageEnum.chat_event);
 
 		InputMultiplexer multiplexer = new InputMultiplexer();
 		int i = 0;

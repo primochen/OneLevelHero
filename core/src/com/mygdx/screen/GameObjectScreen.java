@@ -22,8 +22,8 @@ public class GameObjectScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		gameObjectStage = stageFactory.makeStage(StageEnum.GAME_OBJECT);
-		choiceEventStage = stageFactory.makeStage(StageEnum.CHOICE_EVENT);
+		gameObjectStage = stageFactory.makeStage(StageEnum.game_object);
+		choiceEventStage = stageFactory.makeStage(StageEnum.choice_event);
 		setInputProcessor();
 
 	}

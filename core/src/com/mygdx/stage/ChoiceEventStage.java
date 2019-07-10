@@ -51,9 +51,9 @@ public class ChoiceEventStage extends BaseOneLevelStage {
 				continue;
 			}
 			switch (selectedEvent.getEventState()) {
-				case ALWAYS_OPEN :
-				case OPENED :
-					if (currentElementType.equals(EventElementEnum.NPC)) {
+				case always_open :
+				case opened :
+					if (currentElementType.equals(EventElementEnum.npc)) {
 						ChoiceNpcEventListener choiceNpcEventListener = listenerFactory.getChoiceNpcEventListener();
 						choiceNpcEventListener.setIndex(eventNumber + 1);
 						chatButtons.get(visibleEventIndex).addListener(choiceNpcEventListener);
@@ -65,12 +65,12 @@ public class ChoiceEventStage extends BaseOneLevelStage {
 					}
 					visibleEventIndex++;
 					break;
-				case CLEARED :
+				case cleared :
 					chatButtons.get(visibleEventIndex).setColor(Color.DARK_GRAY);
 					chatButtons.get(visibleEventIndex).setTouchable(Touchable.disabled);
 					break;
-				case CLOSED :
-				case NOT_OPENED :
+				case closed :
+				case not_opened :
 					break;
 				default :
 					Gdx.app.log("ChoiceEventStage", "EventState 정보 오류");
@@ -95,11 +95,11 @@ public class ChoiceEventStage extends BaseOneLevelStage {
 
 	private void setCurrentElementType(PositionManager positionManager) {
 		switch (positionManager.getCurrentEventPositionType()) {
-			case NPC :
-				currentElementType = EventElementEnum.NPC;
+			case npc :
+				currentElementType = EventElementEnum.npc;
 				break;
-			case GAME_OBJECT :
-				currentElementType = EventElementEnum.GAME_OBJECT;
+			case game_object :
+				currentElementType = EventElementEnum.game_object;
 				break;
 			default :
 				Gdx.app.log("ChoiceEventStage", "잘못된 EventElement정보" + positionManager.getCurrentEventPositionType());

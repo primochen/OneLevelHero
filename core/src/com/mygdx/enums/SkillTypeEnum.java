@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum SkillTypeEnum {
-	TECH("tech"), MAGIC("magic");
+	tech("tech"), magic("magic");
 
 	private String code;
 

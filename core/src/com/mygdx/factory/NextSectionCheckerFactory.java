@@ -27,31 +27,31 @@ public class NextSectionCheckerFactory {
 
 	public NextSectionChecker getNextSectionChecker(EventTypeEnum eventType) {
 		switch (eventType) {
-			case BATTLE_COMMAND :
+			case battle_command :
 				return context.getBean(BattleCommandChecker.class);
-			case END_BATTLE :
+			case end_battle :
 				return context.getBean(BattleEndChecker.class);
-			case CHOICE_OPTION :
+			case choice_option :
 				return context.getBean(ChoiceOptionChecker.class);
-			case COLLECT_EVENT :
+			case collect_event :
 				return context.getBean(CollectEventChecker.class);
-			case MOVE_DUNGEON_ROOM :
+			case move_dungeon_room :
 				return context.getBean(MoveDungeonRoomChecker.class);
-			case MOVE_DUNGEON_ROOM_AFTER_ABSOLUTE_TIME :
+			case move_dungeon_room_after_absolute_time :
 				return context.getBean(MoveDungeonRoomAfterAbsoluteTimeChecker.class);
-			case MOVE_DUNGEON_ROOM_BEFORE_ABSOLUTE_TIME :
+			case move_dungeon_room_before_absolute_time :
 				return context.getBean(MoveDungeonRoomBeforeAbsoluteTimeChecker.class);
-			case MOVE_DUNGEON_ROOM_IN_TARGET_TIME :
+			case move_dungeon_room_in_target_time :
 				return context.getBean(MoveDungeonRoomInTargetTimeChecker.class);
-			case MOVE_FIELD :
+			case move_field :
 				return context.getBean(MoveFieldChecker.class);
-			case MOVE_NODE :
+			case move_node :
 				return context.getBean(MoveNodeChecker.class);
-			case MOVE_SUB_NODE :
+			case move_sub_node :
 				return context.getBean(MoveSubNodeChecker.class);
-			case MOVE_SUB_NODE_AFTER_ABSOLUTE_TIME :
+			case move_sub_node_after_absolute_time :
 				return context.getBean(MoveSubNodeAfterAbsoluteTimeChecker.class);
-			case MOVE_SUB_NODE_BEFORE_ABSOLUTE_TIME :
+			case move_sub_node_before_absolute_time :
 				return context.getBean(MoveSubNodeBeforeAbsoluteTimeChecker.class);
 			default :
 				Gdx.app.log("NextSectionCheckerFactory", "eventType 정보 오류" + eventType);

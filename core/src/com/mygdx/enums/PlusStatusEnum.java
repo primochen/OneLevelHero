@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum PlusStatusEnum {
-	PLUS("plus"), MINUS("minus");
+	plus("plus"), minus("minus");
 	private String code;
 
 	PlusStatusEnum(String code) {

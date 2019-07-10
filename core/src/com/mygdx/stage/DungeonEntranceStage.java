@@ -68,7 +68,7 @@ public class DungeonEntranceStage extends BaseOneLevelStage {
 		backgroundTable.setWidth(StaticAssets.BASE_WINDOW_WIDTH);
 		backgroundTable.setHeight(StaticAssets.BASE_WINDOW_HEIGHT);
 		TextureRegionDrawable backgroundImage = new TextureRegionDrawable(new TextureRegion(
-				textureManager.getBackgroundTexture(dungeonEntranceInfo.getNodePath(), TextureEnum.NORMAL)));
+				textureManager.getBackgroundTexture(dungeonEntranceInfo.getNodePath(), TextureEnum.normal)));
 		backgroundTable.setBackground(backgroundImage);
 		tableStack.addActor(backgroundTable);
 	}

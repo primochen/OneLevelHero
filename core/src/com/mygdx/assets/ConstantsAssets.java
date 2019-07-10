@@ -16,12 +16,12 @@ public class ConstantsAssets implements JsonAssetsInitializable {
 	@Override
 	public void set(Map<String, String> jsonStringMap) {
 		Map<String, HashMap> jsonLabelConstantsMap = JsonParser.parseMap(HashMap.class,
-				jsonStringMap.get(JsonEnum.SCENE_CONSTANTS_JSON.toString()));
+				jsonStringMap.get(JsonEnum.scene_constants_json.toString()));
 		for (Entry<String, HashMap> labelConstantsEntry : jsonLabelConstantsMap.entrySet()) {
 			sceneConstantsMap.put(labelConstantsEntry.getKey(), labelConstantsEntry.getValue());
 		}
 		Map<String, HashMap> stageMap = JsonParser.parseMap(HashMap.class,
-				jsonStringMap.get(String.valueOf(JsonEnum.UI_CONSTANTS)).toString());
+				jsonStringMap.get(String.valueOf(JsonEnum.ui_constants)).toString());
 		for (Entry<String, HashMap> stageEntry : stageMap.entrySet()) {
 			uiConstantsMap.put(stageEntry.getKey(), stageEntry.getValue());
 		}

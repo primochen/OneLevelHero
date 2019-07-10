@@ -22,7 +22,7 @@ public class QuestManager {
 				.iterator();
 		while (questMapIterator.hasNext()) {
 			Quest quest = questMapIterator.next().getValue();
-			if (quest.getQuestState().equals(QuestState.CLEARD)) {
+			if (quest.getQuestState().equals(QuestState.cleard)) {
 				continue;
 			}
 			if (quest.getQuestObjectPath().equals(monsterPath)) {
@@ -34,7 +34,7 @@ public class QuestManager {
 
 	private void checkClearQuest(Quest quest) {
 		if (quest.isAchivedQuest()) {
-			quest.setQuestState(QuestEnum.QuestState.CLEARD);
+			quest.setQuestState(QuestEnum.QuestState.cleard);
 		}
 	}
 }

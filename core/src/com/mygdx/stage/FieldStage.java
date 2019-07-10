@@ -14,7 +14,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.scenes.scene2d.utils.SpriteDrawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.mygdx.assets.ConstantsAssets;
@@ -61,7 +61,8 @@ public class FieldStage extends BaseOneLevelStage {
 		// 초기화
 
 		outerTable = new Table();
-		outerTable.setBackground(getBackgroundTRD(), false);
+//		outerTable.setBackground(getBackgroundTRD(), false);
+		outerTable.setBackground(getBackgroundTRD());
 		outerTable.top(); // table을 위로 정렬
 
 		Table labelTable = new Table();
@@ -82,7 +83,8 @@ public class FieldStage extends BaseOneLevelStage {
 		movingLabel.setText(String.format("[ %s 까지 %d필드 남았습니다. ]",
 				worldMapAssets.getWorldNodeInfo(fieldManager.getDestinationNode()).getNodeName(),
 				fieldManager.getLeftFieldLength()));
-		outerTable.setBackground(getBackgroundTRD(), false);
+//		outerTable.setBackground(getBackgroundTRD(), false);
+		outerTable.setBackground(getBackgroundTRD());
 	}
 
 	private TextureRegionDrawable getBackgroundTRD() {

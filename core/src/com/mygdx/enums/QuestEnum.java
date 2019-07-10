@@ -2,10 +2,10 @@ package com.mygdx.enums;
 
 public class QuestEnum {
 	public enum QuestType {
-		HUNT_MONSTER, GET_ITEM;
+		hunt_monster, get_item;
 	}
 
 	public enum QuestState {
-		NOT_OPENED, ING, CLEARD;
+		not_opened, ing, cleard;
 	}
 }

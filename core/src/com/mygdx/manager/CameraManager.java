@@ -53,22 +53,22 @@ public class CameraManager {
 
 	public void stretchToDevice(BaseOverlapStage stage, VillageDirectionEnum villageDirectionEnum) {
 		switch (villageDirectionEnum) {
-			case LEFT :
+			case left :
 				stage.getOrthographicCamera().position.set(StaticAssets.BASE_WINDOW_WIDTH / 2f,
 						StaticAssets.BASE_WINDOW_HEIGHT / 2f, 0);
 				stage.getViewport().setCamera(stage.getOrthographicCamera());
 				break;
-			case RIGHT :
+			case right :
 				stage.getOrthographicCamera().position.set(StaticAssets.BASE_WINDOW_WIDTH * 3f / 2f,
 						StaticAssets.BASE_WINDOW_HEIGHT / 2f, 0);
 				stage.getViewport().setCamera(stage.getOrthographicCamera());
 				break;
-			case UP :
+			case up :
 				stage.getOrthographicCamera().position.set(StaticAssets.BASE_WINDOW_WIDTH / 2f,
 						StaticAssets.BASE_WINDOW_HEIGHT * 3f / 2f, 0);
 				stage.getViewport().setCamera(stage.getOrthographicCamera());
 				break;
-			case DOWN :
+			case down :
 				stage.getOrthographicCamera().position.set(StaticAssets.BASE_WINDOW_WIDTH / 2f,
 						StaticAssets.BASE_WINDOW_HEIGHT / 2f, 0);
 				stage.getViewport().setCamera(stage.getOrthographicCamera());

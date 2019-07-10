@@ -17,6 +17,6 @@ public class GoTitleListener extends ClickListener {
 	@Override
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
-		screenFactory.popAllAndPush(ScreenEnum.MENU);
+		screenFactory.popAllAndPush(ScreenEnum.menu);
 	}
 }

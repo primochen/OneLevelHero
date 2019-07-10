@@ -19,7 +19,7 @@ public class CollectEventChecker implements NextSectionChecker {
 		while (eventIterator.hasNext()) {
 			EventPacket eventPacket = eventIterator.next();
 			if (!eventManager.getEventInfo().getNpcMap().get(eventPacket.getEventElement())
-					.getEvent(eventPacket.getEventNumber()).getEventState().equals(EventStateEnum.CLOSED)) {
+					.getEvent(eventPacket.getEventNumber()).getEventState().equals(EventStateEnum.closed)) {
 				return false;
 			}
 		}

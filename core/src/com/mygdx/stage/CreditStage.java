@@ -124,7 +124,7 @@ public class CreditStage extends BaseOverlapStage {
 		closeButton.addListener(new InputListener() {
 			@Override
 			public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-				screenFactory.show(ScreenEnum.MENU);
+				screenFactory.show(ScreenEnum.menu);
 				return true;
 			}
 

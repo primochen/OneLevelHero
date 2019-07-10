@@ -1,5 +1,5 @@
 package com.mygdx.enums;
 
 public enum EquipmentPositionEnum {
-	LEFT_HAND, RIGHT_HAND, ACCESSORY, CLOTHES;
+	left_hand, right_hand, accessory, clothes;
 }

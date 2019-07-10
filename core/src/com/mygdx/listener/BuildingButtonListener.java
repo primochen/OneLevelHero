@@ -50,13 +50,13 @@ public class BuildingButtonListener extends ClickListener {
 			buildingInfo.setTargetTime(new TargetTime(0, 24));
 		}
 		eventManager.setTargetBuildingInfo(buildingInfo);
-		EventTrigger eventTrigger = eventTriggerFactory.getEventTrigger(EventTypeEnum.GO_SUB_NODE);
+		EventTrigger eventTrigger = eventTriggerFactory.getEventTrigger(EventTypeEnum.go_sub_node);
 		eventTrigger.triggerEvent(getGoSubNodeEventParameter(buildingInfo));
 		if (buildingInfo.canGoBuilding(timeManager.getDayMinute())) {
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_SUB_NODE, nodePath, buildingPath);
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_SUB_NODE_BY_TIME, buildingPath);
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_SUB_NODE_BEFORE_ABSOLUTE_TIME, buildingPath);
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_SUB_NODE_AFTER_ABSOLUTE_TIME, buildingPath);
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_sub_node, nodePath, buildingPath);
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_sub_node_by_time, buildingPath);
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_sub_node_before_absolute_time, buildingPath);
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_sub_node_after_absolute_time, buildingPath);
 		}
 		timeManager.plusMinute(15); // 건물에 들어가는데 15분
 	}

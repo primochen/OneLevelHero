@@ -64,7 +64,7 @@ public class MonsterStage extends BaseOneLevelStage {
 		battleInfo = battleManager.getBattleInfo();
 		uiConstantsMap = constantsAssets.getUiConstants("MonsterStage");
 		monster = battleManager.getCurrentMonster();
-		if (battleInfo.equals(BattleSituationEnum.ENCOUNTER)) {
+		if (battleInfo.equals(BattleSituationEnum.encounter)) {
 			monsterStatusBar = new StatusBar(monster, uiComponentAssets.getSkin(), true);
 		} else {
 			monsterStatusBar = new StatusBar(monster, uiComponentAssets.getSkin(), false);
@@ -80,7 +80,8 @@ public class MonsterStage extends BaseOneLevelStage {
 		uiTable = new Table();
 		// innerTable.setBackground(getBackgroundTRD()); // 몬스터 테이블의 배경
 		monsterTable.add(getMonsterImage());
-		outerTable.setBackground(getBackgroundTRD(), false);
+//		outerTable.setBackground(getBackgroundTRD(), false);
+		outerTable.setBackground(getBackgroundTRD());
 		outerTable.top(); // table을 위로 정렬
 		outerTable.add(monsterTable).padTop(uiConstantsMap.get("monsterPadTop"))
 				.width(uiConstantsMap.get("monsterTableWidth")).height(uiConstantsMap.get("monsterTableHeight")).row();
@@ -95,7 +96,7 @@ public class MonsterStage extends BaseOneLevelStage {
 		tableStack.add(outerTable);
 		tableStack.add(uiTable);
 		tableStack.add(buffTable);
-		if (battleInfo.equals(BattleSituationEnum.ENCOUNTER)) {
+		if (battleInfo.equals(BattleSituationEnum.encounter)) {
 			showBattleAnimation();
 		}
 	}
@@ -154,7 +155,7 @@ public class MonsterStage extends BaseOneLevelStage {
 		if (positionManager.getCurrentLocatePositionType().equals(LocatePosition.DUNGEON)) {
 			return new TextureRegionDrawable(new TextureRegion(textureManager.getBackgroundTexture(dungeonManager
 					.getDungeonInfo().getBackground())));
-		} else if (eventManager.getCurrentEvent().getEventType().equals(EventTypeEnum.START_BATTLE)) {
+		} else if (eventManager.getCurrentEvent().getEventType().equals(EventTypeEnum.start_battle)) {
 			String backgroundPath = battleManager.getBackgroundPath();
 			return new TextureRegionDrawable(new TextureRegion(textureManager.getBackgroundTexture(backgroundPath)));
 		} else {

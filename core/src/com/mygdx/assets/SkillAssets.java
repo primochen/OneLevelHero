@@ -13,8 +13,8 @@ public class SkillAssets implements JsonAssetsInitializable {
 
 	@Override
 	public void set(Map<String, String> jsonStringMap) {
-		skillMap = JsonParser.parseMap(Skill.class, jsonStringMap.get(JsonEnum.SKILL_JSON.toString()));
-		buffMap = JsonParser.parseMap(Buff.class, jsonStringMap.get(JsonEnum.BUFF_JSON.toString()));
+		skillMap = JsonParser.parseMap(Skill.class, jsonStringMap.get(JsonEnum.skill_json.toString()));
+		buffMap = JsonParser.parseMap(Buff.class, jsonStringMap.get(JsonEnum.buff_json.toString()));
 	}
 
 	public Skill getSkill(String skillName) {

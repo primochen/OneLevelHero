@@ -22,7 +22,7 @@ public class AtlasUiAssets implements FileAssetsInitializable {
 
 	public void set(Map<String, StringFile> filePathMap) {
 		List<AtlasUiFile> atlasUiFileList = JsonParser.parseList(AtlasUiFile.class,
-				filePathMap.get(JsonEnum.ATLAS_UI_PATH.toString()).loadFile());
+				filePathMap.get(JsonEnum.atlas_ui_path.toString()).loadFile());
 		for (AtlasUiFile atlasUiFile : atlasUiFileList) {
 			for (String element : atlasUiFile.getElement()) {
 				atlasUiMap.put(element, atlasUiFile.loadFile());

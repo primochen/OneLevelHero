@@ -56,7 +56,7 @@ public class StorySectionManager {
 				.getConditionalGameObjectEvents();
 		if (conditionalGameObjectEvent != null) {
 			for (EventPacket eventPacket : conditionalGameObjectEvent) {
-				eventManager.setGameObjectEventState(eventPacket, EventStateEnum.OPENED);
+				eventManager.setGameObjectEventState(eventPacket, EventStateEnum.opened);
 			}
 		}
 	}
@@ -76,7 +76,7 @@ public class StorySectionManager {
 		List<EventPacket> conditionalEvent = storySectionInfo.getCurrentStorySection().getConditionalNpcEvents();
 		if (conditionalEvent != null) {
 			for (EventPacket eventPacket : conditionalEvent) {
-				eventManager.setNpcEventState(eventPacket, EventStateEnum.OPENED);
+				eventManager.setNpcEventState(eventPacket, EventStateEnum.opened);
 			}
 		}
 	}
@@ -112,8 +112,8 @@ public class StorySectionManager {
 		Gdx.app.log("StorySectionManager", "runStorySequence");
 		if (!eventSequenceQueue.isEmpty()) {
 			EventPacket polledEventPacket = eventSequenceQueue.poll();
-			positionManager.setCurrentEventPositionType(EventPosition.STORY);
-			eventManager.triggerEvent(EventElementEnum.STORY, polledEventPacket);
+			positionManager.setCurrentEventPositionType(EventPosition.story);
+			eventManager.triggerEvent(EventElementEnum.story, polledEventPacket);
 		} else {
 			goCurrentPosition();
 		}

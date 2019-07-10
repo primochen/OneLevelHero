@@ -24,7 +24,7 @@ public class GameOverStage extends BaseOneLevelStage {
 		this.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				screenFactory.show(ScreenEnum.MENU);
+				screenFactory.show(ScreenEnum.menu);
 			}
 		});
 		tableStack.add(table);

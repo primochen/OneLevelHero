@@ -17,7 +17,7 @@ public class OpenGameObjectEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		EventPacket eventPacket = eventParameter.getEventPacket();
-		eventManager.setGameObjectEventState(eventPacket, EventStateEnum.OPENED);
+		eventManager.setGameObjectEventState(eventPacket, EventStateEnum.opened);
 		storySectionManager.runStorySequence();
 	}
 }

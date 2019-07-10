@@ -21,8 +21,8 @@ public class WorldMapScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		worldMapStage = stageFactory.makeStage(StageEnum.WORLD_MAP);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
+		worldMapStage = stageFactory.makeStage(StageEnum.world_map);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
 		setInputProcessor();
 	}
 

@@ -17,7 +17,7 @@ public class AlwaysOpenNpcEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		EventPacket eventPacket = eventParameter.getEventPacket();
-		eventManager.setNpcEventState(eventPacket, EventStateEnum.ALWAYS_OPEN);
+		eventManager.setNpcEventState(eventPacket, EventStateEnum.always_open);
 		storySectionManager.runStorySequence();
 	}
 }

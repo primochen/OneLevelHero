@@ -38,28 +38,28 @@ public class BattleCommandController {
 	public void setBattleCommand(BattleCommandEnum battleCommandEnum) {
 		this.setBattleCommandEnum(battleCommandEnum);
 		switch (battleCommandEnum) {
-			case DEFEND :
+			case defend :
 				battleCommand = defendOnBattleCommand;
 				break;
-			case GENERAL_ATTACK :
+			case general_attack :
 				battleCommand = generalAttackOnBattleCommand;
 				break;
-			case NO_COMMAND :
+			case no_command :
 				battleCommand = noCommandOnBattleCommand;
 				break;
-			case RUN_AWAY :
+			case run_away :
 				battleCommand = runAwayOnBattleCommand;
 				break;
-			case USE_ITEM :
+			case use_item :
 				battleCommand = useItemOnBattleCommand;
 				break;
-			case USE_MAGIC :
+			case use_magic :
 				battleCommand = useMagicOnBattleCommand;
 				break;
-			case USE_SKILL :
+			case use_skill :
 				battleCommand = useSkillOnBattleCommand;
 				break;
-			case WAIT :
+			case wait :
 				battleCommand = waitOnBattleCommand;
 				break;
 			default :

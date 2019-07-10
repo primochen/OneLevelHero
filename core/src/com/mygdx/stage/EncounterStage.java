@@ -77,7 +77,8 @@ public class EncounterStage extends BaseOneLevelStage {
 		// innerTable.setBackground(getBackgroundTRD()); // 몬스터 테이블의 배경
 		monsterTable.add(getMonsterImage());
 
-		outerTable.setBackground(getBackgroundTRD(), false);
+//		outerTable.setBackground(getBackgroundTRD(), false);
+		outerTable.setBackground(getBackgroundTRD());
 		outerTable.top(); // table을 위로 정렬
 		outerTable.add(monsterTable).padTop(uiConstantsMap.get("monsterPadTop"))
 				.width(uiConstantsMap.get("monsterTableWidth")).height(uiConstantsMap.get("monsterTableHeight")).row();
@@ -105,13 +106,13 @@ public class EncounterStage extends BaseOneLevelStage {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				// BattleScreen으로 넘어가는 것이 전투를 시작하는 것을 의미
-				screenFactory.show(ScreenEnum.BATTLE);
+				screenFactory.show(ScreenEnum.battle);
 			}
 		});
 		fleeButton.addListener(new SimpleTouchListener() {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				battleManager.setCurrentBattleSituation(BattleSituationEnum.NOT_IN_BATTLE);
+				battleManager.setCurrentBattleSituation(BattleSituationEnum.not_in_battle);
 				movingManager.goCurrentLocatePosition();
 			}
 		});

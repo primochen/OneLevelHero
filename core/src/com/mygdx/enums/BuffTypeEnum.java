@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum BuffTypeEnum {
-	BUFF("buff"), DEBUFF("debuff");
+	buff("buff"), debuff("debuff");
 	private String buffType;
 
 	BuffTypeEnum(String buffType) {

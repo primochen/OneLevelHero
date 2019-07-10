@@ -94,7 +94,7 @@ public class CharacterChangeStage extends BaseOverlapStage {
 
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				setCompositeItemVisibilty(apply, DEFAULT_VISIBILTY);
-				screenFactory.show(ScreenEnum.STATUS);
+				screenFactory.show(ScreenEnum.status);
 			}
 		});
 

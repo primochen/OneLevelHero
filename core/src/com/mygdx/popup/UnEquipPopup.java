@@ -10,7 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.mygdx.assets.AtlasUiAssets;
 import com.mygdx.assets.ConstantsAssets;
@@ -127,7 +127,7 @@ public class UnEquipPopup extends Dialog {
 		getButtonTable().add(cancelButton).padLeft(uiConstantsMap.get("closeButtonPadLeft")).height(90)
 				.padBottom(uiConstantsMap.get("buttonPadBottom"));
 		getButtonTable().setBackground(atlasUiAssets.getAtlasUiFile("popupui_popup01"));
-		setCenterPosition(StaticAssets.BASE_WINDOW_WIDTH / 2f, StaticAssets.BASE_WINDOW_HEIGHT / 2f);
+		setPosition(StaticAssets.BASE_WINDOW_WIDTH / 2f, StaticAssets.BASE_WINDOW_HEIGHT / 2f, Align.center);
 		setSize(uiConstantsMap.get("popupWidth"), uiConstantsMap.get("popupHeight"));
 
 	}

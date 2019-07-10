@@ -17,7 +17,7 @@ public class AlwaysOpenGameObjectEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		EventPacket eventPacket = eventParameter.getEventPacket();
-		eventManager.setGameObjectEventState(eventPacket, EventStateEnum.ALWAYS_OPEN);
+		eventManager.setGameObjectEventState(eventPacket, EventStateEnum.always_open);
 		storySectionManager.runStorySequence();
 	}
 }

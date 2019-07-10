@@ -107,7 +107,7 @@ public class SaveManager {
 
 	public void saveNewGameInfo() {
 		FileHandle handle;
-		handle = Gdx.files.local(SAVEPATH + SaveVersion.NEW_GAME.toString() + "_" + CurrentInfo.CURRENT_APP_VERSION);
+		handle = Gdx.files.local(SAVEPATH + SaveVersion.new_game.toString() + "_" + CurrentInfo.CURRENT_APP_VERSION);
 		Output output;
 		try {
 			Gdx.app.log("SaveManager", "save - " + handle.file().getParentFile().getAbsolutePath());
@@ -133,7 +133,7 @@ public class SaveManager {
 	}
 
 	public void loadNewGameInfo() {
-		FileHandle handle = Gdx.files.local(SAVEPATH + SaveVersion.NEW_GAME.toString() + "_"
+		FileHandle handle = Gdx.files.local(SAVEPATH + SaveVersion.new_game.toString() + "_"
 				+ CurrentInfo.CURRENT_APP_VERSION);
 		Input input;
 		try {
@@ -201,7 +201,7 @@ public class SaveManager {
 			e.printStackTrace();
 		}
 		timeInfo.setTime(Gdx.app.getPreferences("Time").getInteger("Time"));
-		battleManager.setCurrentBattleSituation(BattleSituationEnum.NOT_IN_BATTLE);
+		battleManager.setCurrentBattleSituation(BattleSituationEnum.not_in_battle);
 		if (eventManager.getCurrentEvent() == null) {
 			eventManager.setCurrentNpcEvent(new EventPacket("waiji", 1));
 			eventManager.setCurrentStoryEvent(new EventPacket("prologue", 1));

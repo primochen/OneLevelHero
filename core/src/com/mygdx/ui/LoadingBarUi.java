@@ -11,13 +11,13 @@ public class LoadingBarUi extends Actor {
 
 	public LoadingBarUi(Animation animation) {
 		this.animation = animation;
-		reg = animation.getKeyFrame(0);
+		reg = (TextureRegion)animation.getKeyFrame(0);
 	}
 
 	@Override
 	public void act(float delta) {
 		stateTime += delta;
-		reg = animation.getKeyFrame(stateTime);
+		reg = (TextureRegion)animation.getKeyFrame(stateTime);
 	}
 
 }

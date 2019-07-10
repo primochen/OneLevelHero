@@ -18,7 +18,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.mygdx.assets.AtlasUiAssets;
 import com.mygdx.assets.ConstantsAssets;
@@ -148,13 +148,13 @@ public class BattleStage extends BaseOneLevelStage {
 		battleInfo = battleManager.getBattleInfo();
 		battleUi = battleManager.getBattleUi();
 		battleUi.setSkillRunPopup(new SkillRunPopup());
-		if (battleInfo.getCurrentBattleSituation().equals(BattleSituationEnum.ENCOUNTER)) {
+		if (battleInfo.getCurrentBattleSituation().equals(BattleSituationEnum.encounter)) {
 			showInEncounterCase(partyManager.getBattleMemberList(), battleInfo.getCurrentMonster());
 		}
 
 		tableStack.add(makeTurnFrameTable()); // TurnTable 배경 테이블
 		tableStack.add(makeTurnFaceTable()); // TurnTable위에 있는 영웅들 이미지 테이블
-		battleManager.setMonsterSize(MonsterEnum.SizeType.MEDIUM); // TODO 고치고,
+		battleManager.setMonsterSize(MonsterEnum.SizeType.medium); // TODO 고치고,
 																	// 옮기세요
 
 		tableStack.add(battleManager.getGridHitbox());
@@ -168,7 +168,7 @@ public class BattleStage extends BaseOneLevelStage {
 		soundManager.setSoundByPathAndPlay("notice_encount");
 		battleManager.initializeBattle(battleMemberList, currentMonster);
 		showMenuBarAnimation();
-		showBattleInfoMessage(BattleMessages.START_BATTLE_MESSAGE);
+		showBattleInfoMessage(BattleMessages.start_battle_message);
 	}
 
 	private void showBattleInfoMessage(BattleMessages battleInfoMessage) {
@@ -180,7 +180,7 @@ public class BattleStage extends BaseOneLevelStage {
 		animationDelay += delta;
 		if (animationDelay > MONSTER_ATTACK_DELAY) {
 			Hero randomHero = partyManager.pickRandomHero();
-			battleManager.setBattleCommand(BattleCommandEnum.GENERAL_ATTACK);
+			battleManager.setBattleCommand(BattleCommandEnum.general_attack);
 			battleManager.doBattleCommand(battleManager.getCurrentActor(), randomHero, null);
 			battleManager.checkTurnEnd();
 			animationDelay = 0;
@@ -268,8 +268,8 @@ public class BattleStage extends BaseOneLevelStage {
 
 	private int getWeaponHitboxSize() {
 		Hero forInv = (Hero) battleInfo.getCurrentActor();
-		Weapon rightWeapon = (Weapon) forInv.getInventory().getEquipment(ItemEnum.RIGHT_HANDGRIP);
-		Weapon leftWeapon = (Weapon) forInv.getInventory().getEquipment(ItemEnum.LEFT_HANDGRIP);
+		Weapon rightWeapon = (Weapon) forInv.getInventory().getEquipment(ItemEnum.right_handgrip);
+		Weapon leftWeapon = (Weapon) forInv.getInventory().getEquipment(ItemEnum.left_handgrip);
 		if (rightWeapon.getHitboxSize() >= leftWeapon.getHitboxSize()) {
 			return rightWeapon.getHitboxSize();
 		} else {

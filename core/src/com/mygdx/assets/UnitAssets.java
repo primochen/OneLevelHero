@@ -28,8 +28,8 @@ public class UnitAssets implements JsonAssetsInitializable {
 	private Map<String, Monster> monsterMap;
 
 	public void set(Map<String, String> jsonStringMap) {
-		heroMap = JsonParser.parseMap(Hero.class, jsonStringMap.get(JsonEnum.HERO_JSON.toString()));
-		monsterMap = JsonParser.parseMap(Monster.class, jsonStringMap.get(JsonEnum.MONSTER_JSON.toString()));
+		heroMap = JsonParser.parseMap(Hero.class, jsonStringMap.get(JsonEnum.hero_json.toString()));
+		monsterMap = JsonParser.parseMap(Monster.class, jsonStringMap.get(JsonEnum.monster_json.toString()));
 	}
 
 	public Hero getHero(String unitString) {

@@ -97,7 +97,7 @@ public class StatusStage extends BaseOverlapStage {
 		inventoryButton.addListener(new SimpleTouchListener() {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				screenFactory.show(ScreenEnum.INVENTORY);
+				screenFactory.show(ScreenEnum.inventory);
 			}
 
 		});
@@ -118,7 +118,7 @@ public class StatusStage extends BaseOverlapStage {
 				public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 					/* StatusScreen.setClickedWorldMap(true); */
 					partyEndButton.setLayerVisibilty("pressed", false);
-					screenFactory.show(ScreenEnum.ENDING);
+					screenFactory.show(ScreenEnum.ending);
 				}
 
 				@Override
@@ -143,7 +143,7 @@ public class StatusStage extends BaseOverlapStage {
 				@Override
 				public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
 					partyEndButton.setLayerVisibilty("pressed2", true);
-					screenFactory.show(ScreenEnum.CHARACTER_CHANGE);
+					screenFactory.show(ScreenEnum.character_change);
 					return true;
 				}
 			});
@@ -160,7 +160,7 @@ public class StatusStage extends BaseOverlapStage {
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				setCompositeItemVisibility(worldMapButton, DEFAULT_VISIBILITY);
 				StatusScreen.setClickedWorldMap(true);
-				screenFactory.show(ScreenEnum.WORLD_MAP);
+				screenFactory.show(ScreenEnum.world_map);
 			}
 
 			@Override
@@ -176,7 +176,7 @@ public class StatusStage extends BaseOverlapStage {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				if (battleManager.isInBattle()) {
-					screenFactory.show(ScreenEnum.BATTLE);
+					screenFactory.show(ScreenEnum.battle);
 				} else {
 					movingManager.goCurrentLocatePosition();
 				}

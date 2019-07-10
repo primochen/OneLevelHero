@@ -1,5 +1,5 @@
 package com.mygdx.enums;
 
 public enum PopupTypeEnum {
-	GAME_OBJECT, SAVE, REST, EQUIPMENT, HANDGRIP;
+	game_object, save, rest, equipment, handgrip;
 }

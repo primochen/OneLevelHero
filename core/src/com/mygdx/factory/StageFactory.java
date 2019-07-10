@@ -48,75 +48,75 @@ public class StageFactory {
 
 	public Stage makeStage(StageEnum stageEnum) {
 		switch (stageEnum) {
-			case BATTLE :
+			case battle :
 				return context.getBean(BattleStage.class).makeStage();
-			case BATTLE_COMMAND :
+			case battle_command :
 				return context.getBean(BattleCommandStage.class).makeStage();
-			case BATTLE_INFO_MESSAGE :
+			case battle_info_message :
 				return context.getBean(BattleInfoMessageStage.class).makeStage();
-			case BUILDING :
+			case building :
 				return context.getBean(BuildingStage.class).makeStage();
-			case BUILDING_REST_POPUP :
+			case building_rest_popup :
 				return context.getBean(BuildingRestPopupStage.class).makeStage();
-			case CHARACTER_CHANGE :
+			case character_change :
 				return context.getBean(CharacterChangeStage.class).makeStage();
-			case CHARACTER_UI :
+			case character_ui :
 				return context.getBean(CharacterUiStage.class).makeStage();
-			case CHAT_EVENT :
+			case chat_event :
 				return context.getBean(ChatEventStage.class).makeStage();
-			case CHOICE_EVENT :
+			case choice_event :
 				return context.getBean(ChoiceEventStage.class).makeStage();
-			case CHOICE_OPTION :
+			case choice_option :
 				return context.getBean(ChoiceOptionStage.class).makeStage();
-			case CREDIT :
+			case credit :
 				return context.getBean(CreditStage.class).makeStage();
-			case DUNGEON :
+			case dungeon :
 				return context.getBean(DungeonStage.class).makeStage();
-			case DUNGEON_ENTRANCE :
+			case dungeon_entrance :
 				return context.getBean(DungeonEntranceStage.class).makeStage();
-			case DUNGEON_ENTRANCE_REST_POPUP :
+			case dungeon_entrance_rest_popup :
 				return context.getBean(DungeonEntranceRestPopupStage.class).makeStage();
-			case DUNGEON_MINIMAP :
+			case dungeon_minimap :
 				return context.getBean(DungeonMinimapStage.class).makeStage();
-			case ENCOUNTER :
+			case encounter :
 				return context.getBean(EncounterStage.class).makeStage();
-			case FORK :
+			case fork :
 				return context.getBean(ForkStage.class).makeStage();
-			case FORK_REST_POPUP :
+			case fork_rest_popup :
 				return context.getBean(ForkRestPopupStage.class).makeStage();
-			case GAME_CLEAR :
+			case game_clear :
 				return context.getBean(GameClearStage.class).makeStage();
-			case GAME_UI :
+			case game_ui :
 				return context.getBean(GameUiStage.class).makeStage();
-			case GAME_OVER :
+			case game_over :
 				return context.getBean(GameOverStage.class).makeStage();
-			case GAME_OBJECT :
+			case game_object :
 				return context.getBean(GameObjectStage.class).makeStage();
-			case GREETING :
+			case greeting :
 				return context.getBean(GreetingStage.class).makeStage();
-			case LOADING_BAR :
+			case loading_bar :
 				return context.getBean(LoadingBarStage.class).makeStage();
-			case LOAD_POPUP :
+			case load_popup :
 				return context.getBean(LoadPopupStage.class).makeStage();
-			case MENU :
+			case menu :
 				return context.getBean(MenuStage.class).makeStage();
-			case MONSTER :
+			case monster :
 				return context.getBean(MonsterStage.class).makeStage();
-			case FIELD :
+			case field :
 				return context.getBean(FieldStage.class).makeStage();
-			case INVENTORY :
+			case inventory :
 				return context.getBean(InventoryStage.class).makeStage();
-			case SAVE :
+			case save :
 				return context.getBean(SavePopupStage.class).makeStage();
-			case SKILL :
+			case skill :
 				return context.getBean(SkillStage.class).makeStage();
-			case STATUS :
+			case status :
 				return context.getBean(StatusStage.class).makeStage();
-			case VILLAGE :
+			case village :
 				return context.getBean(VillageStage.class).makeStage();
-			case WORLD_MAP :
+			case world_map :
 				return context.getBean(WorldMapStage.class).makeStage();
-			case ITEM :
+			case item :
 				return context.getBean(ItemStage.class).makeStage();
 			default :
 				Gdx.app.debug("StageFactory", "StageEnum 주입 에러");

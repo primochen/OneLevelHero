@@ -16,7 +16,7 @@ public class ChoiceOptionEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		eventManager.setCurrentChatScenes(eventParameter.getEventScenes());
-		screenFactory.show(ScreenEnum.CHOICE_OPTION);
+		screenFactory.show(ScreenEnum.choice_option);
 	}
 
 }

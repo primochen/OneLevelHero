@@ -21,8 +21,8 @@ public class QuestGetItemEventTrigger implements EventTrigger {
 		quest.setQuestName(eventParameter.getQuest().getQuestName());
 		quest.setQuestObjectPath(eventParameter.getQuest().getQuestObjectPath());
 		quest.setQuestObjectCount(eventParameter.getQuest().getQuestObjectCount());
-		quest.setQuestType(QuestType.GET_ITEM);
-		quest.setQuestState(QuestState.ING);
+		quest.setQuestType(QuestType.get_item);
+		quest.setQuestState(QuestState.ing);
 		questManager.addQuest(quest);
 		storySectionManager.runStorySequence();
 	}

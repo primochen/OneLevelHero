@@ -35,7 +35,7 @@ public class GoForwardFieldButtonListener extends ClickListener {
 			String node = fieldManager.getDestinationNode();
 			soundManager.setSoundByPathAndPlay("notice_moving");
 			movingManager.goToNode(node);
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE, node);
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node, node);
 		}
 	}
 }

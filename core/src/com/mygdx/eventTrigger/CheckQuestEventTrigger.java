@@ -20,16 +20,16 @@ public class CheckQuestEventTrigger implements EventTrigger {
 	public void triggerEvent(EventParameters eventParameter) {
 		String questName = eventParameter.getQuest().getQuestName();
 		if (eventManager.getEventInfo().getQuestMap().get(questName).getQuestState()
-				.equals(QuestEnum.QuestState.CLEARD)) {
+				.equals(QuestEnum.QuestState.cleard)) {
 			Event event = eventManager.getEventInfo().getNpcMap()
 					.get(eventParameter.getEventPacket().getEventElement())
 					.getEvent(eventParameter.getEventPacket().getEventNumber());
-			eventManager.setCurrentEvent(EventElementEnum.NPC, eventParameter.getEventPacket());
+			eventManager.setCurrentEvent(EventElementEnum.npc, eventParameter.getEventPacket());
 			eventManager.setCurrentChatScenes(event.getEventParameter().getEventScenes());
-			screenFactory.show(ScreenEnum.CHAT_EVENT);
+			screenFactory.show(ScreenEnum.chat_event);
 		} else {
 			eventManager.setCurrentChatScenes(eventParameter.getEventScenes());
-			screenFactory.show(ScreenEnum.CHAT_EVENT);
+			screenFactory.show(ScreenEnum.chat_event);
 		}
 	}
 }

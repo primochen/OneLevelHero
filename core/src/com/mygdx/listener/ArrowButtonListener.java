@@ -40,7 +40,7 @@ public class ArrowButtonListener extends ClickListener {
 		soundManager.playClickSound();
 		soundManager.setSoundByPathAndPlay("notice_moving");
 		int beforeSectionNumber = storySectionManager.getCurrentStorySectionNumber();
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.CLICK_ARROW, connection.getValue().getArrowName());
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.click_arrow, connection.getValue().getArrowName());
 		int currentSectionNumber = storySectionManager.getCurrentStorySectionNumber();
 		if (beforeSectionNumber != currentSectionNumber) {
 			return;
@@ -50,14 +50,14 @@ public class ArrowButtonListener extends ClickListener {
 			fieldManager.goForwardField();
 		} else {
 			positionManager.setCurrentLocatePositionType(PositionEnum.LocatePosition.FIELD);
-			screenFactory.show(ScreenEnum.FIELD);
+			screenFactory.show(ScreenEnum.field);
 			fieldManager.goInField();
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_FIELD, connection.getValue().getArrowName());
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_field, connection.getValue().getArrowName());
 		}
 		if (!fieldManager.isInField()) {
 			String node = fieldManager.getDestinationNode();
 			movingManager.goToNode(node);
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE, node);
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node, node);
 		}
 		soundManager.setSoundByUseAndPlay("move_arrow");
 		timeManager.plusMinute(30); // 마을에서 길로 나가는데 30분

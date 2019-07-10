@@ -34,7 +34,7 @@ public class ChatEventScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		chatEventStage = stageFactory.makeStage(StageEnum.CHAT_EVENT);
+		chatEventStage = stageFactory.makeStage(StageEnum.chat_event);
 		setMultiprocessor();
 	}
 
@@ -48,10 +48,10 @@ public class ChatEventScreen extends BaseScreen {
 
 	private void drawSelectStage() {
 		switch (eventManager.getCurrentEvent().getEventType()) {
-			case CHOICE_OPTION :
+			case choice_option :
 				choiceOptionStage.draw();
 				break;
-			case SELECT_EVENT :
+			case select_event :
 				choiceOptionStage.draw();
 				break;
 			default :
@@ -63,8 +63,8 @@ public class ChatEventScreen extends BaseScreen {
 		multiplexer = new InputMultiplexer();
 		int i = 0;
 		switch (eventManager.getCurrentEvent().getEventType()) {
-			case CHOICE_OPTION :
-				choiceOptionStage = stageFactory.makeStage(StageEnum.CHOICE_OPTION);
+			case choice_option :
+				choiceOptionStage = stageFactory.makeStage(StageEnum.choice_option);
 				multiplexer.addProcessor(i++, choiceOptionStage);
 				multiplexer.addProcessor(i++, chatEventStage);
 				break;

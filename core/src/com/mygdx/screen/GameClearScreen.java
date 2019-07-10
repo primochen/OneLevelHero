@@ -27,7 +27,7 @@ public class GameClearScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		gameClearStage = stageFactory.makeStage(StageEnum.GAME_CLEAR);
+		gameClearStage = stageFactory.makeStage(StageEnum.game_clear);
 		Gdx.input.setInputProcessor(gameClearStage);
 		musicManager.stopMusic();
 		soundManager.setSoundByPathAndPlay("game_over");

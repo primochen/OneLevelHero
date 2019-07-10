@@ -26,8 +26,8 @@ public class SkillScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		monsterStage = stageFactory.makeStage(StageEnum.MONSTER);
-		skillStage = stageFactory.makeStage(StageEnum.SKILL);
+		monsterStage = stageFactory.makeStage(StageEnum.monster);
+		skillStage = stageFactory.makeStage(StageEnum.skill);
 		InputMultiplexer multiplexer = new InputMultiplexer();
 		int i = 0;
 		multiplexer.addProcessor(i++, skillStage);
@@ -36,7 +36,7 @@ public class SkillScreen extends BaseScreen {
 		monsterStage.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				screenFactory.show(ScreenEnum.BATTLE);
+				screenFactory.show(ScreenEnum.battle);
 			}
 		});
 	}

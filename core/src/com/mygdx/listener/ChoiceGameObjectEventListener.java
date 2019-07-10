@@ -23,7 +23,7 @@ public class ChoiceGameObjectEventListener extends ClickListener {
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
 		EventPacket eventPacket = new EventPacket(eventManager.getCurrentGameObject().getElementPath(), index);
-		eventManager.triggerEvent(EventElementEnum.GAME_OBJECT, eventPacket);
+		eventManager.triggerEvent(EventElementEnum.game_object, eventPacket);
 	}
 	public int getIndex() {
 		return index;

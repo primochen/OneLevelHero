@@ -1,5 +1,5 @@
 package com.mygdx.enums;
 
 public enum MusicEnum {
-	WORLD_NODE_MUSIC, VILLAGE_MUSIC, MOVING_MUSIC, BATTLE_MUSIC, NORMAL;
+	world_node_music, village_music, moving_music, battle_music, normal, WORLD_NODE_MUSIC;
 }

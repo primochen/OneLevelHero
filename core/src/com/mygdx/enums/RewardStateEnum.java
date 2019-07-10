@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum RewardStateEnum {
-	NOT_OPENED("not_opened"), ING("ing"), CLEARED("cleared"), ALWAYS_OPEN("always_open");
+	not_opened("not_opened"), ing("ing"), cleared("cleared"), always_open("always_open");
 	private String rewardState;
 
 	private RewardStateEnum(String rewardState) {

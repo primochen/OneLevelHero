@@ -78,9 +78,9 @@ public class EventManager {
 
 	public EventElement getCurrentEventElement() {
 		switch (eventInfo.getCurrentEventElementType()) {
-			case NPC :
+			case npc :
 				return eventInfo.getCurrentNpc();
-			case GAME_OBJECT :
+			case game_object :
 				return eventInfo.getCurrentGameObject();
 			default :
 				Gdx.app.log("EventManager", "EventElement정보 오류");
@@ -91,13 +91,13 @@ public class EventManager {
 	public void setCurrentEvent(EventElementEnum eventElementType, EventPacket eventPacket) {
 		eventInfo.setCurrentEventElementType(eventElementType);
 		switch (eventElementType) {
-			case NPC :
+			case npc :
 				eventInfo.setCurrentNpcEvent(eventPacket);
 				break;
-			case STORY :
+			case story :
 				eventInfo.setCurrentStoryEvent(eventPacket);
 				break;
-			case GAME_OBJECT :
+			case game_object :
 				eventInfo.setCurrentGameObjectEvent(eventPacket);
 				break;
 			default :
@@ -112,7 +112,7 @@ public class EventManager {
 
 	public void setCurrentNpc(String npcName) {
 		NPC npc = eventInfo.getNpcMap().get(npcName);
-		eventInfo.setCurrentEventElementType(EventElementEnum.NPC);
+		eventInfo.setCurrentEventElementType(EventElementEnum.npc);
 		eventInfo.setCurrentNpc(npc);
 	}
 
@@ -121,23 +121,23 @@ public class EventManager {
 	}
 
 	public void setCurrentGameObject(GameObject gameObject) {
-		eventInfo.setCurrentEventElementType(EventElementEnum.GAME_OBJECT);
+		eventInfo.setCurrentEventElementType(EventElementEnum.game_object);
 		eventInfo.setCurrentGameObject(gameObject);
 	}
 
 	public static boolean isEventVisible(Event event) {
 		switch (event.getEventState()) {
-			case ALWAYS_OPEN :
+			case always_open :
 				return true;
-			case CLEARED :
+			case cleared :
 				return true;
-			case CLOSED :
+			case closed :
 				return false;
-			case ING :
+			case ing :
 				return true;
-			case NOT_OPENED :
+			case not_opened :
 				return false;
-			case OPENED :
+			case opened :
 				return true;
 			default :
 				Gdx.app.log("EventManager", "EventState정보 오류" + event.getEventState());
@@ -159,9 +159,9 @@ public class EventManager {
 
 	public EventElement getCurrentEventElement(EventElementEnum eventElementType) {
 		switch (eventElementType) {
-			case NPC :
+			case npc :
 				return eventInfo.getCurrentNpc();
-			case GAME_OBJECT :
+			case game_object :
 				return eventInfo.getCurrentGameObject();
 			default :
 				Gdx.app.log("EventManager", "eventElement정보 오류" + eventInfo.getCurrentEventElementType());
@@ -171,11 +171,11 @@ public class EventManager {
 
 	public Event getCurrentEvent(EventElementEnum eventElementType) {
 		switch (eventElementType) {
-			case NPC :
+			case npc :
 				return eventInfo.getCurrentNpcEvent();
-			case STORY :
+			case story :
 				return eventInfo.getCurrentStoryEvent();
-			case GAME_OBJECT :
+			case game_object :
 				return eventInfo.getCurrentGameObjectEvent();
 			default :
 				Gdx.app.log("EventManager", "eventElement정보 오류" + eventInfo.getCurrentEventElementType());
@@ -185,11 +185,11 @@ public class EventManager {
 
 	public Event getCurrentEvent() {
 		switch (eventInfo.getCurrentEventElementType()) {
-			case NPC :
+			case npc :
 				return eventInfo.getCurrentNpcEvent();
-			case STORY :
+			case story :
 				return eventInfo.getCurrentStoryEvent();
-			case GAME_OBJECT :
+			case game_object :
 				return eventInfo.getCurrentGameObjectEvent();
 			default :
 				Gdx.app.log("EventManager", "eventElement정보 오류" + eventInfo.getCurrentEventElementType());
@@ -229,19 +229,19 @@ public class EventManager {
 		} else {
 			currentEvent = getCurrentEvent(eventElementType);
 		}
-		if (currentEvent.getEventState() == EventStateEnum.OPENED) {
-			currentEvent.setEventState(EventStateEnum.CLOSED);
+		if (currentEvent.getEventState() == EventStateEnum.opened) {
+			currentEvent.setEventState(EventStateEnum.closed);
 		}
 	}
 
 	public EventElementEnum getEventTypeByPosition() {
 		switch (positionManager.getCurrentEventPositionType()) {
-			case NPC :
-				return EventElementEnum.NPC;
-			case GAME_OBJECT :
-				return EventElementEnum.GAME_OBJECT;
-			case STORY :
-				return EventElementEnum.STORY;
+			case npc :
+				return EventElementEnum.npc;
+			case game_object :
+				return EventElementEnum.game_object;
+			case story :
+				return EventElementEnum.story;
 			default :
 				Gdx.app.log("EventManager", "CurrentEventPositionType정보 오류");
 				return null;
@@ -249,14 +249,14 @@ public class EventManager {
 	}
 
 	public void setEventOpen(Event currentEvent) {
-		if (currentEvent.getEventState().equals(EventStateEnum.NOT_OPENED)) {
-			currentEvent.setEventState(EventStateEnum.OPENED);
+		if (currentEvent.getEventState().equals(EventStateEnum.not_opened)) {
+			currentEvent.setEventState(EventStateEnum.opened);
 		}
 	}
 
 	public boolean isEventOpen(Event event) {
-		if (event.getEventState().equals(EventStateEnum.ALWAYS_OPEN)
-				|| event.getEventState().equals(EventStateEnum.OPENED)) {
+		if (event.getEventState().equals(EventStateEnum.always_open)
+				|| event.getEventState().equals(EventStateEnum.opened)) {
 			return true;
 		} else {
 			return false;
@@ -264,7 +264,7 @@ public class EventManager {
 	}
 
 	public boolean isEventNotOpened(Event event) {
-		if (event.getEventState().equals(EventStateEnum.NOT_OPENED)) {
+		if (event.getEventState().equals(EventStateEnum.not_opened)) {
 			return true;
 		} else {
 			return false;
@@ -272,7 +272,7 @@ public class EventManager {
 	}
 
 	public boolean isEventCleared(Event event) {
-		if (event.getEventState().equals(EventStateEnum.CLEARED)) {
+		if (event.getEventState().equals(EventStateEnum.cleared)) {
 			return true;
 		} else {
 			return false;

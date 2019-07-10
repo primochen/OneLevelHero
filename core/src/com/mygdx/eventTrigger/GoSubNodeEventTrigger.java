@@ -31,11 +31,11 @@ public class GoSubNodeEventTrigger implements EventTrigger {
 		if (buildingInfo.canGoBuilding(currentMinute)) {
 			positionManager.setCurrentLocatePositionType(PositionEnum.LocatePosition.SUB_NODE);
 			positionManager.setCurrentSubNodePath(buildingInfo.getSubNodePath());
-			screenFactory.show(ScreenEnum.BUILDING);
+			screenFactory.show(ScreenEnum.building);
 		} else {
 			eventManager.setCurrentChatScenes(eventParameter.getEventScenes());
 			soundManager.setSoundByPathAndPlay("notice_lock");
-			screenFactory.show(ScreenEnum.CHAT_EVENT);
+			screenFactory.show(ScreenEnum.chat_event);
 		}
 	}
 }

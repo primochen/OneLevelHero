@@ -96,11 +96,11 @@ public class WorldMapStage extends BaseOverlapStage {
 							boolean randomBoolean = random.nextBoolean();
 							if (randomBoolean) {
 								movingManager.goToNode("elven_forest_east");
-								storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE,
+								storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node,
 										"elven_forest_east");
 							} else {
 								movingManager.goToNode("elven_forest_west");
-								storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE,
+								storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node,
 										"elven_forest_west");
 							}
 						}
@@ -117,11 +117,11 @@ public class WorldMapStage extends BaseOverlapStage {
 							boolean randomBoolean = random.nextBoolean();
 							if (randomBoolean) {
 								movingManager.goToNode("crystallized_valley_south");
-								storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE,
+								storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node,
 										"crystallized_valley_south");
 							} else {
 								movingManager.goToNode("crystallized_valley_north");
-								storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE,
+								storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node,
 										"crystallized_valley_north");
 							}
 						}
@@ -134,7 +134,7 @@ public class WorldMapStage extends BaseOverlapStage {
 							positionManager.setInWorldMap(false);
 							dungeonManager.getDungeonInfo().setInDungeon(false);
 							movingManager.goToNode(nodePath);
-							storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE, nodePath);
+							storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node, nodePath);
 						}
 					});
 				}
@@ -158,7 +158,7 @@ public class WorldMapStage extends BaseOverlapStage {
 					positionManager.setInWorldMap(false);
 					dungeonManager.getDungeonInfo().setInDungeon(false);
 					movingManager.goToNode(nodePath);
-					storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE, nodePath);
+					storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node, nodePath);
 				}
 			});
 		}
@@ -176,7 +176,7 @@ public class WorldMapStage extends BaseOverlapStage {
 					positionManager.setInWorldMap(false);
 					dungeonManager.getDungeonInfo().setInDungeon(false);
 					movingManager.goToNode(nodePath);
-					storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE, nodePath);
+					storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node, nodePath);
 				}
 			});
 		}

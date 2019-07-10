@@ -69,7 +69,7 @@ public class Assets {
 		constantsAssets.set(jsonStringMap);
 		textureAssets.loadTexture();
 		assetsManager
-				.load(textureAssets.getTexturePath(TextureEnum.BUST + "_" + "default" + "_" + "01"), Texture.class);
+				.load(textureAssets.getTexturePath(TextureEnum.bust + "_" + "default" + "_" + "01"), Texture.class);
 		assetsManager.loadOverlapResources();
 
 	}
@@ -82,7 +82,7 @@ public class Assets {
 
 	private synchronized Map<String, String> loadJsonStringMap(Map<String, StringFile> filePathMap) {
 		Map<String, StringFile> jsonFileMap = JsonParser.parseMap(StringFile.class,
-				filePathMap.get(JsonEnum.JSON_FILE_PATH.toString()).loadFile());
+				filePathMap.get(JsonEnum.json_file_path.toString()).loadFile());
 		Map<String, String> jsonStringMap = new HashMap<>();
 		for (Entry<String, StringFile> entry : jsonFileMap.entrySet())
 			jsonStringMap.put(entry.getKey(), entry.getValue().loadFile());

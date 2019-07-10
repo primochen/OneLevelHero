@@ -1,12 +1,12 @@
 package com.mygdx.enums;
 
 public enum ScreenEnum {
-	BUILDING("building"), DUNGEON("dungeon"), DUNGEON_ENTRANCE("dungeon_entrance"), GAME_OBJECT("game_object"), GREETING(
-			"greeting"), LOG("log"), LOADING_BAR("loading_bar"), MENU("menu"), OPTION("option"), VILLAGE("village"), WORLD_MAP(
-			"world_map"), CREDIT("credit"), EXTRA("extra"), SAVE("save"), BONUS_POINT("bonus_point"), LOAD("load"), CHAT_EVENT(
-			"event"), FIELD("field"), ENDING("ending"), CG("cg"), BGM("bgm"), COLLECTION("collection"), STATUS("status"), BATTLE(
-			"battle"), ENCOUNTER("encounter"), INVENTORY("inventory"), FORK("fork"), GAME_OVER("game_over"), CHARACTER_CHANGE(
-			"character_change"), CHOICE_OPTION("choice_option"), GAME_CLEAR("game_clear");
+	building("building"), dungeon("dungeon"), dungeon_entrance("dungeon_entrance"), game_object("game_object"), greeting(
+			"greeting"), log("log"), loading_bar("loading_bar"), menu("menu"), option("option"), village("village"), world_map(
+			"world_map"), credit("credit"), extra("extra"), save("save"), bonus_point("bonus_point"), load("load"), chat_event(
+			"event"), field("field"), ending("ending"), cg("cg"), bgm("bgm"), collection("collection"), status("status"), battle(
+			"battle"), encounter("encounter"), inventory("inventory"), fork("fork"), game_over("game_over"), character_change(
+			"character_change"), choice_option("choice_option"), game_clear("game_clear");
 
 	private String code;
 

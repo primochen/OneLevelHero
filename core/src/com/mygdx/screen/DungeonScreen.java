@@ -33,12 +33,12 @@ public class DungeonScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
 		setInputProcessor();
-		dungeonStage = stageFactory.makeStage(StageEnum.DUNGEON);
-		minimapStage = stageFactory.makeStage(StageEnum.DUNGEON_MINIMAP);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		musicManager.setMusicAndPlay(MusicEnum.WORLD_NODE_MUSIC);
+		dungeonStage = stageFactory.makeStage(StageEnum.dungeon);
+		minimapStage = stageFactory.makeStage(StageEnum.dungeon_minimap);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		musicManager.setMusicAndPlay(MusicEnum.world_node_music);
 	}
 
 	private void setInputProcessor() {

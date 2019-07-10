@@ -11,7 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.mygdx.assets.AtlasUiAssets;
 import com.mygdx.assets.ConstantsAssets;
@@ -88,7 +88,7 @@ public class EquipPopup extends Dialog {
 	private void setButton(AtlasUiAssets atlasUiAssets, UiComponentAssets uiComponentAssets,
 			final Equipment equipment) {
 		final Dialog thisDialog = this;
-		if (equipment.getItemType().equals(ItemEnum.HANDGRIP)) {
+		if (equipment.getItemType().equals(ItemEnum.handgrip)) {
 			TextButtonStyle buttonStyle = new TextButtonStyle(atlasUiAssets.getAtlasUiFile("popupui_button2"),
 					atlasUiAssets.getAtlasUiFile("popupui_acbutton2"),
 					atlasUiAssets.getAtlasUiFile("popupui_acbutton2"), uiComponentAssets.getFont());
@@ -197,7 +197,7 @@ public class EquipPopup extends Dialog {
 			getButtonTable().add(cancelButton).padLeft(uiConstantsMap.get("equipButtonPadLeft"))
 					.padBottom(uiConstantsMap.get("buttonPadBottom"));
 			getButtonTable().setBackground(atlasUiAssets.getAtlasUiFile("popupui_popup01"));
-			setCenterPosition(StaticAssets.BASE_WINDOW_WIDTH / 2f, StaticAssets.BASE_WINDOW_HEIGHT / 2f);
+			setPosition(StaticAssets.BASE_WINDOW_WIDTH / 2f, StaticAssets.BASE_WINDOW_HEIGHT / 2f, Align.center);
 			setSize(uiConstantsMap.get("popupWidth"), uiConstantsMap.get("popupHeight"));
 		} else {
 			ImageButton okayButton = new ImageButton(atlasUiAssets.getAtlasUiFile("popupui_button_yes"),
@@ -207,7 +207,7 @@ public class EquipPopup extends Dialog {
 			cancelButton.addListener(new HidingClickListener(this));
 			okayButton.addListener(new ClickListener() {
 				public void clicked(InputEvent event, float x, float y) {
-					if (equipment.getItemType().equals(ItemEnum.CLOTHES)) {
+					if (equipment.getItemType().equals(ItemEnum.clothes)) {
 						if (!currentSelectedHero.getInventory().getClothes().isEmpty()) {
 							currentSelectedHero.unEquipClothes();
 							currentSelectedHero.equipClothes(equipment.getItemPath());
@@ -232,7 +232,7 @@ public class EquipPopup extends Dialog {
 			getButtonTable().add(cancelButton).padLeft(uiConstantsMap.get("closeButtonPadLeft")).height(90)
 					.padBottom(uiConstantsMap.get("buttonPadBottom"));
 			getButtonTable().setBackground(atlasUiAssets.getAtlasUiFile("popupui_popup01"));
-			setCenterPosition(StaticAssets.BASE_WINDOW_WIDTH / 2f, StaticAssets.BASE_WINDOW_HEIGHT / 2f);
+			setPosition(StaticAssets.BASE_WINDOW_WIDTH / 2f, StaticAssets.BASE_WINDOW_HEIGHT / 2f, Align.center);
 			setSize(uiConstantsMap.get("popupWidth"), uiConstantsMap.get("popupHeight"));
 		}
 
@@ -242,7 +242,7 @@ public class EquipPopup extends Dialog {
 		Label questionLabel = new Label("", StaticAssets.skin);
 
 		switch (equipment.getItemType()) {
-		case HANDGRIP:
+		case handgrip:
 			questionLabel.setText("어느 손에 장착하시겠습니까?");
 			break;
 		default:

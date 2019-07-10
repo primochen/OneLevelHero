@@ -49,16 +49,16 @@ public class BattleScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		characterUiStage = stageFactory.makeStage(StageEnum.CHARACTER_UI);
-		monsterStage = stageFactory.makeStage(StageEnum.MONSTER);
-		battleCommandStage = stageFactory.makeStage(StageEnum.BATTLE_COMMAND);
-		battleStage = stageFactory.makeStage(StageEnum.BATTLE);
-		battleInfoMessageStage = stageFactory.makeStage(StageEnum.BATTLE_INFO_MESSAGE);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		characterUiStage = stageFactory.makeStage(StageEnum.character_ui);
+		monsterStage = stageFactory.makeStage(StageEnum.monster);
+		battleCommandStage = stageFactory.makeStage(StageEnum.battle_command);
+		battleStage = stageFactory.makeStage(StageEnum.battle);
+		battleInfoMessageStage = stageFactory.makeStage(StageEnum.battle_info_message);
 
-		skillStage = stageFactory.makeStage(StageEnum.SKILL);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
-		itemStage = stageFactory.makeStage(StageEnum.ITEM);
+		skillStage = stageFactory.makeStage(StageEnum.skill);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
+		itemStage = stageFactory.makeStage(StageEnum.item);
 		setInputProcessor();
 	}
 

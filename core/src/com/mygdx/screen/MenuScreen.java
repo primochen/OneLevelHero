@@ -26,8 +26,8 @@ public class MenuScreen extends BaseScreen {
 	@Override
 	public void show() {
 		musicManager.setMusicAndPlay("bgm_title", MusicCondition.WHENEVER);
-		stage = stageFactory.makeStage(StageEnum.MENU);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
+		stage = stageFactory.makeStage(StageEnum.menu);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
 		setInputProcessor();
 	}
 

@@ -95,7 +95,7 @@ public class VillageStage extends BaseOverlapStage {
 		addActor(sceneLoader.getRoot());
 		VillageDirectionEnum villageDirection = villageInfo.getVillageDirection();
 		switch (villageDirection) {
-			case UP_DOWN :
+			case up_down :
 				final CompositeItem shiftbutton_up = sceneLoader.getRoot().getCompositeById("camera_up");
 				final CompositeItem shiftbutton_down = sceneLoader.getRoot().getCompositeById("camera_down");
 
@@ -105,7 +105,7 @@ public class VillageStage extends BaseOverlapStage {
 				shiftbutton_up.addListener(new ClickListener() {
 					@Override
 					public void clicked(InputEvent event, float x, float y) {
-						positionManager.setVillageDirection(VillageDirectionEnum.UP);
+						positionManager.setVillageDirection(VillageDirectionEnum.up);
 						setCameraState(CameraStateEnum.MOVE_UP);
 						timeManager.plusMinute(15);
 						cameraManager.setMoveFlag(2);
@@ -115,7 +115,7 @@ public class VillageStage extends BaseOverlapStage {
 				shiftbutton_down.addListener(new ClickListener() {
 					@Override
 					public void clicked(InputEvent event, float x, float y) {
-						positionManager.setVillageDirection(VillageDirectionEnum.DOWN);
+						positionManager.setVillageDirection(VillageDirectionEnum.down);
 						setCameraState(CameraStateEnum.MOVE_DOWN);
 						timeManager.plusMinute(15);
 						cameraManager.setMoveFlag(2);
@@ -124,7 +124,7 @@ public class VillageStage extends BaseOverlapStage {
 				cameraManager.setDirection(1);
 
 				break;
-			case LEFT_RIGHT :
+			case left_right :
 				final CompositeItem shiftbutton_left = sceneLoader.getRoot().getCompositeById("camera_left");
 				final CompositeItem shiftbutton_right = sceneLoader.getRoot().getCompositeById("camera_right");
 
@@ -134,7 +134,7 @@ public class VillageStage extends BaseOverlapStage {
 				shiftbutton_left.addListener(new ClickListener() {
 					@Override
 					public void clicked(InputEvent event, float x, float y) {
-						positionManager.setVillageDirection(VillageDirectionEnum.LEFT);
+						positionManager.setVillageDirection(VillageDirectionEnum.left);
 						setCameraState(CameraStateEnum.MOVE_LEFT);
 						cameraManager.setMoveFlag(5);
 						timeManager.plusMinute(15);
@@ -145,7 +145,7 @@ public class VillageStage extends BaseOverlapStage {
 				shiftbutton_right.addListener(new ClickListener() {
 					@Override
 					public void clicked(InputEvent event, float x, float y) {
-						positionManager.setVillageDirection(VillageDirectionEnum.RIGHT);
+						positionManager.setVillageDirection(VillageDirectionEnum.right);
 						setCameraState(CameraStateEnum.MOVE_RIGHT);
 						cameraManager.setMoveFlag(5);
 						timeManager.plusMinute(15);
@@ -155,7 +155,7 @@ public class VillageStage extends BaseOverlapStage {
 				cameraManager.setDirection(2);
 
 				break;
-			case CENTER :
+			case center :
 				break;
 			default :
 				Gdx.app.log("VillageStage", "VillageDirectionEnum정보 오류");
@@ -164,12 +164,12 @@ public class VillageStage extends BaseOverlapStage {
 	}
 	private void setNullCase(Village villageInfo) {
 		if (villageInfo.getArrowDirection() == null || positionManager.getVillageDirection() == null) {
-			if (villageInfo.getVillageDirection().equals(VillageDirectionEnum.UP_DOWN)) {
-				positionManager.setVillageDirection(VillageDirectionEnum.DOWN);
-			} else if (villageInfo.getVillageDirection().equals(VillageDirectionEnum.LEFT_RIGHT)) {
-				positionManager.setVillageDirection(VillageDirectionEnum.LEFT);
+			if (villageInfo.getVillageDirection().equals(VillageDirectionEnum.up_down)) {
+				positionManager.setVillageDirection(VillageDirectionEnum.down);
+			} else if (villageInfo.getVillageDirection().equals(VillageDirectionEnum.left_right)) {
+				positionManager.setVillageDirection(VillageDirectionEnum.left);
 			} else {
-				positionManager.setVillageDirection(VillageDirectionEnum.CENTER);
+				positionManager.setVillageDirection(VillageDirectionEnum.center);
 			}
 		}
 	}
@@ -210,7 +210,7 @@ public class VillageStage extends BaseOverlapStage {
 	@Override
 	public void act() {
 		super.act();
-		if (villageInfo.getVillageDirection() != VillageDirectionEnum.CENTER) {
+		if (villageInfo.getVillageDirection() != VillageDirectionEnum.center) {
 			controlButton();
 		}
 	}

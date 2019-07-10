@@ -24,7 +24,7 @@ public class GameOverScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		gameOverStage = stageFactory.makeStage(StageEnum.GAME_OVER);
+		gameOverStage = stageFactory.makeStage(StageEnum.game_over);
 		Gdx.input.setInputProcessor(gameOverStage);
 		soundManager.setSoundByPathAndPlay("game_over");
 	}

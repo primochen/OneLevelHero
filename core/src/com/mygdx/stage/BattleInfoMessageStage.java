@@ -58,7 +58,7 @@ public class BattleInfoMessageStage extends BaseOneLevelStage {
 			public void clicked(InputEvent event, float x, float y) {
 				if (battleStatusMessage.equals(PLAYER_WIN_MESSAGE)) {
 					movingManager.goCurrentLocatePosition();
-					storySectionManager.triggerNextSectionEvent(EventTypeEnum.END_BATTLE, battleManager
+					storySectionManager.triggerNextSectionEvent(EventTypeEnum.end_battle, battleManager
 							.getCurrentMonster().getFacePath());
 				} else if (battleStatusMessage.equals(START_BATTLE_MESSAGE)) {
 					BattleScreen.showBattleInfoMessage = false;

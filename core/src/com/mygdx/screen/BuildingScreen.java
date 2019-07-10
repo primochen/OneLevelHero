@@ -35,13 +35,13 @@ public class BuildingScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		gameObjectPopupStage = stageFactory.makeStage(StageEnum.BUILDING_REST_POPUP);
-		buildingStage = stageFactory.makeStage(StageEnum.BUILDING);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		saveStage = stageFactory.makeStage(StageEnum.SAVE);
-		loadStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
+		gameObjectPopupStage = stageFactory.makeStage(StageEnum.building_rest_popup);
+		buildingStage = stageFactory.makeStage(StageEnum.building);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		saveStage = stageFactory.makeStage(StageEnum.save);
+		loadStage = stageFactory.makeStage(StageEnum.load_popup);
 		setInputProcessor();
-		musicManager.setMusicAndPlay(MusicEnum.WORLD_NODE_MUSIC);
+		musicManager.setMusicAndPlay(MusicEnum.world_node_music);
 	}
 
 	private void setInputProcessor() {

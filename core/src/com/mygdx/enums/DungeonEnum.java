@@ -2,7 +2,7 @@ package com.mygdx.enums;
 
 public class DungeonEnum {
 	public enum Type {
-		GATE("gate"), ELITE("elite"), OBJECT("object"), BOSS("boss"), UP_STAIR("up_stair"), DOWN_STAIR("down_stair"), NORMAL(
+		gate("gate"), elite("elite"), object("object"), boss("boss"), up_stair("up_stair"), down_stair("down_stair"), normal(
 				"normal");
 		private String code;
 
@@ -17,7 +17,7 @@ public class DungeonEnum {
 	}
 
 	public enum Direction {
-		FORWARD("forward"), BACKWARD("backward");
+		forward("forward"), backward("backward");
 		private String code;
 
 		private Direction(String code) {
@@ -31,8 +31,8 @@ public class DungeonEnum {
 	}
 
 	public enum ForwardAngle {
-		LEFT("left"), RIGHT("right"), TOP_LEFT("top_left"), BOTTOM_LEFT("bottom_left"), TOP_RIGHT("top_right"), BOTTOM(
-				"bottom"), TOP("top"), BOTTOM_RIGHT("bottom_right");
+		left("left"), right("right"), top_left("top_left"), bottom_left("bottom_left"), top_right("top_right"), bottom(
+				"bottom"), top("top"), bottom_right("bottom_right");
 		private String code;
 
 		private ForwardAngle(String code) {

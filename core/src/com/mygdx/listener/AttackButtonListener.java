@@ -17,6 +17,6 @@ public class AttackButtonListener extends ClickListener {
 	@Override
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.BATTLE_COMMAND, "normal_attack");
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.battle_command, "normal_attack");
 	}
 }

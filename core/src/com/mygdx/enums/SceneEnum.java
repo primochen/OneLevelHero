@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum SceneEnum {
-	BATTLE("battle_scene"), WORLD_MAP("world_map_scene");
+	battle("battle_scene"), world_map("world_map_scene");
 
 	private String sceneName;
 

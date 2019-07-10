@@ -52,9 +52,9 @@ public class LoadNewManager {
 		setTimeInfo();
 		setBattleInfo();
 		storySectionManager.runStorySequence(); // 프롤로그 시작!
-		bagManager.possessItem(ItemEnum.CONSUMABLES, "small_healing", 1);
-		bagManager.possessItem(ItemEnum.CONSUMABLES, "small_healing", 1);
-		bagManager.possessItem(ItemEnum.HANDGRIP, "sabre");
+		bagManager.possessItem(ItemEnum.consumables, "small_healing", 1);
+		bagManager.possessItem(ItemEnum.consumables, "small_healing", 1);
+		bagManager.possessItem(ItemEnum.handgrip, "sabre");
 	}
 
 	private void setEventInfo(EventManager eventManager, EventAssets eventAssets, UnitAssets unitAssets) {
@@ -63,11 +63,11 @@ public class LoadNewManager {
 		eventManager.setHeroMap(unitAssets.getHeroMap());
 		eventManager.setQuestMap(new HashMap<String, Quest>());
 		eventManager.setGameObjectMap(eventAssets.getGameObjectMap());
-		eventManager.setCurrentEvent(EventElementEnum.STORY, new EventPacket("prologue", 1));
+		eventManager.setCurrentEvent(EventElementEnum.story, new EventPacket("prologue", 1));
 	}
 
 	private void setBattleInfo() {
-		battleManager.setCurrentBattleSituation(BattleSituationEnum.NOT_IN_BATTLE);
+		battleManager.setCurrentBattleSituation(BattleSituationEnum.not_in_battle);
 	}
 
 	private void setTimeInfo() {
@@ -89,7 +89,7 @@ public class LoadNewManager {
 	private void setCurrentLocatePosition() {
 		// 마왕성에서부터 게임을 시작한다.
 		positionManager.setCurrentLocatePositionType(PositionEnum.LocatePosition.DUNGEON);
-		positionManager.setCurrentEventPositionType(EventPosition.NONE);
+		positionManager.setCurrentEventPositionType(EventPosition.none);
 		positionManager.setCurrentNodePath("devil_castle");
 		dungeonManager.setInitialDungeonInfo("devil_castle");
 		fieldManager.setArrowName("16to1");

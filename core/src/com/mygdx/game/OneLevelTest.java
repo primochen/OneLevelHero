@@ -44,20 +44,20 @@ public class OneLevelTest extends Game {
 
 	// 이하 게임에 곧장 진입하고자 하는 경우
 	private void goStatusScreen() {
-		context.getBean(ScreenFactory.class).show(ScreenEnum.STATUS);
+		context.getBean(ScreenFactory.class).show(ScreenEnum.status);
 	}
 
 	private void goVillageScreen() {
-		context.getBean(ScreenFactory.class).show(ScreenEnum.VILLAGE);
+		context.getBean(ScreenFactory.class).show(ScreenEnum.village);
 	}
 
 	private void goWorldMapScreen() {
-		context.getBean(ScreenFactory.class).show(ScreenEnum.WORLD_MAP);
+		context.getBean(ScreenFactory.class).show(ScreenEnum.world_map);
 	}
 
 	private void goDungeonEntranceScreen() {
-		context.getBean(PositionInfo.class).setCurrentNodePath(WorldNodeEnum.BLACKWOOD_FOREST.toString());
-		context.getBean(ScreenFactory.class).show(ScreenEnum.DUNGEON_ENTRANCE);
+		context.getBean(PositionInfo.class).setCurrentNodePath(WorldNodeEnum.blackwood_forest.toString());
+		context.getBean(ScreenFactory.class).show(ScreenEnum.dungeon_entrance);
 	}
 
 	public boolean keyDown(int keycode) {

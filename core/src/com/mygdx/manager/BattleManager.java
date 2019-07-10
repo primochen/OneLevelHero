@@ -99,11 +99,11 @@ public class BattleManager {
 
 	public void startBattleWithMonster(Monster selectedMonster) {
 		unitManager.initiateMonster(selectedMonster);
-		if (getBattleInfo().getCurrentBattleSituation().equals(BattleSituationEnum.NOT_IN_BATTLE)) {
-			setCurrentBattleSituation(BattleSituationEnum.ENCOUNTER);
+		if (getBattleInfo().getCurrentBattleSituation().equals(BattleSituationEnum.not_in_battle)) {
+			setCurrentBattleSituation(BattleSituationEnum.encounter);
 		}
 		setCurrentMonster(selectedMonster);
-		screenFactory.show(ScreenEnum.BATTLE);
+		screenFactory.show(ScreenEnum.battle);
 	}
 
 	private void checkStunOverUnit() {
@@ -148,7 +148,7 @@ public class BattleManager {
 		setSmallTurnTableUpdate(true);
 		setUsingSkill(false);
 		setMonsterTurnEnd(true);
-		battleCommandController.setBattleCommand(BattleCommandEnum.NO_COMMAND);
+		battleCommandController.setBattleCommand(BattleCommandEnum.no_command);
 	}
 
 	private void setMonsterTurnEnd(boolean b) {
@@ -174,7 +174,7 @@ public class BattleManager {
 	public void runAway() {
 		int randomRunValue = (int) Math.round(Math.random() * 100);
 		if (getRunPercent() > randomRunValue) {
-			setCurrentBattleSituation(BattleSituationEnum.NOT_IN_BATTLE);
+			setCurrentBattleSituation(BattleSituationEnum.not_in_battle);
 			finalizeBattle();
 			movingManager.goCurrentLocatePosition();
 			Gdx.app.log(TAG, "도망!");
@@ -224,22 +224,22 @@ public class BattleManager {
 		ArrayList<Unit> list = new ArrayList<Unit>();
 		SkillTargetUnitEnum skillTargetUnitEnum = SkillTargetUnitEnum.findSkillTargetEnum(targetType);
 		switch (skillTargetUnitEnum) {
-			case ALL :
+			case all :
 				list.addAll(partyManager.getBattleMemberList());
 				break;
-			case MONSTER :
+			case monster :
 				list.add(battleInfo.getCurrentMonster());
 				break;
-			case ONE :
+			case one :
 				list.add(selectedUnit);
 				break;
-			case RANDOM :
+			case random :
 				Hero pick = getRandomHero();
 				if (pick != null) {
 					list.add(pick);
 				}
 				break;
-			case SELF :
+			case self :
 				list.add(skillUser);
 				break;
 			default :
@@ -250,7 +250,7 @@ public class BattleManager {
 	}
 
 	public boolean isInBattle() {
-		if (getBattleInfo().getCurrentBattleSituation().equals(BattleSituationEnum.NOT_IN_BATTLE)) {
+		if (getBattleInfo().getCurrentBattleSituation().equals(BattleSituationEnum.not_in_battle)) {
 			return false;
 		} else {
 			return true;
@@ -283,15 +283,15 @@ public class BattleManager {
 		boolean partyState = isHeroDead();
 		if (monsterState && !partyState) {
 			Gdx.app.log(TAG, "용사팀의 승리!");
-			setCurrentBattleSituation(BattleSituationEnum.PLAYER_WIN);
+			setCurrentBattleSituation(BattleSituationEnum.player_win);
 			return true;
 		} else if (partyState && !monsterState) {
 			Gdx.app.log(TAG, "용사팀의 패배!");
-			battleInfo.setCurrentBattleSituation(BattleSituationEnum.GAME_OVER);
+			battleInfo.setCurrentBattleSituation(BattleSituationEnum.game_over);
 			return true;
 		} else if (partyState && monsterState) {
 			Gdx.app.log(TAG, "잘못된 배틀 : 동시에 죽었다.");
-			battleInfo.setCurrentBattleSituation(BattleSituationEnum.GAME_OVER);
+			battleInfo.setCurrentBattleSituation(BattleSituationEnum.game_over);
 			return true;
 		} else {
 			return false;
@@ -321,7 +321,7 @@ public class BattleManager {
 
 	public void setCurrentBattleSituation(BattleSituationEnum battleSituationEnum) {
 		battleInfo.setCurrentBattleSituation(battleSituationEnum);
-		if (battleInfo.getCurrentBattleSituation().equals(BattleSituationEnum.IN_GAME)) {
+		if (battleInfo.getCurrentBattleSituation().equals(BattleSituationEnum.in_game)) {
 			musicManager.setMusicAndPlay("bgm_battle");
 		}
 	}
@@ -556,7 +556,7 @@ public class BattleManager {
 		PriorityQueue<Unit> battleQueue = new PriorityQueue<Unit>();
 		battleQueue.addAll(battleList);
 		setBattleQueue(battleQueue);
-		setBattleDescriptionLabel(monster.getName() + BattleMessages.MEET_MESSAGE);
+		setBattleDescriptionLabel(monster.getName() + BattleMessages.meet_message);
 
 		for (Unit battleListUnit : battleList) {
 			battleListUnit.setGauge(100);
@@ -570,17 +570,17 @@ public class BattleManager {
 		}
 		monster.getStatus().setHp(monster.getStatus().getMaxHp());
 		monster.setRealStatus(monster.getStatus());
-		battleCommandController.setBattleCommand(BattleCommandEnum.NO_COMMAND);
-		setCurrentBattleSituation(BattleSituationEnum.IN_GAME);
+		battleCommandController.setBattleCommand(BattleCommandEnum.no_command);
+		setCurrentBattleSituation(BattleSituationEnum.in_game);
 	}
 
 	public void playBattleAction(float delta) {
 		battleFlag.setMonsterTurnEnd(false);
 		animationManager.nextFrame(delta);
 		if (animationManager.isEmptyAnimation()) {
-			storySectionManager.triggerNextSectionEvent(EventTypeEnum.BATTLE_COMMAND, "normal_attack");
+			storySectionManager.triggerNextSectionEvent(EventTypeEnum.battle_command, "normal_attack");
 			if (getCurrentSelectedSkill() != null) {
-				storySectionManager.triggerNextSectionEvent(EventTypeEnum.BATTLE_COMMAND, "skill_attack");
+				storySectionManager.triggerNextSectionEvent(EventTypeEnum.battle_command, "skill_attack");
 			}
 		}
 
@@ -688,18 +688,18 @@ public class BattleManager {
 	}
 
 	private void processWhenBattleEnd() {
-		if (getBattleInfo().equals(BattleSituationEnum.PLAYER_WIN)) {
+		if (getBattleInfo().equals(BattleSituationEnum.player_win)) {
 			questManager.checkHuntQuest(battleInfo.getCurrentMonster().getFacePath());
-			setCurrentBattleSituation(BattleSituationEnum.NOT_IN_BATTLE);
+			setCurrentBattleSituation(BattleSituationEnum.not_in_battle);
 			musicManager.stopMusic();
 			soundManager.setSoundByPathAndPlay("notice_victory");
 			getDropItem(battleInfo.getCurrentMonster());
 			getExperience(battleInfo.getCurrentMonster());
-			showBattleInfoMessage(BattleMessages.PLAYER_WIN_MESSAGE.toString());
+			showBattleInfoMessage(BattleMessages.player_win_message.toString());
 			finalizeBattle();
 		} else {
 			finalizeBattle();
-			screenFactory.show(ScreenEnum.GAME_OVER);
+			screenFactory.show(ScreenEnum.game_over);
 		}
 	}
 }

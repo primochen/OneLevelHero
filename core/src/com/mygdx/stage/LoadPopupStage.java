@@ -154,10 +154,10 @@ public class LoadPopupStage extends BaseOverlapStage {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				soundManager.playClickSound();
-				saveInfo.setSaveVersion(SaveVersion.SAVE_01);
-				if (saveManager.isLoadable(SaveVersion.SAVE_01)) {
+				saveInfo.setSaveVersion(SaveVersion.save_01);
+				if (saveManager.isLoadable(SaveVersion.save_01)) {
 					musicManager.stopMusic();
-					saveManager.load(SaveVersion.SAVE_01);
+					saveManager.load(SaveVersion.save_01);
 					movingManager.goCurrentLocatePosition();
 					super.touchUp(event, x, y, pointer, button);
 				}
@@ -167,10 +167,10 @@ public class LoadPopupStage extends BaseOverlapStage {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				soundManager.playClickSound();
-				saveInfo.setSaveVersion(SaveVersion.SAVE_02);
-				if (saveManager.isLoadable(SaveVersion.SAVE_02)) {
+				saveInfo.setSaveVersion(SaveVersion.save_02);
+				if (saveManager.isLoadable(SaveVersion.save_02)) {
 					musicManager.stopMusic();
-					saveManager.load(SaveVersion.SAVE_02);
+					saveManager.load(SaveVersion.save_02);
 					movingManager.goCurrentLocatePosition();
 					super.touchUp(event, x, y, pointer, button);
 				}
@@ -180,10 +180,10 @@ public class LoadPopupStage extends BaseOverlapStage {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				soundManager.playClickSound();
-				saveInfo.setSaveVersion(SaveVersion.SAVE_03);
-				if (saveManager.isLoadable(SaveVersion.SAVE_03)) {
+				saveInfo.setSaveVersion(SaveVersion.save_03);
+				if (saveManager.isLoadable(SaveVersion.save_03)) {
 					musicManager.stopMusic();
-					saveManager.load(SaveVersion.SAVE_03);
+					saveManager.load(SaveVersion.save_03);
 					movingManager.goCurrentLocatePosition();
 					super.touchUp(event, x, y, pointer, button);
 				}

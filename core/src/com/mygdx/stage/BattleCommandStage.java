@@ -134,7 +134,7 @@ public class BattleCommandStage extends BaseOneLevelStage {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				battleManager.setBattleCommand(BattleCommandEnum.GENERAL_ATTACK);;
+				battleManager.setBattleCommand(BattleCommandEnum.general_attack);;
 				setDarkButton(attackButton);
 			}
 		});
@@ -144,7 +144,7 @@ public class BattleCommandStage extends BaseOneLevelStage {
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
 
-				battleManager.setBattleCommand(BattleCommandEnum.USE_SKILL);
+				battleManager.setBattleCommand(BattleCommandEnum.use_skill);
 				setDarkButton(skillButton);
 				battleManager.setUsingSkill(true);
 				BattleScreen.showSkillStage = true;
@@ -155,7 +155,7 @@ public class BattleCommandStage extends BaseOneLevelStage {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				battleManager.setBattleCommand(BattleCommandEnum.USE_ITEM);
+				battleManager.setBattleCommand(BattleCommandEnum.use_item);
 				setDarkButton(itemButton);
 				BattleScreen.showItemStage = true;
 			}
@@ -164,7 +164,7 @@ public class BattleCommandStage extends BaseOneLevelStage {
 		defenseButton.addListener(new ClickListener() {
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				battleManager.setBattleCommand(BattleCommandEnum.DEFEND);
+				battleManager.setBattleCommand(BattleCommandEnum.defend);
 				setDarkButton(defenseButton);
 				battleManager.checkTurnEnd();
 			}
@@ -173,7 +173,7 @@ public class BattleCommandStage extends BaseOneLevelStage {
 		waitButton.addListener(new ClickListener() {
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				battleManager.setBattleCommand(BattleCommandEnum.WAIT);
+				battleManager.setBattleCommand(BattleCommandEnum.wait);
 
 				setDarkButton(waitButton);
 				battleCommandController.doBattleCommand(battleManager.getCurrentActor(), null, null);
@@ -185,7 +185,7 @@ public class BattleCommandStage extends BaseOneLevelStage {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				battleManager.setBattleCommand(BattleCommandEnum.RUN_AWAY);
+				battleManager.setBattleCommand(BattleCommandEnum.run_away);
 				setDarkButton(escapeButton);
 				battleManager.getGameObjectPopup().setAtlasUiAssets(atlasUiAssets);
 				battleManager.getGameObjectPopup().setListenerFactory(listenerFactory);

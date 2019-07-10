@@ -24,8 +24,8 @@ public class LeaveEventElementListener extends ClickListener {
 	@Override
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
-		positionManager.setCurrentEventPositionType(EventPosition.NONE);
+		positionManager.setCurrentEventPositionType(EventPosition.none);
 		movingManager.goCurrentLocatePosition();
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.COLLECT_EVENT);
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.collect_event);
 	}
 }

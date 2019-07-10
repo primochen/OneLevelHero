@@ -21,8 +21,8 @@ public class QuestHuntMonsterEventTrigger implements EventTrigger {
 		quest.setQuestName(eventParameter.getQuest().getQuestName());
 		quest.setQuestObjectPath(eventParameter.getQuest().getQuestObjectPath());
 		quest.setQuestObjectCount(eventParameter.getQuest().getQuestObjectCount());
-		quest.setQuestType(QuestType.HUNT_MONSTER);
-		quest.setQuestState(QuestState.ING);
+		quest.setQuestType(QuestType.hunt_monster);
+		quest.setQuestState(QuestState.ing);
 		questManager.addQuest(quest);
 		storySectionManager.runStorySequence();
 	}

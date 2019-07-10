@@ -12,6 +12,6 @@ public class GameClearEventTrigger implements EventTrigger {
 
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
-		screenFactory.show(ScreenEnum.GAME_CLEAR);
+		screenFactory.show(ScreenEnum.game_clear);
 	}
 }

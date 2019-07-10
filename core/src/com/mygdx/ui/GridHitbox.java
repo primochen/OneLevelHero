@@ -6,7 +6,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Stack;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.mygdx.assets.ConstantsAssets;
 import com.mygdx.enums.MonsterEnum;
 import com.mygdx.manager.TextureManager;
@@ -54,13 +54,13 @@ public class GridHitbox extends Table {
 	public void setSizeType(MonsterEnum.SizeType sizeType) {
 
 		switch (sizeType) {
-			case SMALL :
+			case small :
 				// TODO 추후 구현
 				break;
-			case MEDIUM :
+			case medium :
 				setMediumSizeType();
 				break;
-			case LARGE :
+			case large :
 				// TODO 추후 구현
 				break;
 		}
@@ -228,8 +228,10 @@ public class GridHitbox extends Table {
 
 	public boolean isInsideTile(int i, int j, float x, float y) {
 		// FIXME 좌표계 변환을 하지 못해서 우선 상수로 처리.
-		float centerX = tiles[i][j].getCenterX() + 640;
-		float centerY = tiles[i][j].getCenterY() + 270;
+//		float centerX = tiles[i][j].getCenterX() + 640;
+//		float centerY = tiles[i][j].getCenterY() + 270;
+		float centerX = tiles[i][j].getX(Align.center) + 640;
+		float centerY = tiles[i][j].getY(Align.center) + 270;
 		float width = tiles[i][j].getWidth();
 		float height = tiles[i][j].getHeight();
 
@@ -237,8 +239,10 @@ public class GridHitbox extends Table {
 	}
 
 	public boolean isInsideHitbox(float x, float y) {
-		float centerX = this.getCenterX();
-		float centerY = this.getCenterY() + 60;
+//		float centerX = this.getCenterX();
+//		float centerY = this.getCenterY() + 60;
+		float centerX = this.getX(Align.center);
+		float centerY = this.getY(Align.center) + 60;
 		float width = uiConstantsMap.get("gridTableWidthSmall");
 		float height = uiConstantsMap.get("gridTableHeightSmall");
 

@@ -78,9 +78,9 @@ public class DungeonStage extends BaseOneLevelStage {
 	}
 
 	private void setDungeonInfo(DungeonManager dungeonManager) {
-		if (positionManager.getCurrentEventPositionType().equals(EventPosition.DUNGEON)) {
+		if (positionManager.getCurrentEventPositionType().equals(EventPosition.dungeon)) {
 			dungeonManager.setDungeonEventInfo();
-			positionManager.setCurrentEventPositionType(EventPosition.NONE);
+			positionManager.setCurrentEventPositionType(EventPosition.none);
 		} else {
 			setInitialDungeonInfo(dungeonManager);
 		}
@@ -136,7 +136,7 @@ public class DungeonStage extends BaseOneLevelStage {
 		tableStack.add(outerTable);
 	}
 	private String getBackgroundPathByType(DungeonManager dungeonManager) {
-		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.BACKWARD)) {
+		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.backward)) {
 			String subNodePath;
 			if (dungeonManager.getDungeonInfo().getCurrentDungeon().getBackgroundPath() != null) {
 				subNodePath = dungeonManager.getDungeonInfo().getCurrentDungeon().getBackgroundPath();
@@ -144,11 +144,11 @@ public class DungeonStage extends BaseOneLevelStage {
 				subNodePath = dungeonManager.getDungeonInfo().getCurrentDungeon().getSubNodePath();
 			}
 			switch (dungeonManager.getDungeonInfo().getCurrentRoom().getRoomType()) {
-				case GATE :
+				case gate :
 					return subNodePath + "_" + BG_DOOR_GATE;
-				case DOWN_STAIR :
+				case down_stair :
 					return subNodePath + "_" + BG_DOOR_DOWN_STAIR;
-				case UP_STAIR :
+				case up_stair :
 					return subNodePath + "_" + BG_DOOR_UP_STAIR;
 				default :
 					return subNodePath + "_" + BG_DOOR[0];
@@ -239,22 +239,22 @@ public class DungeonStage extends BaseOneLevelStage {
 			setCurrentDirection(dungeonManager.getDungeonInfo().getCurrentDirection());
 			otherButtonTable.clear();
 			switch (dungeonManager.getDungeonInfo().getCurrentRoom().getRoomType()) {
-				case BOSS :
+				case boss :
 					break;
-				case DOWN_STAIR :
+				case down_stair :
 					makeDownStairRoomButton();
 					break;
-				case ELITE :
+				case elite :
 					break;
-				case GATE :
+				case gate :
 					makeGateRoomButton();
 					break;
-				case NORMAL :
+				case normal :
 					break;
-				case OBJECT :
+				case object :
 					// makeObjectRoomButton();
 					break;
-				case UP_STAIR :
+				case up_stair :
 					makeUpStairRoomButton();
 					break;
 				default :
@@ -274,13 +274,13 @@ public class DungeonStage extends BaseOneLevelStage {
 
 	private void makeUpStairRoomButton() {
 		otherButtonTable.clear();
-		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.BACKWARD)) {
+		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.backward)) {
 			ImageButton upButton = new ImageButton(atlasUiAssets.getAtlasUiFile("dungeonui_button_up"));
 			otherButtonTable.left().bottom();
 			otherButtonTable.padLeft(808).padBottom(412);
 			otherButtonTable.add(upButton);
 			DungeonStairButtonListener dungeonStairButtonListener = listenerFactory.getDungeonStairButtonListener();
-			dungeonStairButtonListener.setStairType(DungeonEnum.Type.UP_STAIR);
+			dungeonStairButtonListener.setStairType(DungeonEnum.Type.up_stair);
 			dungeonStairButtonListener.setLink(dungeonManager.getDungeonInfo().getCurrentRoom().getLink());
 			upButton.addListener(dungeonStairButtonListener);
 			addActor(otherButtonTable);
@@ -289,7 +289,7 @@ public class DungeonStage extends BaseOneLevelStage {
 	}
 
 	private void makeGateRoomButton() {
-		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.BACKWARD)) {
+		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.backward)) {
 			ImageButton exitButton = new ImageButton(atlasUiAssets.getAtlasUiFile("dungeonui_button_exit"));
 			otherButtonTable.left().bottom();
 			otherButtonTable.padLeft(808).padBottom(521);
@@ -302,13 +302,13 @@ public class DungeonStage extends BaseOneLevelStage {
 
 	private void makeDownStairRoomButton() {
 		otherButtonTable.clear();
-		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.BACKWARD)) {
+		if (dungeonManager.getDungeonInfo().getCurrentDirection().equals(Direction.backward)) {
 			ImageButton downButton = new ImageButton(atlasUiAssets.getAtlasUiFile("dungeonui_button_down"));
 			otherButtonTable.left().bottom();
 			otherButtonTable.padLeft(808).padBottom(412);
 			otherButtonTable.add(downButton);
 			DungeonStairButtonListener dungeonStairButtonListener = listenerFactory.getDungeonStairButtonListener();
-			dungeonStairButtonListener.setStairType(DungeonEnum.Type.DOWN_STAIR);
+			dungeonStairButtonListener.setStairType(DungeonEnum.Type.down_stair);
 			dungeonStairButtonListener.setLink(dungeonManager.getDungeonInfo().getCurrentRoom().getLink());
 			downButton.addListener(dungeonStairButtonListener);
 			addActor(otherButtonTable);

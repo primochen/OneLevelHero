@@ -22,7 +22,7 @@ public class ChoiceOptionListener extends ClickListener {
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
 		eventManager.triggerCurrentEvent();
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.CHOICE_OPTION, getTargetOption());
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.choice_option, getTargetOption());
 	}
 
 	public String getTargetOption() {

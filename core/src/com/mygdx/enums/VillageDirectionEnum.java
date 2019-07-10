@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum VillageDirectionEnum {
-	UP_DOWN("up_down"), LEFT_RIGHT("left_right"), CENTER("center"), UP("up"), DOWN("down"), LEFT("left"), RIGHT("right");
+	up_down("up_down"), left_right("left_right"), center("center"), up("up"), down("down"), left("left"), right("right");
 	private String code;
 
 	private VillageDirectionEnum(String code) {

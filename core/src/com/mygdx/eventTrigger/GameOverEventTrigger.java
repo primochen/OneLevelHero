@@ -12,6 +12,6 @@ public class GameOverEventTrigger implements EventTrigger {
 
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
-		screenFactory.show(ScreenEnum.GAME_OVER);
+		screenFactory.show(ScreenEnum.game_over);
 	}
 }

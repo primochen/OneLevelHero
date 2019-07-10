@@ -31,7 +31,7 @@ public class MovingManager {
 		if (positionManager.isInWorldMap()) {
 			positionManager.setInWorldMap(false);
 		}
-		if (positionManager.getCurrentEventPositionType() != PositionEnum.EventPosition.NONE) {
+		if (positionManager.getCurrentEventPositionType() != PositionEnum.EventPosition.none) {
 			goBeforeEventPosition();
 		} else {
 			Gdx.app.log("MovingManager", "go" + positionManager.getCurrentLocatePositionType());
@@ -43,10 +43,10 @@ public class MovingManager {
 					goCurrentSubNode(nodeType);
 					break;
 				case FIELD :
-					screenFactory.show(ScreenEnum.FIELD);
+					screenFactory.show(ScreenEnum.field);
 					break;
 				case DUNGEON :
-					screenFactory.show(ScreenEnum.DUNGEON);
+					screenFactory.show(ScreenEnum.dungeon);
 				default :
 					Gdx.app.log("MovingManager", "NodeType정보 오류");
 					break;
@@ -55,26 +55,26 @@ public class MovingManager {
 	}
 	private void goBeforeEventPosition() {
 		switch (positionManager.getCurrentEventPositionType()) {
-			case GAME_OBJECT :
-				screenFactory.show(ScreenEnum.GAME_OBJECT);
+			case game_object :
+				screenFactory.show(ScreenEnum.game_object);
 				break;
-			case BATTLE :
-				positionManager.setCurrentEventPositionType(PositionEnum.EventPosition.NONE);
+			case battle :
+				positionManager.setCurrentEventPositionType(PositionEnum.EventPosition.none);
 				goCurrentLocatePosition();
 				break;
-			case NPC :
-				screenFactory.show(ScreenEnum.GREETING);
+			case npc :
+				screenFactory.show(ScreenEnum.greeting);
 				break;
-			case STORY :
-				positionManager.setCurrentEventPositionType(PositionEnum.EventPosition.NONE);
+			case story :
+				positionManager.setCurrentEventPositionType(PositionEnum.EventPosition.none);
 				goCurrentLocatePosition();
 				break;
-			case WORLD_MAP :
-				positionManager.setCurrentEventPositionType(EventPosition.NONE);
-				screenFactory.show(ScreenEnum.STATUS);
+			case world_map :
+				positionManager.setCurrentEventPositionType(EventPosition.none);
+				screenFactory.show(ScreenEnum.status);
 				break;
-			case LOG :
-				positionManager.setCurrentEventPositionType(EventPosition.NONE);
+			case log :
+				positionManager.setCurrentEventPositionType(EventPosition.none);
 				goCurrentLocatePosition();
 				break;
 			default :
@@ -96,28 +96,28 @@ public class MovingManager {
 
 	public void goCurrentNode(WorldNodeEnum.NodeType nodeType) {
 		switch (nodeType) {
-			case VILLAGE :
-				screenFactory.show(ScreenEnum.VILLAGE);
+			case village :
+				screenFactory.show(ScreenEnum.village);
 				return;
-			case DUNGEON_ENTRANCE :
-				screenFactory.show(ScreenEnum.DUNGEON_ENTRANCE);
+			case dungeon_entrance :
+				screenFactory.show(ScreenEnum.dungeon_entrance);
 				return;
-			case FORK :
-				screenFactory.show(ScreenEnum.FORK);
+			case fork :
+				screenFactory.show(ScreenEnum.fork);
 				return;
 		}
 	}
 
 	private void goCurrentSubNode(WorldNodeEnum.NodeType nodeType) {
 		switch (nodeType) {
-			case VILLAGE :
-				screenFactory.show(ScreenEnum.BUILDING);
+			case village :
+				screenFactory.show(ScreenEnum.building);
 				return;
-			case DUNGEON_ENTRANCE :
-				screenFactory.show(ScreenEnum.DUNGEON);
+			case dungeon_entrance :
+				screenFactory.show(ScreenEnum.dungeon);
 				return;
-			case FORK :
-				screenFactory.show(ScreenEnum.FIELD); // FIXME
+			case fork :
+				screenFactory.show(ScreenEnum.field); // FIXME
 				return;
 		}
 	}

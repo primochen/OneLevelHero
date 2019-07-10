@@ -26,13 +26,13 @@ public class ItemAssets implements JsonAssetsInitializable {
 
 	@Override
 	public void set(Map<String, String> jsonStringMap) {
-		weaponMap = JsonParser.parseMap(Weapon.class, jsonStringMap.get(String.valueOf(JsonEnum.WEAPON_JSON)));
-		accessoryMap = JsonParser.parseMap(Accessory.class, jsonStringMap.get(String.valueOf(JsonEnum.ACCESSORY_JSON)));
-		clothesMap = JsonParser.parseMap(Clothes.class, jsonStringMap.get(String.valueOf(JsonEnum.CLOTHES_JSON)));
-		shieldMap = JsonParser.parseMap(Shield.class, jsonStringMap.get(String.valueOf(JsonEnum.SHIELD_JSON)));
+		weaponMap = JsonParser.parseMap(Weapon.class, jsonStringMap.get(String.valueOf(JsonEnum.weapon_json)));
+		accessoryMap = JsonParser.parseMap(Accessory.class, jsonStringMap.get(String.valueOf(JsonEnum.accessory_json)));
+		clothesMap = JsonParser.parseMap(Clothes.class, jsonStringMap.get(String.valueOf(JsonEnum.clothes_json)));
+		shieldMap = JsonParser.parseMap(Shield.class, jsonStringMap.get(String.valueOf(JsonEnum.shield_json)));
 		consumablesMap = JsonParser.parseMap(Consumables.class,
-				jsonStringMap.get(String.valueOf(JsonEnum.CONSUMABLES_JSON)));
-		etcItemMap = JsonParser.parseMap(Item.class, jsonStringMap.get(String.valueOf(JsonEnum.ETC_ITEM_JSON)));
+				jsonStringMap.get(String.valueOf(JsonEnum.consumables_json)));
+		etcItemMap = JsonParser.parseMap(Item.class, jsonStringMap.get(String.valueOf(JsonEnum.etc_item_json)));
 	}
 
 	public Consumables getConsumables(String consumableName) {

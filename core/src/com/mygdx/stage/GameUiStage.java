@@ -12,7 +12,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton.ImageButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.mygdx.assets.AtlasUiAssets;
 import com.mygdx.assets.ConstantsAssets;
 import com.mygdx.assets.StaticAssets;
@@ -204,7 +204,7 @@ public class GameUiStage extends BaseOneLevelStage {
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				soundManager.playClickSound();
 				if (CurrentInfo.isAdminMode) {
-					screenFactory.show(ScreenEnum.WORLD_MAP);
+					screenFactory.show(ScreenEnum.world_map);
 				}
 			}
 

@@ -46,12 +46,12 @@ public class DungeonEntranceScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		gameObjectPopupStage = stageFactory.makeStage(StageEnum.DUNGEON_ENTRANCE_REST_POPUP);
-		dungeonEntranceStage = stageFactory.makeStage(StageEnum.DUNGEON_ENTRANCE);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		characterUiStage = stageFactory.makeStage(StageEnum.CHARACTER_UI);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
-		saveStage = stageFactory.makeStage(StageEnum.SAVE);
+		gameObjectPopupStage = stageFactory.makeStage(StageEnum.dungeon_entrance_rest_popup);
+		dungeonEntranceStage = stageFactory.makeStage(StageEnum.dungeon_entrance);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		characterUiStage = stageFactory.makeStage(StageEnum.character_ui);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
+		saveStage = stageFactory.makeStage(StageEnum.save);
 		setInputProcessor();
 
 	}

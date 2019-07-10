@@ -38,7 +38,7 @@ public class BackButtonListener extends ClickListener {
 			if (positionManager.getCurrentLocatePositionType().equals(LocatePosition.SUB_NODE)) {
 				movingManager.goPreviousPosition();
 				timeManager.plusMinute(15);
-				storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE,
+				storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node,
 						positionManager.getCurrentNodePath());
 			} else {
 				setAdminCount(getAdminCount() + 1);
@@ -52,7 +52,7 @@ public class BackButtonListener extends ClickListener {
 			if (StatusScreen.isClickedWorldMap()) {
 				StatusScreen.setClickedWorldMap(false);
 				positionManager.setInWorldMap(false);
-				screenFactory.show(ScreenEnum.STATUS);
+				screenFactory.show(ScreenEnum.status);
 			} else {
 				movingManager.goCurrentLocatePosition();
 			}

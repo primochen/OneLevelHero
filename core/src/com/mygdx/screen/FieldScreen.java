@@ -27,12 +27,12 @@ public class FieldScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		characterUiStage = stageFactory.makeStage(StageEnum.CHARACTER_UI);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		fieldStage = stageFactory.makeStage(StageEnum.FIELD);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
+		characterUiStage = stageFactory.makeStage(StageEnum.character_ui);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		fieldStage = stageFactory.makeStage(StageEnum.field);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
 		setInputProcessor();
-		musicManager.setMusicAndPlay(MusicEnum.MOVING_MUSIC);
+		musicManager.setMusicAndPlay(MusicEnum.moving_music);
 	}
 
 	private void setInputProcessor() {

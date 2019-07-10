@@ -76,7 +76,7 @@ public class HeroBattleStrategy implements BattleStrategy {
 		// 각 타겟에 대해 SkillEffectType에 따라 사용
 
 		for (Unit target : targetList) {
-			if (skill.getSkillEffectType().equals(SkillEffectEnum.MULTI_EFFECT.toString())) {
+			if (skill.getSkillEffectType().equals(SkillEffectEnum.multi_effect.toString())) {
 				String[] effectList = skill.getEffectNameList();
 
 				for (String effect : effectList) {
@@ -98,36 +98,36 @@ public class HeroBattleStrategy implements BattleStrategy {
 
 	private void applyEffect(Unit attacker, Unit defender, Skill skill) {
 		switch (SkillEffectEnum.findSkillEffectEnum(skill.getSkillCheckType())) {
-			case ADD_SELF_STATE :
+			case add_self_state :
 				addSelfState(attacker, skill);
 				break;
-			case ADD_STATE :
+			case add_state :
 				addState(attacker, defender, skill);
 				break;
-			case ATTACK :
+			case attack :
 				basicAttack(attacker, defender, skill.getSkillFactor(), skill.getMagicFactor());
 				break;
-			case CHANGE_GAUGE :
+			case change_gauge :
 				changeGauge(attacker, defender, skill.getMagicFactor());
 				break;
-			case CONDITIONAL_ATTACK :
+			case conditional_attack :
 				conditionalAttack(attacker, defender, skill.getOneRegex(), skill.getSkillFactor(),
 						skill.getMagicFactor());
 				break;
-			case DUPLICATED_ATTACK :
+			case duplicated_attack :
 				duplicatedAttack(attacker, defender, skill.getDuplicateNumber(), skill.getSkillFactor(),
 						skill.getMagicFactor());
 				break;
-			case HEAL :
+			case heal :
 				heal(attacker, defender, skill.getMagicFactor());
 				break;
-			case ALL_HEAL :
+			case all_heal :
 				allHeal(attacker, skill.getMagicFactor());
 				break;
-			case REMOVE_STATE :
+			case remove_state :
 				removeState(attacker, defender, skill);
 				break;
-			case CASTING :
+			case casting :
 				cast(attacker, skill);
 				break;
 			default :
@@ -152,7 +152,7 @@ public class HeroBattleStrategy implements BattleStrategy {
 
 		if (attacker.getBuffList().contains(buff)) {
 			for (String buffEffect : buff.getBuffEffectList()) {
-				if (BuffEffectEnum.findBuffEffectEnum(buffEffect) == BuffEffectEnum.BLOCK_ACTION) {
+				if (BuffEffectEnum.findBuffEffectEnum(buffEffect) == BuffEffectEnum.block_action) {
 					Gdx.app.log("HeroBattleStrategy", "스턴은 갱신되지 않습니다.");
 				} else {
 					attacker.getBuffList().remove(buff);
@@ -295,7 +295,7 @@ public class HeroBattleStrategy implements BattleStrategy {
 				buffs.setAttacker(attacker);
 				if (defender.getBuffList().contains(buffs)) {
 					for (String buffEffect : buffs.getBuffEffectList()) {
-						if (BuffEffectEnum.findBuffEffectEnum(buffEffect) == BuffEffectEnum.BLOCK_ACTION) {
+						if (BuffEffectEnum.findBuffEffectEnum(buffEffect) == BuffEffectEnum.block_action) {
 							Gdx.app.log("HeroBattleStrategy", "스턴은 갱신되지 않습니다.");
 						} else {
 							defender.getBuffList().remove(buffs);
@@ -321,7 +321,7 @@ public class HeroBattleStrategy implements BattleStrategy {
 
 			if (defender.getBuffList().contains(buff)) {
 				for (String buffEffect : buff.getBuffEffectList()) {
-					if (BuffEffectEnum.findBuffEffectEnum(buffEffect) == BuffEffectEnum.BLOCK_ACTION) {
+					if (BuffEffectEnum.findBuffEffectEnum(buffEffect) == BuffEffectEnum.block_action) {
 						Gdx.app.log("HeroBattleStrategy", "스턴은 갱신되지 않습니다.");
 					} else {
 						defender.getBuffList().remove(buff);
@@ -394,63 +394,63 @@ public class HeroBattleStrategy implements BattleStrategy {
 		battleManager.setEndBuff(true);
 		for (String buffEffect : buff.getBuffEffectList()) {
 			switch (BuffEffectEnum.findBuffEffectEnum(buffEffect)) {
-				case BLOCK_ACTION :
+				case block_action :
 					blockAction(defender);
 					break;
-				case INCREASE_AGGRO :
+				case increase_aggro :
 					increaseAggro(defender);
 					break;
-				case DECREASE_ATTACK :
+				case decrease_attack :
 					decreaseAttack(defender, buff);
 					break;
-				case DECREASE_HP_ITERATIVE :
+				case decrease_hp_iterative :
 					decreaseHpIterative(defender, buff);
 					break;
-				case DECREASE_MAGIC_ATTACK :
+				case decrease_magic_attack :
 					break;
-				case INCREASE_DEFENSE :
+				case increase_defense :
 					increaseDefense(defender, buff);
 					break;
-				case DECREASE_DEFENSE :
+				case decrease_defense :
 					decreaseDefense(defender, buff);
 					break;
-				case DECREASE_SPEED :
+				case decrease_speed :
 					decreaseSpeed(defender, buff);
 					break;
-				case FLY_ACTION :
+				case fly_action :
 					flyAction(defender);
 					break;
-				case OVERLOAD :
+				case overload :
 					overload(defender);
 					break;
-				case OVERWORK :
+				case overwork :
 					overwork(defender);
 					break;
-				case SHOCK :
+				case shock :
 					shock(defender);
 					break;
-				case WEAK :
+				case weak :
 					weak(defender);
 					break;
-				case STINK :
+				case stink :
 					stink(defender);
 					break;
-				case DECLINE :
+				case decline :
 					decline(defender);
 					break;
-				case CHARM :
+				case charm :
 					charm(defender);
 					break;
-				case INCREASE_FIRE_RESISTANCE :
+				case increase_fire_resistance :
 					increaseFireResistance(defender, buff);
 					break;
-				case INCREASE_WATER_RESISTANCE :
+				case increase_water_resistance :
 					increaseWaterResistance(defender, buff);
 					break;
-				case INCREASE_ELECTRIC_RESISTANCE :
+				case increase_electric_resistance :
 					increaseElectricResistance(defender, buff);
 					break;
-				case BLESS :
+				case bless :
 					bless(defender);
 					break;
 				case DEFAULT :
@@ -465,63 +465,63 @@ public class HeroBattleStrategy implements BattleStrategy {
 		battleManager.setEndBuff(false);
 		for (String buffEffect : buff.getBuffEffectList()) {
 			switch (BuffEffectEnum.findBuffEffectEnum(buffEffect)) {
-				case BLOCK_ACTION :
+				case block_action :
 					blockAction(defender);
 					break;
-				case INCREASE_AGGRO :
+				case increase_aggro :
 					increaseAggro(defender);
 					break;
-				case DECREASE_ATTACK :
+				case decrease_attack :
 					decreaseAttack(defender, buff);
 					break;
-				case DECREASE_HP_ITERATIVE :
+				case decrease_hp_iterative :
 					decreaseHpIterative(defender, buff);
 					break;
-				case DECREASE_MAGIC_ATTACK :
+				case decrease_magic_attack :
 					break;
-				case INCREASE_DEFENSE :
+				case increase_defense :
 					increaseDefense(defender, buff);
 					break;
-				case DECREASE_DEFENSE :
+				case decrease_defense :
 					decreaseDefense(defender, buff);
 					break;
-				case DECREASE_SPEED :
+				case decrease_speed :
 					decreaseSpeed(defender, buff);
 					break;
-				case FLY_ACTION :
+				case fly_action :
 					flyAction(defender);
 					break;
-				case OVERLOAD :
+				case overload :
 					overload(defender);
 					break;
-				case OVERWORK :
+				case overwork :
 					overwork(defender);
 					break;
-				case SHOCK :
+				case shock :
 					shock(defender);
 					break;
-				case WEAK :
+				case weak :
 					weak(defender);
 					break;
-				case STINK :
+				case stink :
 					stink(defender);
 					break;
-				case DECLINE :
+				case decline :
 					decline(defender);
 					break;
-				case CHARM :
+				case charm :
 					charm(defender);
 					break;
-				case INCREASE_FIRE_RESISTANCE :
+				case increase_fire_resistance :
 					increaseFireResistance(defender, buff);
 					break;
-				case INCREASE_WATER_RESISTANCE :
+				case increase_water_resistance :
 					increaseWaterResistance(defender, buff);
 					break;
-				case INCREASE_ELECTRIC_RESISTANCE :
+				case increase_electric_resistance :
 					increaseElectricResistance(defender, buff);
 					break;
-				case BLESS :
+				case bless :
 					bless(defender);
 					break;
 				case DEFAULT :

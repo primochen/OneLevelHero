@@ -655,7 +655,7 @@ public class InventoryStage extends BaseOverlapStage {
 		inventoryButton.addListener(new SimpleTouchListener() {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				screenFactory.show(ScreenEnum.INVENTORY);
+				screenFactory.show(ScreenEnum.inventory);
 			}
 		});
 
@@ -664,7 +664,7 @@ public class InventoryStage extends BaseOverlapStage {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				if (battleManager.isInBattle()) {
-					screenFactory.show(ScreenEnum.BATTLE);
+					screenFactory.show(ScreenEnum.battle);
 				} else {
 					movingManager.goCurrentLocatePosition();
 				}
@@ -675,7 +675,7 @@ public class InventoryStage extends BaseOverlapStage {
 		statusButton.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				screenFactory.show(ScreenEnum.STATUS);
+				screenFactory.show(ScreenEnum.status);
 			}
 		});
 	}

@@ -17,7 +17,7 @@ public class InventoryScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		inventoryStage = stageFactory.makeStage(StageEnum.INVENTORY);
+		inventoryStage = stageFactory.makeStage(StageEnum.inventory);
 		InputMultiplexer multiplexer = new InputMultiplexer();
 		int i = 0;
 		multiplexer.addProcessor(i++, inventoryStage);

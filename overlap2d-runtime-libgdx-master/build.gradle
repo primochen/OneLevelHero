@@ -4,8 +4,8 @@ sourceCompatibility = 1.7
 sourceSets.main.java.srcDirs = [ "src/" ]
 
 ext {
-    gdxVersion = '1.2.0'
-    box2dlightsVersion = '1.2'
+    gdxVersion = '1.9.9'
+    box2dlightsVersion = '1.4'
     reflectasmVersion = '1.10.0'
 }
 

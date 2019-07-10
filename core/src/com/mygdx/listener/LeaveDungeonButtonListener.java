@@ -25,7 +25,7 @@ public class LeaveDungeonButtonListener extends ClickListener {
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
 		dungeonManager.leaveDungeon();
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_NODE, positionManager.getCurrentNodePath());
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_node, positionManager.getCurrentNodePath());
 		Gdx.app.log("LeaveDungeonListener", "LeaveDungeon");
 	}
 }

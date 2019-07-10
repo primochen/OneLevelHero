@@ -33,12 +33,12 @@ public class DungeonDoorButtonListener extends ClickListener {
 		String floorPath = dungeonManager.getDungeonInfo().getCurrentFloor().getFloorPath();
 		String roomLabel = dungeonManager.getDungeonInfo().getCurrentRoom().getRoomLabel();
 		timeManager.plusMinute(10);
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_DUNGEON_ROOM, subNodePath, floorPath, roomLabel);
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_DUNGEON_ROOM_IN_TARGET_TIME, subNodePath,
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_dungeon_room, subNodePath, floorPath, roomLabel);
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_dungeon_room_in_target_time, subNodePath,
 				floorPath, roomLabel);
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_DUNGEON_ROOM_BEFORE_ABSOLUTE_TIME, subNodePath,
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_dungeon_room_before_absolute_time, subNodePath,
 				floorPath, roomLabel);
-		storySectionManager.triggerNextSectionEvent(EventTypeEnum.MOVE_DUNGEON_ROOM_AFTER_ABSOLUTE_TIME, subNodePath,
+		storySectionManager.triggerNextSectionEvent(EventTypeEnum.move_dungeon_room_after_absolute_time, subNodePath,
 				floorPath, roomLabel);
 
 	}

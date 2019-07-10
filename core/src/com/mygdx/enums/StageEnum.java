@@ -1,5 +1,5 @@
 package com.mygdx.enums;
 
 public enum StageEnum {
-	BATTLE, BUILDING, CHARACTER_UI, CHARACTER_CHANGE, CREDIT, DUNGEON, DUNGEON_ENTRANCE, ENCOUNTER, CHAT_EVENT, FIELD, FORK, GAME_UI, GAME_OBJECT, GREETING, MENU, MONSTER, CHOICE_OPTION, SKILL, STATUS, TOUCH_PAD, VILLAGE, WORLD_MAP, INVENTORY, SAVE, LOAD, GAME_OVER, LOADING_BAR, LOAD_POPUP, ITEM, DUNGEON_MINIMAP, CHOICE_EVENT, GAME_CLEAR, GAME_OBJECT_POPUP, FORK_REST_POPUP, DUNGEON_ENTRANCE_REST_POPUP, BUILDING_REST_POPUP, BATTLE_INFO_MESSAGE, BATTLE_COMMAND;
+	battle, building, character_ui, character_change, credit, dungeon, dungeon_entrance, encounter, chat_event, field, fork, game_ui, game_object, greeting, menu, monster, choice_option, skill, status, touch_pad, village, world_map, inventory, save, load, game_over, loading_bar, load_popup, item, dungeon_minimap, choice_event, game_clear, game_object_popup, fork_rest_popup, dungeon_entrance_rest_popup, building_rest_popup, battle_info_message, battle_command;
 }

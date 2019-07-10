@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum HeroEnum {
-	YONGSA("yongsa"), PARATH("parath");
+	yongsa("yongsa"), parath("parath");
 	String heroName;
 
 	private HeroEnum(String heroName) {

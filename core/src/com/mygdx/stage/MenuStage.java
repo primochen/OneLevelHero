@@ -83,14 +83,14 @@ public class MenuStage extends BaseOneLevelStage {
 		albumButton.addListener(new ClickListener() {
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				screenFactory.push(ScreenEnum.COLLECTION);
+				screenFactory.push(ScreenEnum.collection);
 			}
 		});
 
 		creditButton.addListener(new ClickListener() {
 			public void clicked(InputEvent event, float x, float y) {
 				soundManager.playClickSound();
-				screenFactory.push(ScreenEnum.CREDIT);
+				screenFactory.push(ScreenEnum.credit);
 			}
 		});
 

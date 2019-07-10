@@ -23,11 +23,11 @@ public class GameObjectButtonListener extends ClickListener {
 	@Override
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
-		if (pressedGameObject.getObjectType().equals(GameObjectEnum.NORMAL)) {
-			pressedGameObject.setObjectType(GameObjectEnum.PRESSED);
+		if (pressedGameObject.getObjectType().equals(GameObjectEnum.normal)) {
+			pressedGameObject.setObjectType(GameObjectEnum.pressed);
 		}
 		eventManager.setCurrentGameObject(pressedGameObject);
-		screenFactory.show(ScreenEnum.GAME_OBJECT);
+		screenFactory.show(ScreenEnum.game_object);
 	}
 
 	public void setGameObject(GameObject gameObject) {

@@ -26,7 +26,7 @@ public class CreditScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		creditStage = stageFactory.makeStage(StageEnum.CREDIT);
+		creditStage = stageFactory.makeStage(StageEnum.credit);
 		Gdx.input.setInputProcessor(creditStage);
 	}
 }

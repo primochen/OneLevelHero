@@ -23,16 +23,16 @@ public class InventoryStrategy {
 
 	public void equip(Hero hero, ItemEnum equipmentType, String equipmentName) {
 		switch (equipmentType) {
-		case RIGHT_HANDGRIP:
+		case right_handgrip:
 			equipRightHandGrip(hero, equipmentName);
 			break;
-		case LEFT_HANDGRIP:
+		case left_handgrip:
 			equipLeftHandGrip(hero, equipmentName);
 			break;
-		case CLOTHES:
+		case clothes:
 			equipClothes(hero, equipmentName);
 			break;
-		case ACCESSORY:
+		case accessory:
 			equipAccessory(hero, equipmentName);
 			break;
 		default:

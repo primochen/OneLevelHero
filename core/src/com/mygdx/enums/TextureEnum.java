@@ -1,9 +1,9 @@
 package com.mygdx.enums;
 
 public enum TextureEnum {
-	BACKGROUND("bg"), GAME_OBJECT("object"), FACE("face"), BUST("bust"), NPC("npc"), MONSTER("monster"), NORMAL("01"), ATTACK_CUTTING(
-			"attack_cutting"), ATTACK_CUTTING2("attack_cutting2"), BATTLE("battle"), STATUS("status"), ITEM("item"), BIG_IMAGE(
-			"big"), SMALL_IMAGE("small"), MINIMAP("minimap");
+	background("bg"), game_object("object"), face("face"), bust("bust"), npc("npc"), monster("monster"), normal("01"), attack_cutting(
+			"attack_cutting"), attack_cutting2("attack_cutting2"), battle("battle"), status("status"), item("item"), big_image(
+			"big"), small_image("small"), minimap("minimap");
 	// FIXME 애니메이션 시트를 여기에 같이 두는게 적절한가?
 
 	private String textureNumber;

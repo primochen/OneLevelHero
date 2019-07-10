@@ -159,7 +159,7 @@ public class RealAnimationManager extends AnimationManager {
 					iterator.remove();
 
 				} else {
-					spriteBatch.draw(bit.getAnimation().getKeyFrame(stateTime), bit.getX() - bit.getWidth() / 2,
+					spriteBatch.draw((TextureRegion)bit.getAnimation().getKeyFrame(stateTime), bit.getX() - bit.getWidth() / 2,
 							bit.getY() - bit.getHeight() / 2, bit.getWidth(), bit.getHeight());
 				}
 			}

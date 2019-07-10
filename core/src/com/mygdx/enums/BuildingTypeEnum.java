@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum BuildingTypeEnum {
-	INN("inn"), HOUSE("house");
+	inn("inn"), house("house");
 	private String buildingTypeString;
 
 	BuildingTypeEnum(String buildingType) {

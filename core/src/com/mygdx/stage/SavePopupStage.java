@@ -135,7 +135,7 @@ public class SavePopupStage extends BaseOverlapStage {
 		save01.addListener(new TouchListener() {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				saveInfo.setSaveVersion(SaveVersion.SAVE_01);
+				saveInfo.setSaveVersion(SaveVersion.save_01);
 				saveManager.save();
 				super.touchUp(event, x, y, pointer, button);
 			}
@@ -143,7 +143,7 @@ public class SavePopupStage extends BaseOverlapStage {
 		save02.addListener(new TouchListener() {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				saveInfo.setSaveVersion(SaveVersion.SAVE_02);
+				saveInfo.setSaveVersion(SaveVersion.save_02);
 				saveManager.save();
 				super.touchUp(event, x, y, pointer, button);
 			}
@@ -151,7 +151,7 @@ public class SavePopupStage extends BaseOverlapStage {
 		save03.addListener(new TouchListener() {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				saveInfo.setSaveVersion(SaveVersion.SAVE_03);
+				saveInfo.setSaveVersion(SaveVersion.save_03);
 				saveManager.save();
 				super.touchUp(event, x, y, pointer, button);
 			}

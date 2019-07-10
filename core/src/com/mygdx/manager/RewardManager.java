@@ -53,8 +53,8 @@ public class RewardManager {
 			Iterator<Reward> rewardIterator = eventRewards.iterator();
 			while (rewardIterator.hasNext()) {
 				Reward reward = rewardIterator.next();
-				if (reward.getRewardState() != EventStateEnum.ALWAYS_OPEN) {
-					reward.setRewardState(EventStateEnum.ING);
+				if (reward.getRewardState() != EventStateEnum.always_open) {
+					reward.setRewardState(EventStateEnum.ing);
 				}
 				getEventRewards().add(reward);
 			}
@@ -66,8 +66,8 @@ public class RewardManager {
 			Iterator<Reward> rewardIterator = eventRewards.iterator();
 			while (rewardIterator.hasNext()) {
 				Reward reward = rewardIterator.next();
-				if (reward.getRewardState() != EventStateEnum.ALWAYS_OPEN) {
-					reward.setRewardState(EventStateEnum.ING);
+				if (reward.getRewardState() != EventStateEnum.always_open) {
+					reward.setRewardState(EventStateEnum.ing);
 				}
 				rewardInfo.getSceneRewardList().add(reward);
 			}
@@ -81,8 +81,8 @@ public class RewardManager {
 				Reward peekedReward = rewardIterator.next();
 				EventTrigger eventTrigger = eventTriggerFactory.getEventTrigger(peekedReward.getRewardType());
 				eventTrigger.triggerEvent(peekedReward.getRewardParameter());
-				if (!peekedReward.getRewardState().equals(EventStateEnum.ALWAYS_OPEN)) {
-					peekedReward.setRewardState(EventStateEnum.CLEARED);
+				if (!peekedReward.getRewardState().equals(EventStateEnum.always_open)) {
+					peekedReward.setRewardState(EventStateEnum.cleared);
 					rewardIterator.remove();
 					getAchievedRewards().add(peekedReward);
 				}
@@ -97,8 +97,8 @@ public class RewardManager {
 				Reward peekedReward = rewardIterator.next();
 				EventTrigger eventTrigger = eventTriggerFactory.getEventTrigger(peekedReward.getRewardType());
 				eventTrigger.triggerEvent(peekedReward.getRewardParameter());
-				if (!peekedReward.getRewardState().equals(EventStateEnum.ALWAYS_OPEN)) {
-					peekedReward.setRewardState(EventStateEnum.CLEARED);
+				if (!peekedReward.getRewardState().equals(EventStateEnum.always_open)) {
+					peekedReward.setRewardState(EventStateEnum.cleared);
 					getAchievedRewards().add(peekedReward);
 				}
 				rewardIterator.remove();

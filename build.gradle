@@ -15,7 +15,7 @@ allprojects {
     version = '1.0'
     ext {
         appName = 'OneLevelHero'
-        gdxVersion = '1.2.0'
+        gdxVersion = '1.9.9'
     }
 
     repositories {
@@ -40,7 +40,7 @@ project(":desktop") {
 		compile "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
     }
 }
-
+/*
 project(":android") {
     apply plugin: "android"
 
@@ -64,7 +64,7 @@ project(":android") {
 		natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86"
     }
 }
-
+*/
 project(":core") {
     apply plugin: "java"
 	
@@ -77,7 +77,7 @@ project(":core") {
         compile fileTree(dir: 'libs', include: '*.jar')             
     }
 }
-
+/*
 project(":tests") {
     apply plugin: "java"
 
@@ -101,7 +101,7 @@ project(":tests") {
         testCompile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
     }
 }
-
+*/
 tasks.eclipse.doLast {
     delete ".project"
 }

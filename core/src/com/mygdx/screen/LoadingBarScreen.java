@@ -9,7 +9,7 @@ public class LoadingBarScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		loadingBarStage = stageFactory.makeStage(StageEnum.LOADING_BAR);
+		loadingBarStage = stageFactory.makeStage(StageEnum.loading_bar);
 	}
 
 	@Override

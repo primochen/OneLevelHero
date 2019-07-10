@@ -1,5 +1,5 @@
 package com.mygdx.enums;
 
 public enum EventElementEnum {
-	STORY, GAME_OBJECT, NPC, REWARD, SPECIAL;
+	story, game_object, npc, reward, special;
 }

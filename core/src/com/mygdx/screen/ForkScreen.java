@@ -45,12 +45,12 @@ public class ForkScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		restPopupStage = stageFactory.makeStage(StageEnum.FORK_REST_POPUP);
-		forkStage = stageFactory.makeStage(StageEnum.FORK);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		characterUiStage = stageFactory.makeStage(StageEnum.CHARACTER_UI);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
-		saveStage = stageFactory.makeStage(StageEnum.SAVE);
+		restPopupStage = stageFactory.makeStage(StageEnum.fork_rest_popup);
+		forkStage = stageFactory.makeStage(StageEnum.fork);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		characterUiStage = stageFactory.makeStage(StageEnum.character_ui);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
+		saveStage = stageFactory.makeStage(StageEnum.save);
 		setInputProcessor();
 
 	}

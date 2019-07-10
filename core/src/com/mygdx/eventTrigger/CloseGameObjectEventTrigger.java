@@ -17,7 +17,7 @@ public class CloseGameObjectEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		EventPacket eventPacket = eventParameter.getEventPacket();
-		eventManager.setNpcEventState(eventPacket, EventStateEnum.CLOSED);
+		eventManager.setNpcEventState(eventPacket, EventStateEnum.closed);
 		storySectionManager.runStorySequence();
 	}
 }

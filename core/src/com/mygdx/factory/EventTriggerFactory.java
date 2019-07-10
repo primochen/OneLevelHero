@@ -45,65 +45,65 @@ public class EventTriggerFactory {
 
 	public EventTrigger getEventTrigger(EventTypeEnum eventType) {
 		switch (eventType) {
-			case ALWAYS_OPEN_GAME_OBJECT_EVENT :
+			case always_open_game_object_event :
 				return context.getBean(AlwaysOpenGameObjectEventTrigger.class);
-			case ALWAYS_OPEN_NPC_EVENT :
+			case always_open_npc_event :
 				return context.getBean(AlwaysOpenNpcEventTrigger.class);
-			case END_BATTLE :
+			case end_battle :
 				return context.getBean(EndBattleEventTrigger.class);
-			case START_BATTLE :
+			case start_battle :
 				return context.getBean(StartBattleEventTrigger.class);
-			case CHAT :
+			case chat :
 				return context.getBean(ChatEventTrigger.class);
-			case CHECK_QUEST :
+			case check_quest :
 				return context.getBean(CheckQuestEventTrigger.class);
-			case CHOICE_OPTION :
+			case choice_option :
 				return context.getBean(ChoiceOptionEventTrigger.class);
-			case CLOSE_GAME_OBJECT_EVENT :
+			case close_game_object_event :
 				return context.getBean(CloseGameObjectEventTrigger.class);
-			case CLOSE_NPC_EVENT :
+			case close_npc_event :
 				return context.getBean(CloseNpcEventTrigger.class);
-			case GAME_CLEAR :
+			case game_clear :
 				return context.getBean(GameClearEventTrigger.class);
-			case GAME_OVER :
+			case game_over :
 				return context.getBean(GameOverEventTrigger.class);
-			case GET_BUFF :
+			case get_buff :
 				return context.getBean(GetBuffEventTrigger.class);
-			case GET_ITEM :
+			case get_item :
 				return context.getBean(GetItemEventTrigger.class);
-			case GO_SUB_NODE :
+			case go_sub_node :
 				return context.getBean(GoSubNodeEventTrigger.class);
-			case JOIN_PARTY :
+			case join_party :
 				return context.getBean(JoinPartyEventTrigger.class);
-			case MOVE_DUNGEON_ROOM :
+			case move_dungeon_room :
 				return context.getBean(MoveDungeonRoomEventTrigger.class);
-			case MOVE_NODE :
+			case move_node :
 				return context.getBean(MoveNodeEventTrigger.class);
-			case MOVE_SUB_NODE :
+			case move_sub_node :
 				return context.getBean(MoveSubNodeEventTrigger.class);
-			case NEXT_SECTION :
+			case next_section :
 				return context.getBean(NextSectionEventTrigger.class);
-			case OPEN_GAME_OBJECT_EVENT :
+			case open_game_object_event :
 				return context.getBean(OpenGameObjectEventTrigger.class);
-			case OPEN_NPC_EVENT :
+			case open_npc_event :
 				return context.getBean(OpenNpcEventTrigger.class);
-			case PASS_TIME :
+			case pass_time :
 				return context.getBean(PassTimeEventTrigger.class);
-			case PLAY_MUSIC :
+			case play_music :
 				return context.getBean(PlayMusicEventTrigger.class);
-			case REST_IN_NODE :
+			case rest_in_node :
 				return context.getBean(RestInNodeEventTrigger.class);
-			case REST_IN_FORK :
+			case rest_in_fork :
 				return context.getBean(RestInForkEventTrigger.class);
-			case SET_NPC_TARGET_TIME :
+			case set_npc_target_time :
 				return context.getBean(SetNpcTargetTimeEventTrigger.class);
-			case SET_GAME_OBJECT_TARGET_TIME :
+			case set_game_object_target_time :
 				return context.getBean(SetGameObjectTargetTimeEventTrigger.class);
-			case QUEST_GET_ITEM :
+			case quest_get_item :
 				return context.getBean(QuestGetItemEventTrigger.class);
-			case QUEST_HUNT_MONSTER :
+			case quest_hunt_monster :
 				return context.getBean(QuestHuntMonsterEventTrigger.class);
-			case QUIT_PARTY :
+			case quit_party :
 				return context.getBean(QuitPartyEventTrigger.class);
 			default :
 				Gdx.app.log("EventTriggerFactory", "EventType정보 오류 - " + eventType);

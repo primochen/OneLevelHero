@@ -1,9 +1,9 @@
 package com.mygdx.enums;
 
 public enum SkillEffectEnum {
-	ATTACK("attack"), DUPLICATED_ATTACK("duplicated_attack"), ADD_STATE("add_state"), REMOVE_STATE(
-			"remove_state"), CONDITIONAL_ATTACK("conditional_attack"), ADD_SELF_STATE("add_self_state"), CHANGE_GAUGE(
-					"change_gauge"), MULTI_EFFECT("multi_effect"), HEAL("heal"), ALL_HEAL("all_heal"), CASTING(
+	attack("attack"), duplicated_attack("duplicated_attack"), add_state("add_state"), remove_state(
+			"remove_state"), conditional_attack("conditional_attack"), add_self_state("add_self_state"), change_gauge(
+					"change_gauge"), multi_effect("multi_effect"), heal("heal"), all_heal("all_heal"), casting(
 							"casting");
 
 	private String skillEffectType;

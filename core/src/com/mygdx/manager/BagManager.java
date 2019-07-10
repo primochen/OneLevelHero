@@ -28,29 +28,29 @@ public class BagManager {
 	public void possessItem(ItemEnum itemType, String itemName) {
 		Item item = new Item();
 		switch (itemType) {
-			case HANDGRIP :
+			case handgrip :
 				item = itemAssets.getHandGrip(itemName);
 				// item = (Equipment)
 				// deepClone(itemAssets.getHandGrip(itemName));
 				addEquipment((Equipment) item);
 				break;
-			case ACCESSORY :
+			case accessory :
 				item = itemAssets.getAccessory(itemName);
 				// item = (Equipment)
 				// deepClone(itemAssets.getHandGrip(itemName));
 				addEquipment((Equipment) item);
 				break;
-			case CLOTHES :
+			case clothes :
 				item = itemAssets.getClothes(itemName);
 				// item = (Equipment)
 				// deepClone(itemAssets.getClothes(itemName));
 				addEquipment((Equipment) item);
 				break;
-			case CONSUMABLES :
+			case consumables :
 				item = itemAssets.getConsumables(itemName);
 				addConsumables((Consumables) item);
 				break;
-			case ETC_ITEM :
+			case etc_item :
 				item = itemAssets.getEtcItem(itemName);
 				// item = (Item) deepClone(itemAssets.getEtcItem(itemName));
 				addEtcItem(item);
@@ -63,7 +63,7 @@ public class BagManager {
 	public void possessItem(ItemEnum itemType, String itemName, int amount) {
 		Consumables item;
 		switch (itemType) {
-			case CONSUMABLES :
+			case consumables :
 				item = itemAssets.getConsumables(itemName);
 				item.setAmount(item.getAmount() + amount);
 				possessItem(itemType, itemName);
@@ -144,15 +144,15 @@ public class BagManager {
 	}
 	public void putItemInBag(Item item) {
 		switch (item.getItemType()) {
-			case ACCESSORY :
-			case CLOTHES :
-			case HANDGRIP :
+			case accessory :
+			case clothes :
+			case handgrip :
 				getEquipmentList().add((Equipment) item);
 				break;
-			case CONSUMABLES :
+			case consumables :
 				getConsumablesList().add((Consumables) item);
 				break;
-			case ETC_ITEM :
+			case etc_item :
 				getEtcItemList().add(item);
 				break;
 			default :

@@ -20,8 +20,8 @@ public class LoadScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		loadStage = stageFactory.makeStage(StageEnum.LOAD);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
+		loadStage = stageFactory.makeStage(StageEnum.load);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
 		setInputProcessor();
 	}
 

@@ -19,7 +19,7 @@ public class StatusScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		statusStage = stageFactory.makeStage(StageEnum.STATUS);
+		statusStage = stageFactory.makeStage(StageEnum.status);
 		InputMultiplexer multiplexer = new InputMultiplexer();
 		int i = 0;
 		multiplexer.addProcessor(i++, statusStage);

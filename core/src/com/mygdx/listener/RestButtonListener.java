@@ -28,7 +28,7 @@ public class RestButtonListener extends ClickListener {
 	public void clicked(InputEvent event, float x, float y) {
 		soundManager.playClickSound();
 		soundManager.setSoundByPathAndPlay("notice_sleep");
-		eventManager.getEventInfo().setCurrentEventElementType(EventElementEnum.GAME_OBJECT);
+		eventManager.getEventInfo().setCurrentEventElementType(EventElementEnum.game_object);
 		eventManager.getEventInfo().setCurrentGameObjectEvent(
 				new EventPacket(eventManager.getCurrentGameObject().getElementPath(), 1));
 		eventManager.setCurrentChatScenes(eventManager.getCurrentGameObject().getEvent(1).getEventParameter()
@@ -48,7 +48,7 @@ public class RestButtonListener extends ClickListener {
 				break;
 		}
 
-		screenFactory.show(ScreenEnum.CHAT_EVENT);
+		screenFactory.show(ScreenEnum.chat_event);
 	}
 
 	public String getPosition() {

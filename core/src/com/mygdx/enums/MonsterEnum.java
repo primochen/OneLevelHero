@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum MonsterEnum {
-	ASSASSIN_GIRL("assassin girl");
+	assassin_girl("assassin girl");
 
 	private String monsterName;
 
@@ -23,7 +23,7 @@ public enum MonsterEnum {
 	}
 
 	public enum SizeType {
-		SMALL("small"), MEDIUM("medium"), LARGE("large");
+		small("small"), medium("medium"), large("large");
 
 		private String name;
 		private float factor;
@@ -47,7 +47,7 @@ public enum MonsterEnum {
 	}
 
 	public enum ElementType {
-		ALL("all"), FIRE("fire"), WATER("water"), ELECTRIC("electric"), NONE("none");
+		all("all"), fire("fire"), water("water"), electric("electric"), none("none");
 
 		private String name;
 

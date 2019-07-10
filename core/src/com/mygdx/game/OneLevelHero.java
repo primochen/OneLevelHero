@@ -17,7 +17,7 @@ public class OneLevelHero extends Game {
 		Gdx.input.setCatchBackKey(true);
 		context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		context.getBean(ScreenFactory.class).setGame(this);
-		context.getBean(ScreenFactory.class).popAllAndPush(ScreenEnum.LOADING_BAR);
+		context.getBean(ScreenFactory.class).popAllAndPush(ScreenEnum.loading_bar);
 	}
 
 	public boolean keyDown(int keycode) {

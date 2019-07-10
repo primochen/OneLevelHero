@@ -12,7 +12,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.utils.Align;
 import com.mygdx.assets.Assets;
 import com.mygdx.assets.StaticAssets;
 import com.mygdx.enums.ScreenEnum;
@@ -120,7 +120,7 @@ public class LoadingBarStage extends BaseOneLevelStage {
 		if (assetsManager.update()) {
 			assetsManager.unload("texture/loading/loading.pack");
 			assetsManager.unload("texture/loading/cien_logo2.png");
-			screenFactory.popAllAndPush(ScreenEnum.MENU);
+			screenFactory.popAllAndPush(ScreenEnum.menu);
 		}
 
 		// Interpolate the percentage to make it more smooth

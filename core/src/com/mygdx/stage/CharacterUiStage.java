@@ -127,7 +127,7 @@ public class CharacterUiStage extends BaseOneLevelStage {
 		heroStatusBarList = new ArrayList<StatusBar>(battleMemberList.size());
 		buffTableList = new ArrayList<Table>(battleMemberList.size());
 		for (int i = 0; i < battleMemberList.size(); i++) {
-			if (battleInfo.equals(BattleSituationEnum.ENCOUNTER)) {
+			if (battleInfo.equals(BattleSituationEnum.encounter)) {
 				partyManager.setCurrentSelectedHero(null);
 				heroStatusBarList.add(new StatusBar(battleMemberList.get(i), uiComponentAssets.getSkin(), true));
 			} else {
@@ -204,7 +204,7 @@ public class CharacterUiStage extends BaseOneLevelStage {
 
 	private void makeAddListener(final int index) {
 		heroImage.clearListeners();
-		if (battleInfo.equals(BattleSituationEnum.ENCOUNTER)) {
+		if (battleInfo.equals(BattleSituationEnum.encounter)) {
 			// 전투 중엔 다른 식으로 작동한다.
 			heroImage.addListener(new ClickListener() {
 				@Override
@@ -229,7 +229,7 @@ public class CharacterUiStage extends BaseOneLevelStage {
 				@Override
 				public void clicked(InputEvent event, float x, float y) {
 					partyManager.setCurrentSelectedHero(battleMemberList.get(index));
-					screenFactory.show(ScreenEnum.STATUS);
+					screenFactory.show(ScreenEnum.status);
 				}
 			});
 		}

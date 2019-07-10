@@ -25,15 +25,15 @@ public class NodeAssets implements JsonAssetsInitializable {
 	public Map<String, DungeonEntrance> dungeonEntranceMap;
 
 	public void set(Map<String, String> jsonStringMap) {
-		villageMap = JsonParser.parseMap(Village.class, jsonStringMap.get(String.valueOf(JsonEnum.VILLAGE_JSON)));
+		villageMap = JsonParser.parseMap(Village.class, jsonStringMap.get(String.valueOf(JsonEnum.village_json)));
 
-		dungeonMap = JsonParser.parseMap(Dungeon.class, jsonStringMap.get(String.valueOf(JsonEnum.DUNGEON_JSON)));
+		dungeonMap = JsonParser.parseMap(Dungeon.class, jsonStringMap.get(String.valueOf(JsonEnum.dungeon_json)));
 		dungeonEntranceMap = JsonParser.parseMap(DungeonEntrance.class,
-				jsonStringMap.get(String.valueOf(JsonEnum.DUNGEON_ENTRANCE_JSON)));
-		forkMap = JsonParser.parseMap(Fork.class, jsonStringMap.get(String.valueOf(JsonEnum.FORK_JSON)));
+				jsonStringMap.get(String.valueOf(JsonEnum.dungeon_entrance_json)));
+		forkMap = JsonParser.parseMap(Fork.class, jsonStringMap.get(String.valueOf(JsonEnum.fork_json)));
 
 		ArrayList<MonsterField> monsterFieldList = JsonParser.parseList(MonsterField.class,
-				jsonStringMap.get(String.valueOf(JsonEnum.MONSTER_FIELD_JSON)));
+				jsonStringMap.get(String.valueOf(JsonEnum.monster_field_json)));
 		monsterFieldMap = new HashMap<FieldTypeEnum, ArrayList<String>>();
 		for (MonsterField monsterField : monsterFieldList) {
 			monsterFieldMap.put(monsterField.getFieldType(), monsterField.getFieldMonsterList());
@@ -42,9 +42,9 @@ public class NodeAssets implements JsonAssetsInitializable {
 
 	public SubNode getSubNodeInfo(WorldNodeEnum.NodeType nodeType, String nodeName, String subNodeName) {
 		switch (nodeType) {
-			case VILLAGE :
+			case village :
 				return getBuildingByPath(nodeName, subNodeName);
-			case DUNGEON_ENTRANCE :
+			case dungeon_entrance :
 				return getDungeonByPath(subNodeName);
 			default :
 				Gdx.app.log("NodeAssets", "nodeType or subNodeType정보 오류 ");

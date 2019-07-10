@@ -26,7 +26,7 @@ public class TextureAssets {
 				.parseMap(StringFile.class, Gdx.files.internal("data/load/file_path.json").readString());
 
 		animationSheetMap = JsonParser.parseMap(FrameSheet.class,
-				filePathMap.get(JsonEnum.ANIMATION_SHEET_FILE_PATH.toString()).loadFile());
+				filePathMap.get(JsonEnum.animation_sheet_file_path.toString()).loadFile());
 		textureMap = json.fromJson(HashMap.class, Gdx.files.internal("texture/textureMap.json"));
 		if (Gdx.app.getType() != ApplicationType.Android) {
 			directoryTextureMapperRecursive(textureMap, Gdx.files.internal("./bin/texture"));

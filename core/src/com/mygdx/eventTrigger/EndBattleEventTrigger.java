@@ -15,7 +15,7 @@ public class EndBattleEventTrigger implements EventTrigger {
 
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
-		battleManager.setCurrentBattleSituation(BattleSituationEnum.NOT_IN_BATTLE);
+		battleManager.setCurrentBattleSituation(BattleSituationEnum.not_in_battle);
 		battleManager.setEventBattle(false);
 		storySectionManager.runStorySequence();
 	}

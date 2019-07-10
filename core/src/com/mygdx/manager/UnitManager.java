@@ -62,16 +62,16 @@ public class UnitManager {
 			Entry<String, ItemEnum> dropItemEntry = dropItemListIterator.next();
 			Item item;
 			switch (dropItemEntry.getValue()) {
-				case HANDGRIP :
+				case handgrip :
 					item = itemAssets.getHandGrip(dropItemEntry.getKey());
 					break;
-				case CLOTHES :
+				case clothes :
 					item = itemAssets.getClothes(dropItemEntry.getKey());
 					break;
-				case ACCESSORY :
+				case accessory :
 					item = itemAssets.getAccessory(dropItemEntry.getKey());
 					break;
-				case ETC_ITEM :
+				case etc_item :
 					item = itemAssets.getEtcItem(dropItemEntry.getKey());
 					break;
 				default :

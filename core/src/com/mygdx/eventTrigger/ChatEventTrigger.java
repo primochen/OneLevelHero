@@ -16,6 +16,6 @@ public class ChatEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		eventManager.setCurrentChatScenes(eventParameter.getEventScenes());
-		screenFactory.show(ScreenEnum.CHAT_EVENT);
+		screenFactory.show(ScreenEnum.chat_event);
 	}
 }

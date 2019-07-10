@@ -42,13 +42,13 @@ public class VillageScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		villageStage = stageFactory.makeStage(StageEnum.VILLAGE);
-		characterUiStage = stageFactory.makeStage(StageEnum.CHARACTER_UI);
-		gameUiStage = stageFactory.makeStage(StageEnum.GAME_UI);
-		loadPopupStage = stageFactory.makeStage(StageEnum.LOAD_POPUP);
+		villageStage = stageFactory.makeStage(StageEnum.village);
+		characterUiStage = stageFactory.makeStage(StageEnum.character_ui);
+		gameUiStage = stageFactory.makeStage(StageEnum.game_ui);
+		loadPopupStage = stageFactory.makeStage(StageEnum.load_popup);
 		// 여러 스테이지에 인풋 프로세서를 동시에 할 당한다
 
-		musicManager.setMusicAndPlay(MusicEnum.WORLD_NODE_MUSIC);
+		musicManager.setMusicAndPlay(MusicEnum.world_node_music);
 		setInputProcessor();
 	}
 

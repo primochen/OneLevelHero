@@ -17,7 +17,7 @@ public class CharacterChangeScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		characterChangeStage = stageFactory.makeStage(StageEnum.CHARACTER_CHANGE);
+		characterChangeStage = stageFactory.makeStage(StageEnum.character_change);
 		InputMultiplexer multiplexer = new InputMultiplexer();
 		multiplexer.addProcessor(0, characterChangeStage);
 		Gdx.input.setInputProcessor(multiplexer);

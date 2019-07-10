@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum SkillTargetUnitEnum {
-	MONSTER("monster"), SELF("self"), ALL("all"), ONE("one"), RANDOM("random");
+	monster("monster"), self("self"), all("all"), one("one"), random("random");
 
 	private String skillTargetType;
 

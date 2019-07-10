@@ -34,8 +34,8 @@ public class ChoiceOptionScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		chatEventStage = stageFactory.makeStage(StageEnum.CHAT_EVENT);
-		choiceOptionStage = stageFactory.makeStage(StageEnum.CHOICE_OPTION);
+		chatEventStage = stageFactory.makeStage(StageEnum.chat_event);
+		choiceOptionStage = stageFactory.makeStage(StageEnum.choice_option);
 		setMultiprocessor();
 	}
 

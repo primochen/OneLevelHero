@@ -13,7 +13,7 @@ public class EncounterScreen extends BaseScreen {
 
 	@Override
 	public void show() {
-		encountStage = stageFactory.makeStage(StageEnum.ENCOUNTER);
+		encountStage = stageFactory.makeStage(StageEnum.encounter);
 		setInputProcessor();
 	}
 

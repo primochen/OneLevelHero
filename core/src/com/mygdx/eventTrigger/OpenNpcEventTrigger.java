@@ -17,7 +17,7 @@ public class OpenNpcEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		EventPacket eventPacket = eventParameter.getEventPacket();
-		eventManager.setNpcEventState(eventPacket, EventStateEnum.OPENED);
+		eventManager.setNpcEventState(eventPacket, EventStateEnum.opened);
 		storySectionManager.runStorySequence();
 	}
 }

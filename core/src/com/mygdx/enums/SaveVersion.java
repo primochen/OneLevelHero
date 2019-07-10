@@ -1,7 +1,7 @@
 package com.mygdx.enums;
 
 public enum SaveVersion {
-	NEW_GAME("new_game"), SAVE_01("save_01"), SAVE_02("save_02"), SAVE_03("save_03");
+	new_game("new_game"), save_01("save_01"), save_02("save_02"), save_03("save_03");
 	private String code;
 
 	private SaveVersion(String code) {

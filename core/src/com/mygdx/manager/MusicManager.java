@@ -98,23 +98,23 @@ public class MusicManager {
 	private void setMusicByType(String musicName, MusicEnum musicType) {
 		Music music;
 		switch (musicType) {
-			case NORMAL :
+			case normal :
 				setMusic(musicName);
 				break;
-			case WORLD_NODE_MUSIC :
+			case world_node_music :
 				String currentNode = positionManager.getCurrentNodePath();
 				music = musicAssets.getWorldNodeMusic(currentNode);
 				musicInfo.setPreMusicName(currentNode);
 				music.setVolume(musicInfo.getMusicVolume());
 				musicInfo.setMusic(music);
 				break;
-			case BATTLE_MUSIC :
+			case battle_music :
 				music = musicAssets.getBattleMusic("bgm_battle");
 				musicInfo.setPreMusicName("bgm_battle");
 				music.setVolume(musicInfo.getMusicVolume());
 				musicInfo.setMusic(music);
 				break;
-			case MOVING_MUSIC : {
+			case moving_music : {
 				String arrowName = fieldManager.getArrowName();
 				musicInfo.setPreMusicName(arrowName);
 				music = musicAssets.getMovingMusic(arrowName);
@@ -138,14 +138,14 @@ public class MusicManager {
 
 	private boolean checkIsSameWithCurrentMusic(String musicName, MusicEnum musicType) {
 		switch (musicType) {
-			case NORMAL :
+			case normal :
 				return musicInfo.getPreMusicName().equals(musicName);
-			case BATTLE_MUSIC :
+			case battle_music :
 				return musicInfo.getPreMusicName().equals("bgm_battle");
-			case MOVING_MUSIC :
+			case moving_music :
 				String arrowName = fieldManager.getArrowName();
 				return musicInfo.getPreMusicName().equals(arrowName);
-			case WORLD_NODE_MUSIC :
+			case world_node_music :
 				String currentNode = positionManager.getCurrentNodePath();
 				return musicInfo.getPreMusicName().equals(currentNode);
 			default :
@@ -156,11 +156,11 @@ public class MusicManager {
 	}
 
 	public void setMusicAndPlay(String musicName) {
-		setMusicAndPlay(musicName, MusicEnum.NORMAL, MusicCondition.WHENEVER);
+		setMusicAndPlay(musicName, MusicEnum.normal, MusicCondition.WHENEVER);
 	}
 
 	public void setMusicAndPlay(String musicName, MusicCondition musicCondition) {
-		setMusicAndPlay(musicName, MusicEnum.NORMAL, musicCondition);
+		setMusicAndPlay(musicName, MusicEnum.normal, musicCondition);
 	}
 
 	public void setMusicAndPlay(MusicEnum musicType) {

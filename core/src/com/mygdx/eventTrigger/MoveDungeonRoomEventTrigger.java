@@ -17,7 +17,7 @@ public class MoveDungeonRoomEventTrigger implements EventTrigger {
 	@Override
 	public void triggerEvent(EventParameters eventParameter) {
 		positionManager.setCurrentSubNodePath(eventParameter.getLocation().getSubNodePath());
-		positionManager.setCurrentEventPositionType(EventPosition.DUNGEON);
+		positionManager.setCurrentEventPositionType(EventPosition.dungeon);
 		positionManager.setCurrentLocatePositionType(LocatePosition.DUNGEON);
 		dungeonManager.moveDungeonByEvent(eventParameter.getLocation());
 	}
