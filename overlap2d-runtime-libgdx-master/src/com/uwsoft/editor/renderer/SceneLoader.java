@@ -203,6 +203,7 @@ public class SceneLoader {
 	public void setAmbienceInfo(SceneVO vo) {
 		if (essentials.rayHandler != null && vo.ambientColor != null) {
 			Color clr = new Color(vo.ambientColor[0], vo.ambientColor[1], vo.ambientColor[2], vo.ambientColor[3]);
+//			Color clr = new Color(	1, 1, 1, 1);
 			essentials.rayHandler.setAmbientLight(clr);
 		}
 	}
