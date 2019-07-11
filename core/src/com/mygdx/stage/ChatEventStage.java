@@ -96,6 +96,7 @@ public class ChatEventStage extends BaseOneLevelStage {
 	}
 
 	public void setChatScene(EventScene eventScene) {
+		tableStack.clear();
 		setScript(eventScene);
 		makeChatTable(eventScene);
 		makeSkipButton();
