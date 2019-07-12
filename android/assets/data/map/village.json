@@ -75,7 +75,7 @@
     }
   },
   "cobweb": {
-    "nodeName": "콥웨브",
+    "nodeName": "cobweb",
     "nodePath": "cobweb",
     "villageDirection": "up_down",
     "scenePath": "cobweb_scene",
@@ -87,7 +87,7 @@
     },
     "building": {
       "cobweb_library": {
-        "subNodeName": "콥웨브 대도서관",
+        "subNodeName": "cobweb_library",
         "buildingType": "house",
         "outerPath": "cobweb_02",
         "subNodePath": "cobweb_library",
@@ -102,7 +102,7 @@
         ]
       },
       "cobweb_villagehall": {
-        "subNodeName": "콥웨브 마을회관",
+        "subNodeName": "cobweb_villagehall",
         "buildingType": "house",
         "outerPath": "cobweb_02",
         "subNodePath": "cobweb_villagehall",
@@ -116,7 +116,7 @@
         ]
       },
       "cobweb_grocery": {
-        "subNodeName": "콥웨브 잡화점",
+        "subNodeName": "cobweb_grocery",
         "buildingType": "house",
         "outerPath": "cobweb_03",
         "subNodePath": "cobweb_grocery",
@@ -131,7 +131,7 @@
         ]
       },
       "cobweb_smithy": {
-        "subNodeName": "콥웨브 대장간",
+        "subNodeName": "cobweb_smithy",
         "buildingType": "house",
         "outerPath": "cobweb_03",
         "subNodePath": "cobweb_smithy",
@@ -147,7 +147,7 @@
         ]
       },
       "cobweb_inn": {
-        "subNodeName": "콥웨브 여관",
+        "subNodeName": "cobweb_inn",
         "buildingType": "inn",
         "backgroundPath":"blackwood_inn",
         "subNodePath": "cobweb_inn",
@@ -162,7 +162,7 @@
         ]
       },
       "cobweb_cathedral": {
-        "subNodeName": "콥웨브 대성당",
+        "subNodeName": "cobweb_cathedral",
         "buildingType": "house",
         "outerPath": "cobweb_03",
         "subNodePath": "cobweb_cathedral",

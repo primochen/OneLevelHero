@@ -1,6 +1,6 @@
 {
   "blackwood": {
-    "nodeName": "블랙우드",
+    "nodeName": "blackwood",
     "nodeType": "village",
     "nodeConnection": {
       "cobweb": {
@@ -32,7 +32,7 @@
     }
   },
   "cobweb": {
-    "nodeName": "콥웨브",
+    "nodeName": "cobweb",
     "nodeType": "village",
     "nodeConnection": {
       "blackwood": {
@@ -67,7 +67,7 @@
     }
   },
   "oberon": {
-    "nodeName": "오베론",
+    "nodeName": "oberon",
     "nodeType": "village",
     "nodeConnection": {
       "retreat_stone": {
@@ -83,7 +83,7 @@
     }
   },
   "southcape": {
-    "nodeName": "사우스케이프",
+    "nodeName": "southcape",
     "nodeType": "village",
     "nodeConnection": {
       "caravanserai": {
@@ -105,7 +105,7 @@
     }
   },
   "middle_ridge": {
-    "nodeName": "미들 릿지",
+    "nodeName": "middle ridge",
     "nodeType": "village",
     "nodeConnection": {
       "blackwood": {
@@ -135,7 +135,7 @@
     }
   },
   "vaical_castle": {
-    "nodeName": "바이칼 성",
+    "nodeName": "vaical castle",
     "nodeType": "village",
     "nodeConnection": {
       "middle_ridge": {
@@ -154,7 +154,7 @@
     }
   },
   "redrose_castle": {
-    "nodeName": "레드로즈 성",
+    "nodeName": "redrose castle",
     "nodeType": "village",
     "nodeConnection": {
       "cobweb": {
@@ -172,7 +172,7 @@
     }
   },
   "winterfall": {
-    "nodeName": "윈터폴",
+    "nodeName": "winterfall",
     "nodeType": "village",
     "nodeConnection": {
       "crystallized_valley_north": {
@@ -182,7 +182,7 @@
     }
   },
   "mirage_port": {
-    "nodeName": "미라지 포트",
+    "nodeName": "mirage_port",
     "nodeType": "village",
     "nodeConnection": {
       "southcape": {
@@ -203,7 +203,7 @@
     }
   },
   "kadilla_castle": {
-    "nodeName": "카딜라 성",
+    "nodeName": "kadilla_castle",
     "nodeType": "village",
     "nodeConnection": {
       "oberon": {
@@ -222,12 +222,12 @@
     }
   },
   "bonichea": {
-    "nodeName": "보니체아",
+    "nodeName": "bonichea",
     "nodeType": "village",
     "nodeConnection": {}
   },
   "mountain_titania": {
-    "nodeName": "티타니아 산",
+    "nodeName": "mountain_titania",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "retreat_stone": {
@@ -237,7 +237,7 @@
     }
   },
   "crystallized_valley_south": {
-    "nodeName": "수정 협곡 남쪽 입구",
+    "nodeName": "crystallized_valley_south",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "cobweb": {
@@ -249,7 +249,7 @@
     }
   },
   "crystallized_valley_north": {
-    "nodeName": "수정 협곡 북쪽 입구",
+    "nodeName": "crystallized_valley_north",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "winterfall": {
@@ -259,7 +259,7 @@
     }
   },
   "elven_forest_east": {
-    "nodeName": "엘프의 숲 동쪽 입구",
+    "nodeName": "elven_forest_east",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "statue_of_golden_beetle": {
@@ -271,7 +271,7 @@
     }
   },
   "elven_forest_west": {
-    "nodeName": "엘프의 숲 서쪽 입구",
+    "nodeName": "elven_forest_west",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "caravanserai": {
@@ -291,7 +291,7 @@
     }
   },
   "devil_castle": {
-    "nodeName": "마왕성",
+    "nodeName": "devil_castle",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "blackwood": {
@@ -301,7 +301,7 @@
     }
   },
   "blackwood_forest": {
-    "nodeName": "블랙우드 숲",
+    "nodeName": "blackwood_forest",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "blackwood": {
@@ -313,7 +313,7 @@
     }
   },
   "golden_lake": {
-    "nodeName": "금빛 호수",
+    "nodeName": "golden_lake",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {
       "vaical_castle": {
@@ -323,12 +323,12 @@
     }
   },
   "cape_of_tempest": {
-    "nodeName": "폭풍의 곶",
+    "nodeName": "cape_of_tempest",
     "nodeType": "dungeon_entrance",
     "nodeConnection": {}
   },
   "retreat_stone": {
-    "nodeName": "회군의 바위",
+    "nodeName": "retreat_stone",
     "nodeType": "fork",
     "nodeConnection": {
       "oberon": {
@@ -346,7 +346,7 @@
     }
   },
   "dogbenefit_camp": {
-    "nodeName": "도그베네핏 야영지",
+    "nodeName": "dogbenefit_camp",
     "nodeType": "fork",
     "nodeConnection": {
       "retreat_stone": {
@@ -372,7 +372,7 @@
     }
   },
   "cemetery": {
-    "nodeName": "공동묘지",
+    "nodeName": "cemetery",
     "nodeType": "fork",
     "nodeConnection": {
       "caravanserai": {
@@ -392,7 +392,7 @@
     }
   },
   "caravanserai": {
-    "nodeName": "여행자의 쉼터",
+    "nodeName": "caravanserai",
     "nodeType": "fork",
     "nodeConnection": {
       "dogbenefit_camp": {
@@ -421,7 +421,7 @@
     }
   },
   "statue_of_golden_beetle": {
-    "nodeName": "황금 풍뎅이 석상",
+    "nodeName": "statue_of_golden_beetle",
     "nodeType": "fork",
     "nodeConnection": {
       "temple_of_moerae": {
