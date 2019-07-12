@@ -623,7 +623,7 @@
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어디로갈까요?",
+              "script": "我們應該去哪兒？",
               "characterPath": "lilis",
               "faceNumber": "01",
               "speakerPosition": "right",
