@@ -41,7 +41,7 @@ public class UiComponentAssets implements FileAssetsInitializable {
 		setStayButton(new Texture(Gdx.files.internal("texture/ui/dungeon_entrance/stay_button_stay.png")));
 		//skin = new Skin(Gdx.files.internal("skin/uiskin.json"));
 		skin = new Skin();
-		skin.add("default-fontX", font, BitmapFont.class);
+		skin.add("default-font", font, BitmapFont.class);
 		FileHandle fileHandle = Gdx.files.internal("skin/uiskin.json");
 		//FileHandle atlasFile = fileHandle.sibling("skin/uiskin.atlas");
 		FileHandle atlasFile = Gdx.files.internal("skin/uiskin.atlas");

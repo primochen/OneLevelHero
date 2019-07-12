@@ -102,7 +102,7 @@ public class StaticAssets {
 		
 		//skin.remove("default-fontX", BitmapFont.class);
 		//skin = new MySkin();
-		skin.add("default-fontX", font, BitmapFont.class);
+		skin.add("default-font", font, BitmapFont.class);
 		
 
 		
