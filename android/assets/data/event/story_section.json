@@ -11,14 +11,14 @@
         "nextSectionNumber": "102",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "예是"
+          "targetComponent": "是"
         }
       },
       {
         "nextSectionNumber": "112",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "아니오"
+          "targetComponent": "否"
         }
       }
     ]
@@ -281,28 +281,28 @@
         "nextSectionNumber": "114",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "카딜라 성"
+          "targetComponent": "凱迪拉城堡"
         }
       },
       {
         "nextSectionNumber": "301",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "수정 협곡"
+          "targetComponent": "水晶峽谷"
         }
       },
       {
         "nextSectionNumber": "401",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "바이칼 성"
+          "targetComponent": "貝加爾湖城堡"
         }
       },
       {
         "nextSectionNumber": "114",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "레드로즈 성"
+          "targetComponent": "紅玫瑰城堡"
         }
       }
     ]
@@ -327,28 +327,28 @@
         "nextSectionNumber": "114",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "카딜라 성"
+          "targetComponent": "凱迪拉城堡"
         }
       },
       {
         "nextSectionNumber": "301",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "수정 협곡"
+          "targetComponent": "水晶峽谷"
         }
       },
       {
         "nextSectionNumber": "401",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "바이칼 성"
+          "targetComponent": "貝加爾湖城堡"
         }
       },
       {
         "nextSectionNumber": "114",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "레드로즈 성"
+          "targetComponent": "紅玫瑰城堡"
         }
       }
     ]
@@ -369,28 +369,28 @@
         "nextSectionNumber": "115",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "카딜라 성"
+          "targetComponent": "凱迪拉城堡"
         }
       },
       {
         "nextSectionNumber": "301",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "수정 협곡"
+          "targetComponent": "水晶峽谷"
         }
       },
       {
         "nextSectionNumber": "401",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "바이칼 성"
+          "targetComponent": "貝加爾湖城堡"
         }
       },
       {
         "nextSectionNumber": "115",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "레드로즈 성"
+          "targetComponent": "紅玫瑰城堡"
         }
       }
     ]
@@ -411,28 +411,28 @@
         "nextSectionNumber": "114",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "카딜라 성"
+          "targetComponent": "凱迪拉城堡"
         }
       },
       {
         "nextSectionNumber": "301",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "수정 협곡"
+          "targetComponent": "水晶峽谷"
         }
       },
       {
         "nextSectionNumber": "401",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "바이칼 성"
+          "targetComponent": "貝加爾湖城堡"
         }
       },
       {
         "nextSectionNumber": "114",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "레드로즈 성"
+          "targetComponent": "紅玫瑰城堡"
         }
       }
     ]
@@ -1155,14 +1155,14 @@
         "nextSectionNumber": "224",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "살려준다"
+          "targetComponent": "Salryeojunda"
         }
       },
       {
         "nextSectionNumber": "225",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "죽인다"
+          "targetComponent": "殺"
         }
       }
     ]
@@ -1254,7 +1254,7 @@
         "nextSectionNumber": "228",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "죽인다"
+          "targetComponent": "殺"
         }
       }
     ]
@@ -1339,14 +1339,14 @@
         "nextSectionNumber": "230",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "살려준다"
+          "targetComponent": "Salryeojunda"
         }
       },
       {
         "nextSectionNumber": "231",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "죽인다"
+          "targetComponent": "殺"
         }
       }
     ]
@@ -1548,14 +1548,14 @@
         "nextSectionNumber": "237",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "편지를 건낸다."
+          "targetComponent": "發一封信。"
         }
       },
       {
         "nextSectionNumber": "245",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "편지를 건내지 않는다."
+          "targetComponent": "我不寫信。"
         }
       }
     ]
@@ -1716,14 +1716,14 @@
         "nextSectionNumber": "243",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "로어."
+          "targetComponent": "勞爾。"
         }
       },
       {
         "nextSectionNumber": "244",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "플레챠."
+          "targetComponent": "查塔姆球員。"
         }
       }
     ]
@@ -3131,21 +3131,21 @@
         "nextSectionNumber": "418",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "콥웨브에 보고"
+          "targetComponent": "向Cobweb報告"
         }
       },
       {
         "nextSectionNumber": "419",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "미들릿지 학살"
+          "targetComponent": "Middle Ridge大屠殺"
         }
       },
       {
         "nextSectionNumber": "421",
         "eventType": "choice_option",
         "eventParameter": {
-          "targetComponent": "마왕과 결탁"
+          "targetComponent": "與魔鬼聯繫在一起"
         }
       }
     ]
