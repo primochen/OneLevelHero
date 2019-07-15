@@ -103,13 +103,13 @@ public class TimeManager {
 
 	public String getHourInfo() {
 		if (getHour() > 12) {
-			return "오후 " + (getHour() - 12) + "시 ";
+			return "PM " + (getHour() - 12) + "點 ";
 		} else if (getHour() == 12) {
-			return "오후 " + getHour() + "시 ";
+			return "PM " + getHour() + "點 ";
 		} else if (getHour() > 0) {
-			return "오전 " + getHour() + "시 ";
+			return "AM " + getHour() + "點 ";
 		} else {
-			return "오전 " + (getHour() + 12) + "시 ";
+			return "AM" + (getHour() + 12) + "點 ";
 		}
 	}
 
@@ -123,14 +123,14 @@ public class TimeManager {
 
 	public String getMinuteInfo() {
 		if (getMinute() == 0) {
-			return "00분";
+			return "00分";
 		} else {
-			return getMinute() + "분";
+			return getMinute() + "分";
 		}
 	}
 
 	public String getDayInfo() {
-		return getDay() + "일째 ";
+		return getDay() + "日 ";
 	}
 
 	public String getTimeInfo() {

@@ -82,22 +82,22 @@ public class SaveManager {
 		}
 		switch (storySectionInfo.getCurrentSectionNumber()) {
 			case 1 :
-				saveInfo.setStoryName("프롤로그");
+				saveInfo.setStoryName("序言");
 				break;
 			case 2 :
-				saveInfo.setStoryName("카딜라 스토리");
+				saveInfo.setStoryName("凱迪拉故事");
 				break;
 			case 3 :
-				saveInfo.setStoryName("수정협곡 스토리");
+				saveInfo.setStoryName("水晶峽谷的故事");
 				break;
 			case 4 :
-				saveInfo.setStoryName("레드로즈 스토리");
+				saveInfo.setStoryName("紅玫瑰故事");
 				break;
 			case 5 :
-				saveInfo.setStoryName("미라지포트 스토리");
+				saveInfo.setStoryName("幻影港口故事");
 				break;
 		}
-		saveInfo.setSaveTime(new SimpleDateFormat("yyyy년 MM월dd일 HH:mm에 저장").format(new Date()));
+		saveInfo.setSaveTime(new SimpleDateFormat("yyyy/MM/dd/ HH:mm 存檔").format(new Date()));
 	}
 
 	public void setNewGame() {
