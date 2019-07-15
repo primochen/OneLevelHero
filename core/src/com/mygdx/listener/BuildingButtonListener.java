@@ -22,7 +22,7 @@ import com.mygdx.model.location.Building;
 import com.mygdx.model.location.TargetTime;
 
 public class BuildingButtonListener extends ClickListener {
-	private static final String THE_DOOR_IS_CLOSED = "문이 굳게 닫혀있다.";
+	private static final String THE_DOOR_IS_CLOSED = "門緊緊地關上了。";
 	@Autowired
 	private StorySectionManager storySectionManager;
 	@Autowired

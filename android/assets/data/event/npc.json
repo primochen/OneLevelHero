@@ -2143,7 +2143,7 @@
     ]
   },
   "cobweb_smithy_owner": {
-    "name": "대장장이",
+    "name": "鐵匠",
     "positionIndex": 1,
     "facePath": "smithy_owner",
     "elementPath": "cobweb_smithy_owner",
