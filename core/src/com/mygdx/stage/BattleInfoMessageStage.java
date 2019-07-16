@@ -18,8 +18,8 @@ import com.mygdx.manager.TextureManager;
 import com.mygdx.screen.BattleScreen;
 
 public class BattleInfoMessageStage extends BaseOneLevelStage {
-	private final String START_BATTLE_MESSAGE = "전투 시작!";
-	private final String PLAYER_WIN_MESSAGE = "몬스터를 물리쳤다!";
+	private final String START_BATTLE_MESSAGE = "開始戰鬥！";
+	private final String PLAYER_WIN_MESSAGE = "我擊敗了怪物！";
 	@Autowired
 	private TextureManager textureManager;
 	@Autowired
