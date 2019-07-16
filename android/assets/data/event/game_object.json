@@ -1,6 +1,6 @@
 {
   "save": {
-    "name": "저장하기",
+    "name": "保存",
     "objectType" : "function",
     "events": {
       "1": {
@@ -9,7 +9,7 @@
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "저장되었습니다.",
+              "script": "它已被保存。",
               "characterPath": "nothing_image",
               "faceNumber":"01",
               "backgroundPath": "blackwood_inn"
@@ -26,7 +26,7 @@
     }
   },
   "rest": {
-    "name": "회복하기",
+    "name": "要恢復",
     "elementPath" : "rest",
     "objectType" : "function",
     "events": {
@@ -36,7 +36,7 @@
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "4시간이 흐르고 파티원의 체력과 피로도가 모두 회복되었습니다.",
+              "script": "四個小時過去了，黨的力量和疲勞都恢復了。",
               "characterPath": "nothing_image",
               "faceNumber":"01",
               "backgroundPath": "blackwood_inn"
@@ -53,7 +53,7 @@
     }
   },
   "rest_in_fork": {
-    "name": "회복하기",
+    "name": "要恢復",
     "elementPath" : "rest_in_fork",
     "objectType" : "function",
     "events": {
@@ -63,7 +63,7 @@
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "4시간이 흐르고 파티원의 체력 전부와 피로도 20이 회복되었습니다.",
+              "script": "4小時後，所有黨的體力和疲勞都恢復了。",
               "characterPath": "nothing_image",
               "faceNumber":"01",
               "backgroundPath": "elven_forest"
@@ -81,82 +81,82 @@
   },
   
   "blackwood_jar": {
-    "name": "항아리",
+    "name": "罐",
     "objectType" : "pressed",
     "elementPath" : "blackwood_jar",
     "facePath" : "jar",
     "events": {
       "1": {
-        "eventTitle": "물건을 꺼낸다",
+        "eventTitle": "取出東西。",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "아니, 당신들 지금 뭘 하고 있는 건가?",
+              "script": "不，你們現在在做什麼？",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "네?",
+              "script": "什麼？",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "왜 남의 집 물건에 함부로 손대는 거지?",
+              "script": "你為什麼要折磨別人的房子？",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "아니, 뭐 도움이 될만한 물건이 있나 해서요…",
+              "script": "不，我擔心我有事要幫忙......",
               "characterPath": "yongsa",
               "faceNumber": "11",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "도움이 될 거 같다고 남의 것을 막 훔쳐도 되는 건가!",
+              "script": "你可以偷別人的東西！",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "그런 건 아니지만…",
+              "script": "這不是那樣的......",
               "characterPath": "yongsa",
               "faceNumber": "12",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "갑자기 막 집에 들어올 때부터 알아 봤어야 됬는데…",
+              "script": "從我回到家的那一刻起我就應該知道了...",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "아니 그건 원래 불문율 같은 거라…",
+              "script": "不，這有點像原始的廢話......",
               "characterPath": "yongsa",
               "faceNumber": "11",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "도둑이야, 도둑!!",
+              "script": "這是小偷，小偷！",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "우왓… 도…도망가자!",
+              "script": "哇... 還...... 我們離開吧！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
@@ -196,34 +196,34 @@
         ]
       },
       "2": {
-        "eventTitle": "물건을 꺼낸다",
+        "eventTitle": "取出東西。",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "아니, 또 왔잖아?",
+              "script": "不，你又來了？",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "으앗!",
+              "script": "Euat！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "도둑이야, 도둑!!",
+              "script": "這是小偷，小偷！",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "우왓… 도…도망가자!",
+              "script": "哇... 還...... 我們離開吧！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
@@ -263,34 +263,34 @@
         ]
       },
       "3": {
-        "eventTitle": "물건을 꺼낸다",
+        "eventTitle": "取出東西。",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "아니, 또 왔잖아?",
+              "script": "不，你又來了？",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "으앗!",
+              "script": "Euat！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "도둑이야, 도둑!!",
+              "script": "這是小偷，小偷！",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "우왓… 도…도망가자!",
+              "script": "哇... 還...... 我們離開吧！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
@@ -330,34 +330,34 @@
         ]
       },
       "4": {
-        "eventTitle": "물건을 꺼낸다",
+        "eventTitle": "取出東西。",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "아니, 또 왔잖아?",
+              "script": "不，你又來了？",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "으앗!",
+              "script": "Euat！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "도둑이야, 도둑!!",
+              "script": "這是小偷，小偷！",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "우왓… 도…도망가자!",
+              "script": "哇... 還...... 我們離開吧！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
@@ -397,48 +397,48 @@
         ]
       },
       "5": {
-        "eventTitle": "물건을 꺼낸다",
+        "eventTitle": "取出東西。",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "지금이닷!",
+              "script": "現在yidat！",
               "characterPath": "yongsa",
               "faceNumber": "04",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "아스트라를 훔쳤다.",
+              "script": "我偷了阿斯特拉。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "음? 아직도 내 물건을 노리는건 아니겠지?",
+              "script": "嗯？ 你還沒有嘗試我的東西，是嗎？",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "에이... 설마요... 하핫",
+              "script": "A ......我不......",
               "characterPath": "yongsa",
               "faceNumber": "11",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "수상쩍은 걸...",
+              "script": "可疑......",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "그럼 전 이만!",
+              "script": "那麼我就是！",
               "characterPath": "yongsa",
               "faceNumber": "11",
               "speakerPosition": "right",
@@ -480,34 +480,34 @@
         ]
       },
       "6": {
-        "eventTitle": "깨뜨린다",
+        "eventTitle": "它打破了",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "당신 지금 머하는 짓이야!!",
+              "script": "你現在做什麼！",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "헛!",
+              "script": "小屋！",
               "characterPath": "yongsa",
               "faceNumber": "10",
               "speakerPosition": "right",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "그 항아리는 유서깊은 물건으로 내 할아버지의 할아버지의 할아버지의 할아버지의 할아버지의...",
+              "script": "那個罐子是我祖父祖父祖父祖父的東西......",
               "characterPath": "blackwood_resident",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_house"
             },
             {
-              "script": "으악! 도망가자!",
+              "script": "哎呦！ 我們離開吧！",
               "characterPath": "yongsa",
               "faceNumber": "11",
               "speakerPosition": "right",
@@ -571,31 +571,31 @@
       }
     },
     "greetingMessages": [
-      "고풍스럽게 느껴지는 항아리다."
+      "這是一個老式的鍋。"
     ]
   },
   
   "cobweb_anvil":{
-    "name": "모루",
+    "name": "砧",
     "objectType" : "pressed",
     "facePath" : "anvil",
     "elementPath" : "cobweb_anvil",
     "events": {
       "1": {
-        "eventTitle": "만진다",
+        "eventTitle": "倒是",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "앗! 뜨거!",
+              "script": "噢！熱！",
               "characterPath": "yongsa",
               "faceNumber": "06",
               "speakerPosition": "left",
               "backgroundPath": "cobweb_smithy"
             },
             {
-              "script": "뜨거운 모루에 손을 대어서 체력이 20 감소하였다.",
+              "script": "我在熱鐵砧上打了手，我的耐力減少了20。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -617,24 +617,24 @@
       }
     },
     "greetingMessages": [
-      "열기가 느껴지는 모루다."
+      "這是一個感覺到熱量的鐵砧。"
     ]
   },
   
   "oberon_box_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "oberon_box_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 3개, 브랜디 3개를 얻었다.",
+              "script": "3和3白蘭地。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -687,13 +687,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -714,27 +714,27 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "상자를 부셨다.",
+              "script": "你打破了盒子。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "oberon_house"
             },
             {
-              "script": "갑자기 남의 집 물건을 부수다니...",
+              "script": "突然間我弄壞了房子的東西......",
               "characterPath": "mia",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "oberon_house"
             },
             {
-              "script": "당장 나가주세요!",
+              "script": "現在滾出去！",
               "characterPath": "ai",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -809,24 +809,24 @@
       }
     },
     "greetingMessages": [
-      "상자다."
+      "這是一個盒子。"
     ]
   },
   
   "redrose_castle_snack":{
-    "name": "갓 구운 과자",
+    "name": "新鮮出爐的糖果",
     "objectType" : "pressed",
     "facePath" : "snack",
     "elementPath" : "redrose_castle_snack",
     "events": {
       "1": {
-        "eventTitle": "먹는다",
+        "eventTitle": "吃",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "과자를 먹고 파티원의 체력이 모두 회복되었다.",
+              "script": "吃完甜食後，所有黨員都恢復了體力。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -874,27 +874,27 @@
         ]
       },
       "2": {
-        "eventTitle": "엎는다",
+        "eventTitle": "該eopneun",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "과자를 엎었다.",
+              "script": "我超過了餅乾。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "redrose_castle_house"
             },
             {
-              "script": "지금 머하시는 거에요! 먹을라고 만든 과자를!",
+              "script": "你現在正在做！ 糖果吃！",
               "characterPath": "nia",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "redrose_castle_house"
             },
             {
-              "script": "당장 여기서 나가시죠!",
+              "script": "現在離開這裡吧！",
               "characterPath": "nia",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -969,23 +969,23 @@
       }
     },
     "greetingMessages": [
-      "갓 구워서 맛있어 보이는 과자다."
+      "新鮮出爐的糖果看起來很美味。"
     ]
   },
   "redrose_castle_box_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "redrose_castle_box_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "잠겨있다.",
+              "script": "它被鎖定了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1006,27 +1006,27 @@
         ]
       },
       "2": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "상자를 부수고 생강 2개, 세이지 2개, 작약 뿌리 2개를 획득했다.",
+              "script": "我打破盒子，得到2個生薑，2個鼠尾草和2個牡丹根。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "redrose_castle_house"
             },
             {
-              "script": "자네 지금 뭐 하는 건가! 완전 날강도가 따로 없네!",
+              "script": "你現在在做什麼？ 沒有完整的日光！",
               "characterPath": "noctern",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "redrose_castle_house"
             },
             {
-              "script": "당장 나가!",
+              "script": "現在滾出去！",
               "characterPath": "noctern",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1134,23 +1134,23 @@
       }
     },
     "greetingMessages": [
-      "상자다."
+      "這是一個盒子。"
     ]
   },
   "redrose_castle_box_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "redrose_castle_box_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "마법의 정석을 얻었다.",
+              "script": "我有一個神奇的名字。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1212,13 +1212,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1239,13 +1239,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "상자를 부수고 마법의 정석을 얻었다.",
+              "script": "盒子我有一個神奇的限制。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1300,13 +1300,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "상자를 부셨지만 아무 것도 나오지 않았다.",
+              "script": "盒子但沒有出現。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1351,24 +1351,24 @@
       }
     },
     "greetingMessages": [
-      "상자다."
+      "這是一個盒子。"
     ]
   },
   
   "middle_ridge_drawer": {
-    "name": "서랍장",
+    "name": "五斗櫃",
     "objectType" : "pressed",
     "facePath" : "drawer",
     "elementPath": "middle_ridge_drawer",
     "events": {
       "1": {
-        "eventTitle": "첫 번째 서랍",
+        "eventTitle": "第一個抽屜",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1389,13 +1389,13 @@
         ]
       },
       "2": {
-        "eventTitle": "두 번째 서랍",
+        "eventTitle": "第二抽屜",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "편지더미가 있는데 건들진 말아야겠다.",
+              "script": "我有一堆信件，我什麼都聽不到。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1416,111 +1416,111 @@
         ]
       },
       "3": {
-        "eventTitle": "두 번째 서랍",
+        "eventTitle": "第二抽屜",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "상자에서 편지더미가 발견되었다.",
+              "script": "盒子發現了一堆信件。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "친애하는 월라스 경께",
+              "script": "親愛的華萊士夫人",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "저번에 보내주신 하인 덕분에 일은 잘 처리했습니다.",
+              "script": "感謝你上次送我的僕人，我工作得很好。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "그렇지만 죽은 줄만 알았던 케인 녀석이 쥐새끼같이 살아남아 휘스턴가의 수장을 차지할 줄은 누가 알았겠습니까?",
+              "script": "但是誰知道只知道死了的該隱將作為一個囓齒動物存活並佔據費斯頓的頭？",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "그 녀석도 바로 죽이긴 사람들 눈치가 보이고……",
+              "script": "我注意到那個現在殺了他的那個人.........",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "그래서 제가 묘안을 생각해보았습니다.",
+              "script": "所以我試著想一想這個想法。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "용사에게 어떤 사정이 생겨 미들릿지로 오고 있다고 합니다.",
+              "script": "據說戰士要來到Middle Ridge有一定的情況。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "용사는 휘스턴가에서 자랐으니 분명히 케인을 만날 것입니다.",
+              "script": "戰士們在惠特斯隆長大，肯定會遇見該隱。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "용사와 케인의 사이는 무척 나쁘니, 둘을 이간질해 케인이 용사를 죽이려다 되려 개죽음을 당하는 건 어떻겠습니까?",
+              "script": "戰士和凱恩之間的關係非常糟糕，其中兩個。你為什麼不讓凱恩達到殺死戰士的程度？",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "월라스 경의 의견을 듣고 싶습니다. 이만 줄이겠습니다.",
+              "script": "我想听聽華萊士先生的發言。 我會縮短它。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "에버그네일 경 올림",
+              "script": "常青指甲",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "이런 파렴치한……!",
+              "script": "這無恥.........！",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "어떻게 이런 일을 저지를 수 있죠?",
+              "script": "你怎麼能這樣做？",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "아니야. 그럴 수 없어. 믿을 수 없어.",
+              "script": "號 我不能。 我簡直不敢相信。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "middle_ridge_house"
             },
             {
-              "script": "아까 만난 사람들한테 직접 들을 거야.",
+              "script": "我會聽到以前見過的人。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1557,13 +1557,13 @@
         ]
       },
       "4": {
-        "eventTitle": "두 번째 서랍",
+        "eventTitle": "第二抽屜",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "이미 편지를 꺼냈다.",
+              "script": "我已經收到了這封信。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1584,13 +1584,13 @@
         ]
       },
       "5": {
-        "eventTitle": "세 번째 서랍",
+        "eventTitle": "第三抽屜",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1612,23 +1612,23 @@
       }
     },
     "greetingMessages": [
-      "서랍이다."
+      "這是一個抽屜。"
     ]
   },
   "middle_ridge_vase":{
-    "name": "꽃병",
+    "name": "花瓶",
     "objectType" : "pressed",
     "facePath" : "vase",
     "elementPath" : "middle_ridge_vase",
     "events": {
       "1": {
-        "eventTitle": "꽃을 흔든다.",
+        "eventTitle": "搖動花朵。",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "꽃을 흔들어 부들 꽃가루를 2개 얻었다.",
+              "script": "我有兩個花粉桿搖動花朵。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1670,13 +1670,13 @@
         ]
       },
       "2": {
-        "eventTitle": "꽃을 흔든다.",
+        "eventTitle": "搖動花朵。",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "이젠 꽃가루가 없다.",
+              "script": "現在沒有花粉。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1697,27 +1697,27 @@
         ]
       },
       "3": {
-        "eventTitle": "깨뜨린다",
+        "eventTitle": "它打破了",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "꽃병을 떨어뜨렸다.",
+              "script": "我丟了花瓶。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_inn"
             },
             {
-              "script": "지금 머하시는 거에요! 지금 일부러 그러신거죠!",
+              "script": "你現在正在做！ 這就是你現在所做的！",
               "characterPath": "middle_ridge_inn_owner",
               "faceNumber": "01",
               "speakerPosition": "left",
               "backgroundPath": "blackwood_inn"
             },
             {
-              "script": "더 파손하지 말고 당장 여기서 나가시죠!",
+              "script": "不要打破它，離開這裡！",
               "characterPath": "middle_ridge_inn_owner",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1792,18 +1792,18 @@
       }
     },
     "greetingMessages": [
-      "이쁜 꽃병이다."
+      "這是一個漂亮的花瓶。"
     ]
   },
   
   "winterfall_portal":{
-    "name": "서큐버스 동굴 포탈",
+    "name": "魅魔洞穴門戶",
     "objectType" : "pressed",
     "facePath" : "portal",
     "elementPath" : "winterfall_portal",
     "events": {
       "1": {
-        "eventTitle": "들어간다",
+        "eventTitle": "成",
         "eventState": "always_open",
         "eventType": "move_dungeon_room",
         "eventParameter": {
@@ -1827,23 +1827,23 @@
       }
     },
     "greetingMessages": [
-      "서큐버스 동굴로 통하는 포탈이다."
+      "它是Succubus洞穴的入口。"
     ]
   },
   "winterfall_box_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "winterfall_box_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "상자가 부서지면서 수정 골렘이 나타났다!",
+              "script": "盒子一個破碎的魔像出現了！",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1897,13 +1897,13 @@
         ]
       },
       "2": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "always_open",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자 부서지면서 수정 골렘이 나타났다!",
+              "script": "盒子一個破碎的魔像出現了！",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -1958,23 +1958,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "winterfall_box_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "winterfall_box_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2036,13 +2036,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2063,13 +2063,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2103,13 +2103,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2144,23 +2144,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "winterfall_glue_pile_01":{
-    "name": "약초 더미",
+    "name": "草本堆",
     "objectType" : "pressed",
     "facePath" : "glue_pile",
     "elementPath" : "winterfall_glue_pile_01",
     "events": {
       "1": {
-        "eventTitle": "줍는다",
+        "eventTitle": "拿起來",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2215,13 +2215,13 @@
         ]
       },
       "2": {
-        "eventTitle": "발로 뭉갠다",
+        "eventTitle": "團結腳壓傷",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "발로 약초 더미를 뭉갰다.",
+              "script": "我用腳捏草藥堆。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2266,23 +2266,23 @@
       }
     },
     "greetingMessages": [
-      "약초가 놓여 있다."
+      "草藥到位了。"
     ]
   },
   "winterfall_glue_pile_02":{
-    "name": "약초 더미",
+    "name": "草本堆",
     "objectType" : "pressed",
     "facePath" : "glue_pile",
     "elementPath" : "winterfall_glue_pile_02",
     "events": {
       "1": {
-        "eventTitle": "줍는다",
+        "eventTitle": "拿起來",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2337,13 +2337,13 @@
         ]
       },
       "2": {
-        "eventTitle": "발로 뭉갠다",
+        "eventTitle": "團結腳壓傷",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "발로 약초 더미를 뭉갰다.",
+              "script": "我用腳捏草藥堆。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2388,24 +2388,24 @@
       }
     },
     "greetingMessages": [
-      "약초가 놓여 있다."
+      "草藥到位了。"
     ]
   },
 
   "treasureBox_12_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_12_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2467,13 +2467,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2494,13 +2494,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2534,13 +2534,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2575,23 +2575,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_12_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_12_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2653,13 +2653,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2680,13 +2680,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2720,13 +2720,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2761,23 +2761,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_12_03":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_12_03",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2839,13 +2839,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2866,13 +2866,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2906,13 +2906,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -2947,24 +2947,24 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
 
   "treasureBox_13_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_13_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3026,13 +3026,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3053,13 +3053,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3093,13 +3093,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3134,24 +3134,24 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
 
   "treasureBox_14_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_14_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3213,13 +3213,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3240,13 +3240,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3280,13 +3280,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3321,23 +3321,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_14_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_14_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3399,13 +3399,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3426,13 +3426,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3466,13 +3466,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3507,23 +3507,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_14_03":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_14_03",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3585,13 +3585,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3612,13 +3612,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3652,13 +3652,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3693,23 +3693,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_14_04":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_14_04",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3771,13 +3771,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3798,13 +3798,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3838,13 +3838,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3879,24 +3879,24 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
 
   "treasureBox_15_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3958,13 +3958,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -3985,13 +3985,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4025,13 +4025,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4066,23 +4066,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_15_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4144,13 +4144,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4171,13 +4171,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4211,13 +4211,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4252,23 +4252,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_15_03":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4330,13 +4330,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4357,13 +4357,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4397,13 +4397,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4438,23 +4438,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_15_04":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_04",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4516,13 +4516,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4543,13 +4543,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4583,13 +4583,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4624,23 +4624,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_15_05":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_05",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4702,13 +4702,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4729,13 +4729,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4769,13 +4769,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4810,23 +4810,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_15_06":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_06",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4888,13 +4888,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4915,13 +4915,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4955,13 +4955,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -4996,23 +4996,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_15_07":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_15_07",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5074,13 +5074,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5101,13 +5101,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5141,13 +5141,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5182,17 +5182,17 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "portal_15_01":{
-    "name": "포탈",
+    "name": "門戶",
     "objectType" : "pressed",
     "facePath" : "portal",
     "elementPath" : "portal_15_01",
     "events": {
       "1": {
-        "eventTitle": "들어간다",
+        "eventTitle": "成",
         "eventState": "always_open",
         "eventType": "move_node",
         "eventParameter": {
@@ -5214,24 +5214,24 @@
       }
     },
     "greetingMessages": [
-      "모에라핌을 처치하니 포탈이 생겼다."
+      "我有一扇殺死Moerafim的大門。"
     ]
   },
 
   "treasureBox_16_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5293,13 +5293,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5320,13 +5320,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5360,13 +5360,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5401,23 +5401,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5479,13 +5479,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5506,13 +5506,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5546,13 +5546,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5587,23 +5587,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_03":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_03",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5665,13 +5665,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5692,13 +5692,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5732,13 +5732,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5773,23 +5773,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_04":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_04",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5851,13 +5851,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5878,13 +5878,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5918,13 +5918,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -5959,23 +5959,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_05":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_05",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6037,13 +6037,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6064,13 +6064,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6104,13 +6104,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6145,23 +6145,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_06":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_06",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6223,13 +6223,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6250,13 +6250,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6290,13 +6290,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6331,23 +6331,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_07":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_07",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6409,13 +6409,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6436,13 +6436,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6476,13 +6476,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6517,23 +6517,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_08":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_08",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6595,13 +6595,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6622,13 +6622,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6662,13 +6662,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6703,23 +6703,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_09":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_09",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6781,13 +6781,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6808,13 +6808,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6848,13 +6848,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6889,23 +6889,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_10":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_10",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6967,13 +6967,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -6994,13 +6994,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7034,13 +7034,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7075,23 +7075,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_11":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_11",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7153,13 +7153,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7180,13 +7180,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7220,13 +7220,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7261,23 +7261,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_12":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_12",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7339,13 +7339,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7366,13 +7366,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7406,13 +7406,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7447,23 +7447,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_16_13":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_16_13",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7525,13 +7525,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7552,13 +7552,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7592,13 +7592,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7633,24 +7633,24 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   
   "treasureBox_17_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_17_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7712,13 +7712,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7739,13 +7739,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7779,13 +7779,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7820,23 +7820,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_17_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_17_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7898,13 +7898,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7925,13 +7925,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -7965,13 +7965,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8006,23 +8006,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_17_03":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_17_03",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8084,13 +8084,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8111,13 +8111,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8151,13 +8151,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8192,23 +8192,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_17_04":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_17_04",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8270,13 +8270,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8297,13 +8297,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8337,13 +8337,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8378,24 +8378,24 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   
   "treasureBox_18_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_18_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8457,13 +8457,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8484,13 +8484,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8524,13 +8524,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8565,23 +8565,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_18_02":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_18_02",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8643,13 +8643,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8670,13 +8670,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8710,13 +8710,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8751,23 +8751,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_18_03":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_18_03",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8829,13 +8829,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8856,13 +8856,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8896,13 +8896,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -8937,23 +8937,23 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
   "treasureBox_18_04":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_18_04",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9015,13 +9015,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9042,13 +9042,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9082,13 +9082,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9123,18 +9123,18 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   },
 
   "portal_25_01":{
-    "name": "수정의 제단 포탈",
+    "name": "水晶祭壇門戶",
     "objectType" : "pressed",
     "facePath" : "portal",
     "elementPath" : "portal_25_01",
     "events": {
       "1": {
-        "eventTitle": "들어간다",
+        "eventTitle": "成",
         "eventState": "always_open",
         "eventType": "move_sub_node",
         "eventParameter": {
@@ -9157,17 +9157,17 @@
       }
     },
     "greetingMessages": [
-      "수정의 제단으로 통하는 포탈이다."
+      "它是通往水晶祭壇的門戶。"
     ]
   },
   "portal_25_02":{
-    "name": "네펠의 포탈",
+    "name": "NEPEL的門戶",
     "objectType" : "pressed",
     "facePath" : "portal",
     "elementPath" : "portal_25_02",
     "events": {
       "1": {
-        "eventTitle": "들어간다",
+        "eventTitle": "成",
         "eventState": "always_open",
         "eventType": "move_dungeon_room",
         "eventParameter": {
@@ -9190,7 +9190,7 @@
         ]
       },
      "2": {
-        "eventTitle": "들어간다",
+        "eventTitle": "成",
         "eventState": "not_opened",
         "eventType": "move_dungeon_room",
         "eventParameter": {
@@ -9227,24 +9227,24 @@
       }
     },
     "greetingMessages": [
-      "네펠이 만들어 둔 포탈이다."
+      "這是Neppel製作的大門。"
     ]
   },
   
   "treasureBox_27_01":{
-    "name": "상자",
+    "name": "盒子",
     "objectType" : "pressed",
     "facePath" : "box",
     "elementPath" : "treasureBox_27_01",
     "events": {
       "1": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "어성초 1개를 얻었다.",
+              "script": "我有一個。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9306,13 +9306,13 @@
         ]
       },
       "2": {
-        "eventTitle": "연다",
+        "eventTitle": "打開",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
             {
-              "script": "비어있다.",
+              "script": "它是空的。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9333,13 +9333,13 @@
         ]
       },
       "3": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 너무 세게 부셔서 안의 약초가 뭉개졌다.",
+              "script": "盒子草藥被粉碎了。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9373,13 +9373,13 @@
         ]
       },
       "4": {
-        "eventTitle": "부순다",
+        "eventTitle": "緊急",
         "eventState": "not_opened",
         "eventType": "chat",
         "eventParameter": {
           "eventScenes": [
              {
-              "script": "상자를 부셨다. 안에는 아무 것도 없다.",
+              "script": "盒子他是。 裡面什麼都沒有。",
               "characterPath": "nothing_image",
               "faceNumber": "01",
               "speakerPosition": "left",
@@ -9414,7 +9414,7 @@
       }
     },
     "greetingMessages": [
-      "허름한 상자다."
+      "這是一個破舊盒子。"
     ]
   }
 }
